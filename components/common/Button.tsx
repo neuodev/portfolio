@@ -12,7 +12,9 @@ const Button: NextPage<{
         variant === "secondary"
           ? "border border-main text-main"
           : "bg-main text-white"
-      } uppercase rounded-3xl font-semibold ${className || ""}`}
+      } uppercase rounded-3xl font-semibold relative overflow-hidden bg-slide ${variant} ${
+        className || ""
+      }`}
     >
       {children}
     </button>
@@ -20,3 +22,7 @@ const Button: NextPage<{
 };
 
 export default Button;
+
+Button.defaultProps = {
+  variant: "primary",
+};
