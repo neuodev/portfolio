@@ -5,9 +5,9 @@ import { NextApiRequest, NextApiResponse } from "next";
 type Date = {
   aboutme: string;
 };
-
+// https://vercel.com/guides/loading-static-file-nextjs-api-route
 export default async function handler(
-  req: NextApiRequest,
+  _req: NextApiRequest,
   res: NextApiResponse
 ) {
   const filePath = path.join(process.cwd(), "json", "staticdata.json");
