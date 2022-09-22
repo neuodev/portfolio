@@ -10,13 +10,13 @@ const Button: NextPage<{
     <button
       className={`px-8 py-3 ${
         variant === "secondary"
-          ? "border border-main text-main"
-          : "bg-main text-white"
-      } uppercase rounded-3xl font-semibold relative overflow-hidden bg-slide ${variant} ${
+          ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
+          : "bg-indigo-500 text-white hover:bg-indigo-600"
+      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-semibold relative overflow-hidden bg-slide ${variant} ${
         className || ""
       }`}
     >
-      <span className="z-10">{children}</span>
+      {children}
     </button>
   );
 };

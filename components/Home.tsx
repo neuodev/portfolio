@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 import Button from "./common/Button";
-import Menu from "./Menu";
 
 const Home = () => {
   return (
@@ -17,8 +16,8 @@ const Home = () => {
         </div>
         <div className="text-white max-w-lg">
           <p className="uppercase text-lg mb-2">HI THERE!</p>
-          <h1 className="mt-2 mb-3 text-5xl font-bold uppercase">
-            I&apos;m <span className="text-main">a web developer</span>
+          <h1 className="mt-2 mb-3 text-4xl font-bold uppercase">
+            I&apos;m <span className="text-indigo-500">a web developer</span>
           </h1>
           <p className="mt-2 mb-6 leading-relaxed">
             I&apos;m a Freelance UI/UX Designer and Developer based in London,
@@ -33,7 +32,6 @@ const Home = () => {
               Portfolio
             </Button>
           </div>
-          <Menu />
         </div>
       </div>
     </div>
