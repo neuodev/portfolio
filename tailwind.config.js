@@ -6,7 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {},
+      fontFamily: {
+        rubik: ["Rubik", "sans-serif"],
+      },
     },
   },
   plugins: [],

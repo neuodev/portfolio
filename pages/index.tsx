@@ -1,10 +1,12 @@
 import type { NextPage } from "next";
 import Home from "../components/Home";
+import Projects from "../components/Projects";
 
 const Main: NextPage = () => {
   return (
-    <div className="flex items-center justify-center h-screen w-screen">
+    <div className="bg-black">
       <Home />
+      <Projects />
     </div>
   );
 };
