@@ -16,7 +16,7 @@ const Button: NextPage<{
         className || ""
       }`}
     >
-      {children}
+      <span className="z-10">{children}</span>
     </button>
   );
 };

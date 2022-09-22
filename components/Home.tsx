@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "./common/Button";
+import Menu from "./Menu";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
               Portfolio
             </Button>
           </div>
+          <Menu />
         </div>
       </div>
     </div>

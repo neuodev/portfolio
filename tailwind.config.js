@@ -8,6 +8,10 @@ module.exports = {
     extend: {
       colors: {
         main: "#2196F3",
+        menuColor: "#1d1d27",
+        menuIcon: "#1d1d27",
+        deriveIcon: "#f54888",
+        stackIcon: "#4343f5",
       },
     },
   },
