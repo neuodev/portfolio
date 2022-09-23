@@ -1,7 +1,14 @@
 {
-  "aboutme": "I am a software engineer with a huge interest in Machine Learning and data-driven decision making. My experience ranges from working on Real-Time messaging systems that can handle thousands of messages per day to scale open-source projects to serve more than 1+ million active users.",
-  "socialMedia": {
-    "github": "https://github.com/AhmedIbrahim336"
+  "name": "Ahmed Ibrahim",
+  "personalImage": "/images/me.jpg",
+  "resume": "/Ahmed Ibrahim - Software Engineer.pdf",
+  "jobTitle": "Full Stack Web Developer",
+  "aboutme": "<TODO>",
+  "social": {
+    "github": "https://github.com/AhmedIbrahim336",
+    "email": "ahmedibarhim556@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/ahmedibrahimweb/",
+    "facebook": null
   },
   "projects": [
     {
