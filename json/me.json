@@ -14,7 +14,12 @@
     {
       "thumbnail": "/images/e-commerce-1.png",
       "name": "Wallet Ecommerce",
-      "description": [""],
+      "description": [
+        "E-Commerce Platform that gives the client a good shopping experience with features like Shopping cart, Wishlist, search, advanced filters, checkout, payment, REST API, Auth`",
+        "Built using React.js + Redux, Tailwindcss, Node.js, Express.js, Mongoose.js"
+      ],
+      "repo": "https://github.com/AhmedIbrahim336/wallet",
+      "live": "https://walletecommerce.herokuapp.com/",
       "screenshots": [
         {
           "path": "/images/e-commerce-1.png",
@@ -26,6 +31,74 @@
         },
         {
           "path": "/images/e-commerce-3.png",
+          "description": null
+        }
+      ]
+    },
+    {
+      "thumbnail": "/images/homepress-1.jpg",
+      "name": "HomePress",
+      "description": [
+        "Real E-State Platform with Advanced Search to Help visitors find the right property by letting them set various search criteria such as size and price range. Advantages: Dewing on maps, Gallery Images, powerful filters, Saved Properties and 100% Mobile Ready",
+        "Built using GraphQl, Apollo client , Apollo server, React.js, Node.js, MongoDB"
+      ],
+      "repo": "https://github.com/AhmedIbrahim336/homepress",
+      "live": "https://homepress101.herokuapp.com/",
+      "screenshots": [
+        {
+          "path": "/images/hompress-1.jpg",
+          "description": null
+        },
+        {
+          "path": "/images/hompress-2.png",
+          "description": null
+        },
+        {
+          "path": "/images/hompress-3.png",
+          "description": null
+        }
+      ]
+    },
+    {
+      "thumbnail": "/images/chat-app-1.png",
+      "name": "Connect",
+      "description": [
+        "A social chat  app focused on real time messaging. Utilized React + Redux to render modal page forms that provide users an intuitive UI with components easy to maintain. Features: Register an account and login, save data, join an existing group, or create your own group to communicate with everyone, chat privately with anyone and add them as friends, update user info, fully customizable, Easy to use, easy to use",
+        "Built using JavaScript, React.js + Redux, socket.io, Express, MongoDB"
+      ],
+      "repo": "https://github.com/AhmedIbrahim336/connect",
+      "live": "https://connectchatapplication.herokuapp.com/",
+      "screenshots": [
+        {
+          "path": "/images/chat-app-1.png",
+          "description": null
+        },
+        {
+          "path": "/images/chat-app-2.png",
+          "description": null
+        },
+        {
+          "path": "/images/chat-app-3.png",
+          "description": null
+        }
+      ]
+    },
+    {
+      "thumbnail": "/images/sorting-visualizer-1.png",
+      "name": "Sorting Visualizier",
+      "description": [
+        "Program made with React and Material-UI for visualizing sorting algorithms. I built this application because I was fascinated by sorting algorithms, and I wanted to visualize them in action. Features: Prev and next buttons to control the steps, custom array sizes, custom sorting speed.",
+        "Applying Heap Sort, Insertion Sort, Selection Sort, Quick Sort, Merge Sort, Bubble Sort  "
+      ],
+      "repo": "https://github.com/AhmedIbrahim336/sorting-visualizer",
+      "live": "https://eloquent-swirles-49a9f8.netlify.app/",
+      "screenshots": [
+        {
+          "path": "/images/sorting-visualizer-1.png",
+          "description": null
+        },
+        {
+          "path": "/images/sorting-visualizer-2.png",
           "description": null
         }
       ]
