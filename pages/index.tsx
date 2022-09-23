@@ -4,9 +4,9 @@ import Projects from "../components/Projects";
 
 const Main: NextPage = () => {
   return (
-    <div className="bg-black h-screen w-screen overflow-xx-hidden snap-y snap-proximity overflow-y-scroll">
+    <div className="bg-black h-screen w-full overflow-xx-hidden snap-y snap-proximity overflow-y-scroll">
       <Home />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   );
 };

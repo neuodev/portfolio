@@ -2,15 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Button from "./common/Button";
 import Typewriter from "typewriter-effect";
+import me from "../json/me.json";
 
 const Home = () => {
   return (
-    <section className="h-screen w-screen bg-[url('/images/hero.jpg')] relative overlay snap-start">
+    <section className="h-screen w-full bg-[url('/images/hero.jpg')] relative overlay snap-start">
       <div className="relative z-10 flex items-center justify-center w-full h-full">
         <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden mr-12">
           <Image
             src="/images/ahmed.jpg"
-            alt="Ahmed Ibrahim"
+            alt={me.name}
             height={300}
             width={300}
           />

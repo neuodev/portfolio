@@ -4,7 +4,7 @@ import Project from "./Project";
 
 const Projects = () => {
   return (
-    <section className="text-gray-300 w-screen h-screen snap-start">
+    <section className="text-gray-300 w-full h-screen snap-start">
       <div className="w-ful flex items-center justify-center flex-col py-16">
         <h1 className="text-7xl uppercase font-bold">
           My <span className="text-indigo-500">Projects</span>
