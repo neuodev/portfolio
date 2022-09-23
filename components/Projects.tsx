@@ -1,4 +1,6 @@
 import React from "react";
+import me from "../json/me.json";
+import Project from "./Project";
 
 const Projects = () => {
   return (
@@ -9,10 +11,22 @@ const Projects = () => {
         </h1>
         <p className="mt-5 flex items-center justify-center">
           <span className="w-9 h-0.5 bg-indigo-500 inline-block"></span>
-          <span className="mx-4 inline-block">WANT TO SEE MORE? EMAIL ME.</span>
+          <span className="mx-4 inline-block uppercase">
+            want to see more? checkout my{" "}
+            <a
+              className="text-indigo-500 hover:underline"
+              href={me.socialMedia.github}
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </span>
           <span className="w-9 h-0.5 bg-indigo-500 inline-block"></span>
         </p>
       </div>
+
+      <Project />
     </div>
   );
 };

@@ -1,0 +1,27 @@
+{
+  "aboutme": "I am a software engineer with a huge interest in Machine Learning and data-driven decision making. My experience ranges from working on Real-Time messaging systems that can handle thousands of messages per day to scale open-source projects to serve more than 1+ million active users.",
+  "socialMedia": {
+    "github": "https://github.com/AhmedIbrahim336"
+  },
+  "projects": [
+    {
+      "thumbnail": "/images/e-commerce-1.png",
+      "name": "Wallet Ecommerce",
+      "description": [""],
+      "screenshots": [
+        {
+          "path": "/images/e-commerce-1.png",
+          "description": null
+        },
+        {
+          "path": "/images/e-commerce-2.png",
+          "description": null
+        },
+        {
+          "path": "/images/e-commerce-3.png",
+          "description": null
+        }
+      ]
+    }
+  ]
+}

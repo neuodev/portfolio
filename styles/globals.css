@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  @apply font-rubik;
+}
+
 .overlay {
   @apply after:block after:absolute after:w-full after:h-full after:top-0 after:left-0 after:bg-black after:opacity-80 after:z-0;
 }
