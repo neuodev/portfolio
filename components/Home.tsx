@@ -5,8 +5,8 @@ import Typewriter from "typewriter-effect";
 
 const Home = () => {
   return (
-    <div className="h-screen w-screen bg-[url('/images/hero.jpg')] relative overlay">
-      <div className="relative z-10 flex items-center justify-center h-screen w-screen">
+    <section className="h-screen w-screen bg-[url('/images/hero.jpg')] relative overlay snap-start">
+      <div className="relative z-10 flex items-center justify-center w-full h-full">
         <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden mr-12">
           <Image
             src="/images/ahmed.jpg"
@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
