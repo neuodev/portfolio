@@ -1,13 +1,17 @@
 import type { NextPage } from "next";
 import Home from "../components/Home";
 import Projects from "../components/Projects";
+import { ThemeProvider } from "@mui/material";
+import theme from "../theme";
 
 const Main: NextPage = () => {
   return (
-    <div className="bg-black h-screen w-full overflow-xx-hidden snap-y snap-proximity overflow-y-scroll">
-      <Home />
-      <Projects />
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="bg-black w-full snap-y snap-proximity h-screen overflow-y-scroll">
+        <Home />
+        <Projects />
+      </div>
+    </ThemeProvider>
   );
 };
 

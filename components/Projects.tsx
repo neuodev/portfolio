@@ -25,8 +25,13 @@ const Projects = () => {
           <span className="w-9 h-0.5 bg-indigo-500 inline-block"></span>
         </p>
       </div>
-
-      <Project />
+      <div className="container mx-auto">
+        <div className="grid grid-cols-12 grid-rows-4 lg:grid-rows-6 max-w-screen-lg mx-auto gap-1 min-h-700 lg:min-h-500">
+          {me.projects.map((project) => (
+            <Project key={project.name} project={project} />
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

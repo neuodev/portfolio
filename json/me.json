@@ -3,6 +3,7 @@
   "personalImage": "/images/me.jpg",
   "resume": "/Ahmed Ibrahim - Software Engineer.pdf",
   "jobTitle": "Full Stack Web Developer",
+  "jobTitleParts": ["A full stack engineer"],
   "aboutme": "<TODO>",
   "social": {
     "github": "https://github.com/AhmedIbrahim336",

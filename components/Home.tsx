@@ -23,11 +23,10 @@ const Home = () => {
             <span className="text-indigo-500 ml-1">
               <Typewriter
                 onInit={(typewriter) => {
-                  typewriter
-                    .typeString("A WEB DEVELOPER")
-                    .pauseFor(200)
-                    .deleteAll()
-                    .start();
+                  me.jobTitleParts.forEach((p) => {
+                    typewriter.typeString(p).pauseFor(200).deleteAll();
+                  });
+                  typewriter.start();
                 }}
                 options={{
                   autoStart: true,
