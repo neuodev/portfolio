@@ -1,4 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+const spaces = {
+  450: 450,
+  500: 500,
+  600: 600,
+  700: 700,
+};
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -9,11 +16,8 @@ module.exports = {
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
       },
-      minHeight: {
-        500: 500,
-        600: 600,
-        700: 700,
-      },
+      spacing: spaces,
+      minHeight: spaces,
     },
   },
   plugins: [],

@@ -40,11 +40,11 @@ const Home = () => {
             England. I strives to build immersive and beautiful web applications
             through carefully crafted code and user-centric design.
           </p>
-          <div>
-            <Button className="mr-4 w-52" variant="primary">
+          <div className="flex">
+            <Button className="mr-4 w-52 py-3" variant="primary">
               More about me
             </Button>
-            <Button variant="secondary" className="w-52">
+            <Button variant="secondary" className="w-52 py-3">
               Portfolio
             </Button>
           </div>

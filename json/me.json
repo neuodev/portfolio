@@ -47,15 +47,15 @@
       "live": "https://homepress101.herokuapp.com/",
       "screenshots": [
         {
-          "path": "/images/hompress-1.jpg",
+          "path": "/images/homepress-1.jpg",
           "description": null
         },
         {
-          "path": "/images/hompress-2.png",
+          "path": "/images/homepress-2.jpg",
           "description": null
         },
         {
-          "path": "/images/hompress-3.png",
+          "path": "/images/homepress-3.jpg",
           "description": null
         }
       ]

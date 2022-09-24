@@ -17,6 +17,9 @@ const Modal: React.FC<{
           height: "100%",
           boxShadow: 24,
           p: 4,
+          "&:focus": {
+            outline: "none",
+          },
         }}
         className="bg-zinc-800 font-rubik text-gray-100"
       >

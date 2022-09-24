@@ -5,18 +5,24 @@ const Button: NextPage<{
   children: React.ReactNode;
   className?: string;
   variant?: "primary" | "secondary";
-}> = ({ children, className, variant }) => {
+  onClick?(): void;
+  iconStart?: React.ReactNode;
+  iconEnd?: React.ReactNode;
+}> = ({ children, className, variant, onClick, iconStart, iconEnd }) => {
   return (
     <button
-      className={`px-8 py-3 ${
+      onClick={onClick}
+      className={`px-8 py-2 ${
         variant === "secondary"
           ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
           : "bg-indigo-500 text-white hover:bg-indigo-600"
-      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-semibold relative overflow-hidden bg-slide ${variant} ${
+      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-semibold relative overflow-hidden bg-slide flex items-center justify-center ${variant} ${
         className || ""
       }`}
     >
-      {children}
+      {iconStart && <span className="inline-block mr-1">{iconStart}</span>}
+      <p>{children}</p>
+      {iconEnd && <span className="inline-block ml-1">{iconEnd}</span>}
     </button>
   );
 };

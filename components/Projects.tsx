@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import me from "../json/me.json";
-import Modal from "./common/Modal";
 import Project, { IProject } from "./Project";
+import ProjectDetails from "./ProjectDetails";
 
 const Projects = () => {
   const [currProject, setCurrProject] = useState<IProject | null>(
@@ -41,9 +41,12 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      <Modal open={currProject !== null} onClose={() => setCurrProject(null)}>
-        <h1>Hello, World</h1>
-      </Modal>
+      {currProject !== null && (
+        <ProjectDetails
+          project={currProject}
+          onClose={() => setCurrProject(null)}
+        />
+      )}
     </section>
   );
 };
