@@ -4,7 +4,9 @@ import Modal from "./common/Modal";
 import Project, { IProject } from "./Project";
 
 const Projects = () => {
-  const [currProject, setCurrProject] = useState<IProject | null>(null);
+  const [currProject, setCurrProject] = useState<IProject | null>(
+    me.projects[0]
+  );
 
   return (
     <section className="text-gray-300 w-full h-screen snap-start">
@@ -40,7 +42,7 @@ const Projects = () => {
         </div>
       </div>
       <Modal open={currProject !== null} onClose={() => setCurrProject(null)}>
-        hello world
+        <h1>Hello, World</h1>
       </Modal>
     </section>
   );
