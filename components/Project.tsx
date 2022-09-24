@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
 
-export type Project = {
+export interface IProject {
   thumbnail: string;
   name: string;
   description: Array<string>;
@@ -14,7 +14,7 @@ export type Project = {
     path: string;
     description: string | null;
   }>;
-};
+}
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
@@ -41,7 +41,7 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   },
 }));
 
-const ImageSrc = styled("span")(({ theme }) => ({
+const ImageSrc = styled("span")({
   position: "absolute",
   left: 0,
   right: 0,
@@ -49,7 +49,7 @@ const ImageSrc = styled("span")(({ theme }) => ({
   bottom: 0,
   backgroundSize: "cover",
   backgroundPosition: "center 40%",
-}));
+});
 
 const Image = styled("span")(({ theme }) => ({
   position: "absolute",
@@ -88,10 +88,13 @@ const ImageMarked = styled("span")(({ theme }) => ({
   transition: theme.transitions.create("opacity"),
 }));
 
-const Project: React.FC<{ project: Project }> = ({ project }) => {
+const Project: React.FC<{ project: IProject; onSelect(): void }> = ({
+  project,
+  onSelect,
+}) => {
   return (
     <div className="col-span-12 lg:col-span-6 row-span-1 lg:row-span-3 flex items-center justify-center w-full">
-      <ImageButton focusRipple key={project.name}>
+      <ImageButton onClick={onSelect} focusRipple key={project.name}>
         <ImageSrc style={{ backgroundImage: `url(${project.thumbnail})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>

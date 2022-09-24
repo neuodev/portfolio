@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import me from "../json/me.json";
-import Project from "./Project";
+import Modal from "./common/Modal";
+import Project, { IProject } from "./Project";
 
 const Projects = () => {
+  const [currProject, setCurrProject] = useState<IProject | null>(null);
+
   return (
     <section className="text-gray-300 w-full h-screen snap-start">
       <div className="w-ful flex items-center justify-center flex-col py-16">
@@ -28,10 +31,17 @@ const Projects = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-12 grid-rows-4 lg:grid-rows-6 max-w-screen-lg mx-auto gap-1 min-h-700 lg:min-h-500">
           {me.projects.map((project) => (
-            <Project key={project.name} project={project} />
+            <Project
+              onSelect={() => setCurrProject(project)}
+              key={project.name}
+              project={project}
+            />
           ))}
         </div>
       </div>
+      <Modal open={currProject !== null} onClose={() => setCurrProject(null)}>
+        hello world
+      </Modal>
     </section>
   );
 };
