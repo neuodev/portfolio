@@ -1,7 +1,7 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
+const ReactIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     fill="#fff"
     viewBox="0 0 24 24"
@@ -13,4 +13,4 @@ const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-export default SvgComponent;
+export default ReactIcon;
