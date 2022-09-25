@@ -4,9 +4,7 @@ import Project, { IProject } from "./Project";
 import ProjectDetails from "./ProjectDetails";
 
 const Projects = () => {
-  const [currProject, setCurrProject] = useState<IProject | null>(
-    me.projects[0]
-  );
+  const [currProject, setCurrProject] = useState<IProject | null>(null);
 
   return (
     <section className="text-gray-300 w-full h-screen snap-start">

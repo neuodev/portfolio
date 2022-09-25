@@ -21,7 +21,7 @@ const Modal: React.FC<{
             outline: "none",
           },
         }}
-        className="bg-zinc-800 font-rubik text-gray-100"
+        className="bg-zinc-800 font-rubik text-gray-100 overflow-x-hidden overflow-y-auto"
       >
         {children}
       </Box>

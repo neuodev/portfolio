@@ -14,6 +14,7 @@ export interface IProject {
     path: string;
     description: string | null;
   }>;
+  techStack: Array<string>;
 }
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({

@@ -2,7 +2,7 @@ import Actix from "./Actix";
 import Bash from "./Bash";
 import CSS3 from "./CSS3";
 import Cucumber from "./Cucumber";
-import Cypress from "./cypress";
+import Cypress from "./Cypress";
 import Django from "./Django";
 import Docker from "./Docker";
 import Electron from "./Electron";
@@ -27,9 +27,9 @@ import Selenium from "./Selenium";
 import Sklearn from "./Sklearn";
 import TailwindCSS from "./TailwindCSS";
 import Tauri from "./Tauri";
-import TensorFlow from "./Tensorflow";
+import TensorFlow from "./TensorFlow";
 import TS from "./TS";
-import Vim from "./VIM";
+import Vim from "./Vim";
 import { SVGProps } from "react";
 import Apollo from "./Apollo";
 import SocketIo from "./Socketio";
@@ -43,7 +43,7 @@ export const DEV_TOOLS: {
   react: ReactIcon,
   redux: Redux,
   nextjs: NextJS,
-  grpahql: GraphQL,
+  graphql: GraphQL,
   tailwind: TailwindCSS,
   git: Git,
   html: HTML5,
@@ -82,7 +82,7 @@ export const Logo: React.FC<{ id: string; className?: string }> = ({
   let DevTool = DEV_TOOLS[id];
 
   if (!DevTool) throw new Error(`'${id}' logo not found`);
-  return <DevTool className={className} />;
+  return <DevTool className={className} fill="#ffffff" />;
 };
 
 Logo.defaultProps = {
