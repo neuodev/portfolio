@@ -33,6 +33,7 @@ import Vim from "./VIM";
 import { SVGProps } from "react";
 import Apollo from "./Apollo";
 import SocketIo from "./Socketio";
+import Express from "./Express";
 
 export const DEV_TOOLS: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -71,6 +72,7 @@ export const DEV_TOOLS: {
   tauri: Tauri,
   apollo: Apollo,
   socketio: SocketIo,
+  express: Express,
 };
 
 export const Logo: React.FC<{ id: string; className?: string }> = ({

@@ -100,8 +100,9 @@
       "name": "Sorting Visualizier",
       "description": [
         "Program made with React and Material-UI for visualizing sorting algorithms. I built this application because I was fascinated by sorting algorithms, and I wanted to visualize them in action. Features: Prev and next buttons to control the steps, custom array sizes, custom sorting speed.",
-        "Applying Heap Sort, Insertion Sort, Selection Sort, Quick Sort, Merge Sort, Bubble Sort  "
+        "Applying Heap Sort, Insertion Sort, Selection Sort, Quick Sort, Merge Sort, Bubble Sort"
       ],
+      "techStack": ["js", "react", "redux", "node"],
       "repo": "https://github.com/AhmedIbrahim336/sorting-visualizer",
       "live": "https://eloquent-swirles-49a9f8.netlify.app/",
       "screenshots": [
@@ -296,6 +297,11 @@
       "name": "Socket.io",
       "website": "https://socket.io/",
       "about": "Bidirectional and low-latency communication for every platform"
+    },
+    "express": {
+      "name": "Express",
+      "website": "https://expressjs.com/",
+      "about": "Fast, unopinionated, minimalist web framework for Node.js"
     }
   }
 }
