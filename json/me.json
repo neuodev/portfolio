@@ -19,6 +19,7 @@
         "E-Commerce Platform that gives the client a good shopping experience with features like Shopping cart, Wishlist, search, advanced filters, checkout, payment, REST API, Auth`",
         "Built using React.js + Redux, Tailwindcss, Node.js, Express.js, Mongoose.js"
       ],
+      "techStack": ["react", "redux", "tailwind", "node", "mongodb"],
       "repo": "https://github.com/AhmedIbrahim336/wallet",
       "live": "https://walletecommerce.herokuapp.com/",
       "screenshots": [
@@ -43,6 +44,7 @@
         "Real E-State Platform with Advanced Search to Help visitors find the right property by letting them set various search criteria such as size and price range. Advantages: Dewing on maps, Gallery Images, powerful filters, Saved Properties and 100% Mobile Ready",
         "Built using GraphQl, Apollo client , Apollo server, React.js, Node.js, MongoDB"
       ],
+      "techStack": ["graphql", "apollo", "react", "node", "mongodb"],
       "repo": "https://github.com/AhmedIbrahim336/homepress",
       "live": "https://homepress101.herokuapp.com/",
       "screenshots": [
@@ -66,6 +68,15 @@
       "description": [
         "A social chat  app focused on real time messaging. Utilized React + Redux to render modal page forms that provide users an intuitive UI with components easy to maintain. Features: Register an account and login, save data, join an existing group, or create your own group to communicate with everyone, chat privately with anyone and add them as friends, update user info, fully customizable, Easy to use, easy to use",
         "Built using JavaScript, React.js + Redux, socket.io, Express, MongoDB"
+      ],
+      "techStack": [
+        "js",
+        "react",
+        "redux",
+        "node",
+        "socketio",
+        "express",
+        "mongodb"
       ],
       "repo": "https://github.com/AhmedIbrahim336/connect",
       "live": "https://connectchatapplication.herokuapp.com/",
@@ -275,6 +286,16 @@
       "name": "Tauri",
       "website": "https://tauri.app/",
       "about": "Build an optimized, secure, and frontend-independent application for multi-platform deployment."
+    },
+    "apollo": {
+      "name": "Apollo",
+      "website": "https://www.apollographql.com/docs/react/",
+      "about": "Apollo Client is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL."
+    },
+    "socketio": {
+      "name": "Socket.io",
+      "website": "https://socket.io/",
+      "about": "Bidirectional and low-latency communication for every platform"
     }
   }
 }

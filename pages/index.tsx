@@ -3,7 +3,6 @@ import Home from "../components/Home";
 import Projects from "../components/Projects";
 import { ThemeProvider } from "@mui/material";
 import theme from "../theme";
-import Image from "next/image";
 import JS from "../components/icons/JS";
 import TS from "../components/icons/TS";
 import ReactIcon from "../components/icons/ReactIcon";

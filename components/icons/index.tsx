@@ -31,6 +31,8 @@ import TensorFlow from "./Tensorflow";
 import TS from "./TS";
 import Vim from "./VIM";
 import { SVGProps } from "react";
+import Apollo from "./Apollo";
+import SocketIo from "./Socketio";
 
 export const DEV_TOOLS: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;
@@ -67,6 +69,8 @@ export const DEV_TOOLS: {
   electron: Electron,
   actix: Actix,
   tauri: Tauri,
+  apollo: Apollo,
+  socketio: SocketIo,
 };
 
 export const Logo: React.FC<{ id: string; className?: string }> = ({
