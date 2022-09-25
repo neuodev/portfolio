@@ -108,139 +108,173 @@
   "tech": {
     "js": {
       "name": "JavaScript",
-      "logo": null
+      "website": "https://www.javascript.com/",
+      "about": "JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions."
     },
     "ts": {
       "name": "TypeScript",
-      "logo": null
+      "website": "https://www.typescriptlang.org/",
+      "about": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
     },
     "react": {
       "name": "React",
-      "logo": null
+      "website": "https://reactjs.org/",
+      "about": "A JavaScript library for building user interfaces"
     },
     "redux": {
       "name": "Redux",
-      "logo": null
+      "website": "https://redux.js.org/",
+      "about": "A Predictable State Container for JS Apps"
     },
     "nextjs": {
       "name": "NextJS",
-      "logo": null
+      "website": "https://nextjs.org/",
+      "about": "The React Framework for Production"
     },
     "graphql": {
       "name": "GraphQL",
-      "logo": null
+      "website": "https://graphql.org/",
+      "about": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data"
     },
     "tailwind": {
       "name": "Tailwind",
-      "logo": null
+      "website": "https://tailwindcss.com/",
+      "about": "Rapidly build modern websites without ever leaving your HTML."
     },
     "git": {
       "name": "Git",
-      "logo": null
+      "website": "https://git-scm.com/",
+      "about": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
     },
     "html": {
       "name": "HTML",
-      "logo": null
+      "website": "https://developer.mozilla.org/en-US/docs/Glossary/HTML5",
+      "about": "HTML5 is a markup language used for structuring and presenting content on the World Wide Web."
     },
     "css": {
       "name": "CSS",
-      "logo": null
+      "website": "https://www.w3.org/Style/CSS/Overview.en.html",
+      "about": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML"
     },
     "sass": {
       "name": "SASS",
-      "logo": null
+      "website": "https://sass-lang.com/",
+      "about": "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."
     },
     "node": {
       "name": "NodeJS",
-      "logo": null
+      "website": "https://nodejs.org/en/",
+      "about": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine."
     },
     "python": {
       "name": "Python",
-      "logo": null
+      "website": "https://www.python.org/",
+      "about": "Python is a programming language that lets you work quickly and integrate systems more effectively."
     },
     "django": {
       "name": "Django",
-      "logo": null
+      "website": "https://www.djangoproject.com/",
+      "about": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. "
     },
     "flask": {
       "name": "Flask",
-      "logo": null
+      "website": "https://flask.palletsprojects.com/en/2.2.x/",
+      "about": "Flask is a micro web framework written in Python."
     },
     "mysql": {
       "name": "MySQL",
-      "logo": null
+      "website": "https://www.mysql.com/",
+      "about": "MySQL is an open-source relational database management system."
     },
     "postgres": {
       "name": "PostgreSQL",
-      "logo": null
+      "website": "https://www.postgresql.org/",
+      "about": "The World's Most Advanced Open Source Relational Database"
     },
     "mongodb": {
       "name": "MongoDB",
-      "logo": null
+      "website": "https://www.mongodb.com/",
+      "about": "MongoDB is a document-oriented NoSQL database used for high volume data storage. "
     },
     "docker": {
       "name": "Docker",
-      "logo": null
+      "website": "https://www.docker.com/",
+      "about": "Containerization technology that enables the creation and use of Linux® containers."
     },
     "jest": {
       "name": "Jest",
-      "logo": null
+      "website": "https://jestjs.io/",
+      "about": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity."
     },
     "selenium": {
       "name": "Selenium",
-      "logo": null
+      "website": "https://www.selenium.dev/",
+      "about": "Selenium automates browsers. That's it!"
     },
     "cucumber": {
       "name": "Cucumber",
-      "logo": null
+      "website": "https://cucumber.io/",
+      "about": "Cucumber is a software tool that supports behavior-driven development."
     },
     "cypress": {
       "name": "Cypress",
-      "logo": null
+      "website": "https://www.cypress.io/",
+      "about": "Cypress is a purely JavaScript-based front-end testing tool built for the modern web."
     },
     "numpy": {
       "name": "NumPy",
-      "logo": null
+      "website": "https://numpy.org/",
+      "about": "NumPy offers comprehensive mathematical functions, random number generators, linear algebra routines, Fourier transforms, and more."
     },
     "pandas": {
       "name": "Pandas",
-      "logo": null
+      "website": "https://pandas.pydata.org/",
+      "about": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language."
     },
     "matplotlib": {
       "name": "Matplotlib",
-      "logo": null
+      "website": "https://matplotlib.org/",
+      "about": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. "
     },
     "sklearn": {
       "name": "Scikit-Learn",
-      "logo": null
+      "website": "https://scikit-learn.org/stable/",
+      "about": "Scikit-learn (Sklearn) is the most useful and robust library for machine learning in Python."
     },
     "tensorflow": {
       "name": "Tensorflow",
-      "logo": null
+      "website": "https://www.tensorflow.org/",
+      "about": "TensorFlow is an open-source library developed by Google primarily for deep learning applications."
     },
     "rust": {
       "name": "Rust",
-      "logo": null
+      "website": "https://www.rust-lang.org/",
+      "about": "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages."
     },
     "bash": {
       "name": "BASH",
-      "logo": null
+      "website": "https://www.gnu.org/software/bash/",
+      "about": "Bash is the shell, or command language interpreter, for the GNU operating system."
     },
     "vim": {
       "name": "VIM",
-      "logo": null
+      "website": "https://www.vim.org/",
+      "about": "Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient."
     },
     "electron": {
       "name": "Electron",
-      "logo": null
+      "website": "https://www.electronjs.org/",
+      "about": "Build cross-platform desktop apps with JavaScript, HTML, and CSS"
     },
     "actix": {
       "name": "Actix",
-      "logo": null
+      "website": "https://actix.rs/",
+      "about": "A powerful, pragmatic, and extremely fast web framework for Rust"
     },
     "tauri": {
       "name": "Tauri",
-      "logo": null
+      "website": "https://tauri.app/",
+      "about": "Build an optimized, secure, and frontend-independent application for multi-platform deployment."
     }
   }
 }
