@@ -104,5 +104,143 @@
         }
       ]
     }
-  ]
+  ],
+  "tech": {
+    "js": {
+      "name": "JavaScript",
+      "logo": null
+    },
+    "ts": {
+      "name": "TypeScript",
+      "logo": null
+    },
+    "react": {
+      "name": "React",
+      "logo": null
+    },
+    "redux": {
+      "name": "Redux",
+      "logo": null
+    },
+    "nextjs": {
+      "name": "NextJS",
+      "logo": null
+    },
+    "graphql": {
+      "name": "GraphQL",
+      "logo": null
+    },
+    "tailwind": {
+      "name": "Tailwind",
+      "logo": null
+    },
+    "git": {
+      "name": "Git",
+      "logo": null
+    },
+    "html": {
+      "name": "HTML",
+      "logo": null
+    },
+    "css": {
+      "name": "CSS",
+      "logo": null
+    },
+    "sass": {
+      "name": "SASS",
+      "logo": null
+    },
+    "node": {
+      "name": "NodeJS",
+      "logo": null
+    },
+    "python": {
+      "name": "Python",
+      "logo": null
+    },
+    "django": {
+      "name": "Django",
+      "logo": null
+    },
+    "flask": {
+      "name": "Flask",
+      "logo": null
+    },
+    "mysql": {
+      "name": "MySQL",
+      "logo": null
+    },
+    "postgres": {
+      "name": "PostgreSQL",
+      "logo": null
+    },
+    "mongodb": {
+      "name": "MongoDB",
+      "logo": null
+    },
+    "docker": {
+      "name": "Docker",
+      "logo": null
+    },
+    "jest": {
+      "name": "Jest",
+      "logo": null
+    },
+    "selenium": {
+      "name": "Selenium",
+      "logo": null
+    },
+    "cucumber": {
+      "name": "Cucumber",
+      "logo": null
+    },
+    "cypress": {
+      "name": "Cypress",
+      "logo": null
+    },
+    "numpy": {
+      "name": "NumPy",
+      "logo": null
+    },
+    "pandas": {
+      "name": "Pandas",
+      "logo": null
+    },
+    "matplotlib": {
+      "name": "Matplotlib",
+      "logo": null
+    },
+    "sklearn": {
+      "name": "Scikit-Learn",
+      "logo": null
+    },
+    "tensorflow": {
+      "name": "Tensorflow",
+      "logo": null
+    },
+    "rust": {
+      "name": "Rust",
+      "logo": null
+    },
+    "bash": {
+      "name": "BASH",
+      "logo": null
+    },
+    "vim": {
+      "name": "VIM",
+      "logo": null
+    },
+    "electron": {
+      "name": "Electron",
+      "logo": null
+    },
+    "actix": {
+      "name": "Actix",
+      "logo": null
+    },
+    "tauri": {
+      "name": "Tauri",
+      "logo": null
+    }
+  }
 }
