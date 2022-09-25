@@ -34,7 +34,28 @@ import { SVGProps } from "react";
 import Apollo from "./Apollo";
 import SocketIo from "./Socketio";
 import Express from "./Express";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 
+export const SOCIAL_ICONS = {
+  whatsapp: WhatsAppIcon,
+  email: AlternateEmailIcon,
+  github: GitHubIcon,
+  linkedin: LinkedInIcon,
+  youtube: YouTubeIcon,
+};
+
+export type SocialIconId = keyof typeof SOCIAL_ICONS;
+
+export const SocialIcon: React.FC<{ id: string }> = ({ id }) => {
+  if (!id) throw new Error("ContactId is required");
+  let Icon = SOCIAL_ICONS[id as SocialIconId];
+  if (!Icon) throw new Error(`'${id}' doesn't have any icon`);
+  return <Icon />;
+};
 export const DEV_TOOLS: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 } = {

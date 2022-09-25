@@ -3,6 +3,8 @@ import Image from "next/image";
 import Button from "./common/Button";
 import Typewriter from "typewriter-effect";
 import me from "../json/me.json";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 
 const Home = () => {
   return (
@@ -41,10 +43,18 @@ const Home = () => {
             through carefully crafted code and user-centric design.
           </p>
           <div className="flex">
-            <Button className="mr-4 w-52 py-3" variant="primary">
+            <Button
+              iconStart={<AccountCircleIcon />}
+              className="mr-4 w-56 py-3 px-4 tracking-normal leading-normal text-base"
+              variant="primary"
+            >
               More about me
             </Button>
-            <Button variant="secondary" className="w-52 py-3">
+            <Button
+              iconStart={<BusinessCenterIcon />}
+              variant="secondary"
+              className="w-56 py-3 tracking-normal leading-normal text-base"
+            >
               Portfolio
             </Button>
           </div>

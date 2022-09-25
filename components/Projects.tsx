@@ -18,7 +18,7 @@ const Projects = () => {
             want to see more? checkout my{" "}
             <a
               className="text-indigo-500 hover:underline"
-              href={me.social.github}
+              href={me.github}
               target="_blank"
               rel="noreferrer"
             >

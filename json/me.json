@@ -5,12 +5,36 @@
   "jobTitle": "Full Stack Web Developer",
   "jobTitleParts": ["A full stack engineer"],
   "aboutme": "<TODO>",
-  "social": {
-    "github": "https://github.com/AhmedIbrahim336",
-    "email": "ahmedibarhim556@gmail.com",
-    "linkedin": "https://www.linkedin.com/in/ahmedibrahimweb/",
-    "facebook": null
-  },
+  "github": "https://github.com/AhmedIbrahim336",
+  "social": [
+    {
+      "lable": "GitHub",
+      "id": "github",
+      "value": "https://github.com/AhmedIbrahim336"
+    },
+    {
+      "lable": "LinkedIn",
+      "id": "linkedin",
+      "value": "https://www.linkedin.com/in/ahmedibrahimweb/"
+    },
+    {
+      "lable": "YouTube",
+      "id": "youtube",
+      "value": "https://www.youtube.com/channel/UCtwFnsB9zw8P_rNePfRjUnw/videos"
+    }
+  ],
+  "contact": [
+    {
+      "label": "Email",
+      "id": "email",
+      "value": "ahmedibarhim556@gmail.com"
+    },
+    {
+      "label": "Phone",
+      "id": "whatsapp",
+      "value": "+20 01552832217"
+    }
+  ],
   "projects": [
     {
       "thumbnail": "/images/e-commerce-1.png",

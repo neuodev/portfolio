@@ -16,7 +16,7 @@ const Button: NextPage<{
         variant === "secondary"
           ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
           : "bg-indigo-500 text-white hover:bg-indigo-600"
-      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-semibold relative overflow-hidden bg-slide flex items-center justify-center ${variant} ${
+      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-semibold relative overflow-hidden bg-slide flex items-center justify-center tracking-widest ${variant} ${
         className || ""
       }`}
     >
