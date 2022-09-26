@@ -35,6 +35,15 @@
       "value": "+20 01552832217"
     }
   ],
+  "content": {
+    "videos": [
+      {
+        "title": "Bash master class course review",
+        "thumbnail": "/thumbnails/bash-course-review.png"
+      }
+    ],
+    "posts": null
+  },
   "projects": [
     {
       "thumbnail": "/images/e-commerce-1.png",

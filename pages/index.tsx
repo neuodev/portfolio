@@ -4,6 +4,7 @@ import Projects from "../components/Projects";
 import { ThemeProvider } from "@mui/material";
 import theme from "../theme";
 import Contact from "../components/Contact";
+import Latest from "../components/Latest";
 
 const Main: NextPage = () => {
   return (
@@ -11,6 +12,7 @@ const Main: NextPage = () => {
       <div className="bg-black w-full snap-y snap-proximity h-screen overflow-y-scroll">
         <Home />
         <Projects />
+        <Latest />
         <Contact />
       </div>
     </ThemeProvider>
