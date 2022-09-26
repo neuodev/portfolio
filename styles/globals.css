@@ -39,3 +39,7 @@ html {
   left: 120%;
   transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
+
+.card-zoom-image {
+  @apply absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover;
+}

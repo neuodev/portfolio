@@ -38,8 +38,64 @@
   "content": {
     "videos": [
       {
-        "title": "Bash master class course review",
-        "thumbnail": "/thumbnails/bash-course-review.png"
+        "title": "Bash mastery class course review",
+        "thumbnail": "/thumbnails/bash-course-review.png",
+        "description": "A review for the famous BASH mastery course on Udemy",
+        "videoId": "uLHggJC00PI"
+      },
+      {
+        "title": "Best resources to learn rust",
+        "thumbnail": "/thumbnails/best-resources-to-learn-rust.png",
+        "description": "A quick video for people who are welling to learn rust but doesn't know where to start",
+        "videoId": "wCqMRKUBN_M"
+      },
+      {
+        "title": "How to aquire new skills?",
+        "thumbnail": "/thumbnails/how-to-aquire-new-skills.png",
+        "description": "In this video I am sharing my own methods and techniques for aquiring new skills in most effcient way",
+        "videoId": "ht0isWbUhh8"
+      },
+      {
+        "title": "How to boost your productivity?",
+        "thumbnail": "/thumbnails/how-to-boost-your-productvity.png",
+        "description": "In this video I am sharing my own thoughts on what makes someone PRODUCTIVE",
+        "videoId": "topmycLwhGE"
+      },
+      {
+        "title": "How to plan for your life?",
+        "thumbnail": "/thumbnails/how-to-plan-for-your-life.png",
+        "description": "In this video I am sharing my own way for putting a new plan and complete it end to end",
+        "videoId": "ITZtvSlAljU"
+      },
+      {
+        "title": "How to put your daily plan?",
+        "thumbnail": "/thumbnails/how-to-put-a-daily-plan.png",
+        "description": "Learn how to get the most out of your day",
+        "videoId": "video"
+      },
+      {
+        "title": "How to set the right goals?",
+        "thumbnail": "/thumbnails/how-to-set-the-right-goals.png",
+        "description": "In this video I am taking about my own way for setting my goals",
+        "videoId": "m6-1Mi0YkEo"
+      },
+      {
+        "title": "Vim Masterclas course review ",
+        "thumbnail": "/thumbnails/vim-mastery-course-review.png",
+        "description": "In this video I am reviewing the famouse course from Udemy about the tool that changed how I write my code",
+        "videoId": "6gHXQ8XE0J8"
+      },
+      {
+        "title": "Why should you have your own server?",
+        "thumbnail": "/thumbnails/why-should-you-have-your-own-server.png",
+        "description": "In this video I am taking about why me and you should have our own server. Server at not just made for production! We can do more with it!",
+        "videoId": "F4FSwM1oxhw"
+      },
+      {
+        "title": "Why should you learn rust?",
+        "thumbnail": "/thumbnails/why-should-you-learn-rust.png",
+        "description": "In this video I am sharing my personal reason for learning Rust why should everyone else should consider learning Rust",
+        "videoId": "XJf615CfJXE"
       }
     ],
     "posts": null

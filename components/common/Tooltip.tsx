@@ -9,9 +9,10 @@ export default styled(({ className, ...props }: TooltipProps) => (
   <MuiTooltip {...props} arrow classes={{ popper: className }} />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.arrow}`]: {
-    color: theme.palette.common.black,
+    color: theme.palette.grey[900],
   },
   [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: theme.palette.common.black,
+    backgroundColor: theme.palette.grey[900],
+    boxShadow: 32,
   },
 }));
