@@ -50,11 +50,14 @@ export const SOCIAL_ICONS = {
 
 export type SocialIconId = keyof typeof SOCIAL_ICONS;
 
-export const SocialIcon: React.FC<{ id: string }> = ({ id }) => {
+export const SocialIcon: React.FC<{ id: string; className?: string }> = ({
+  id,
+  className,
+}) => {
   if (!id) throw new Error("ContactId is required");
   let Icon = SOCIAL_ICONS[id as SocialIconId];
   if (!Icon) throw new Error(`'${id}' doesn't have any icon`);
-  return <Icon />;
+  return <Icon className={className} />;
 };
 export const DEV_TOOLS: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;
