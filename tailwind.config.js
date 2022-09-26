@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 const spaces = {
+  100: 100,
+  200: 200,
+  300: 300,
   450: 450,
   500: 500,
   600: 600,

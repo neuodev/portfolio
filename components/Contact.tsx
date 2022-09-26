@@ -1,8 +1,11 @@
-import { Typography } from "@mui/material";
+import { OutlinedInput, Typography } from "@mui/material";
 import React from "react";
 import me from "../json/me.json";
 import Tooltip from "./common/Tooltip";
 import { SocialIcon } from "./icons";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 
 const Contact = () => {
   return (
@@ -61,10 +64,35 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-span-8">
-          <p>
-            If you have any suggestion, project or even you want to say Hello..
-            please fill out the form below and I will reply you shortly.
+          <p className="text-gray-100 leading-relaxed">
+            If you have any suggestions, projects, or even you want to say
+            Hello.. please fill out the form below and I will reply shortly.
           </p>
+          <form className="mt-8">
+            <div className="w-full grid grid-cols-2 gap-5">
+              <OutlinedInput
+                className="text-gray-200 rounded-3xl col-span-1 bg-zinc-800"
+                startAdornment={
+                  <AccountCircleIcon className="text-indigo-500 mr-2" />
+                }
+                placeholder="Your name"
+              />
+              <OutlinedInput
+                className="text-gray-200 rounded-3xl grid-cols-1 bg-zinc-800"
+                startAdornment={
+                  <AlternateEmailIcon className="text-indigo-500 mr-2" />
+                }
+                placeholder="Your email"
+              />
+            </div>
+            <div className="mt-5 px-4 py-5 flex items-start bg-zinc-800 focus:outline-none focus-within:ring-2 focus-within:ring-indigo-500 min-h-200 rounded-3xl overflow-hidden">
+              <QuestionAnswerIcon className="text-indigo-500 mr-3" />
+              <textarea
+                placeholder="You message"
+                className="bg-transparent w-full h-300 px-1 outline-none"
+              />
+            </div>
+          </form>
         </div>
       </div>
     </div>
