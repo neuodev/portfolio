@@ -7,9 +7,7 @@ import Button from "./common/Button";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const Latest = () => {
-  const [currVideo, setCurrVideo] = useState<VideoType | null>(
-    me.content.videos[0]
-  );
+  const [currVideo, setCurrVideo] = useState<VideoType | null>(null);
   return (
     <section className="w-full min-h-screen mb-20">
       <SectionTitle

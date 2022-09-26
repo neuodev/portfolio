@@ -332,11 +332,6 @@
       "website": "https://pandas.pydata.org/",
       "about": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language."
     },
-    "matplotlib": {
-      "name": "Matplotlib",
-      "website": "https://matplotlib.org/",
-      "about": "Matplotlib is a comprehensive library for creating static, animated, and interactive visualizations in Python. "
-    },
     "sklearn": {
       "name": "Scikit-Learn",
       "website": "https://scikit-learn.org/stable/",

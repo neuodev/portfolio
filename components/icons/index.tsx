@@ -39,6 +39,7 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
+import PostgreSQL from "./PostgreSQL";
 
 export const SOCIAL_ICONS = {
   whatsapp: WhatsAppIcon,
@@ -97,6 +98,7 @@ export const DEV_TOOLS: {
   apollo: Apollo,
   socketio: SocketIo,
   express: Express,
+  postgres: PostgreSQL,
 };
 
 export const Logo: React.FC<{ id: string; className?: string }> = ({
