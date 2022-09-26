@@ -242,6 +242,11 @@
       "website": "https://tailwindcss.com/",
       "about": "Rapidly build modern websites without ever leaving your HTML."
     },
+    "mui": {
+      "name": "Material UI",
+      "website": "https://mui.com/",
+      "about": "MUI provides a simple, customizable, and accessible library of React components. "
+    },
     "git": {
       "name": "Git",
       "website": "https://git-scm.com/",
@@ -297,6 +302,11 @@
       "website": "https://www.mongodb.com/",
       "about": "MongoDB is a document-oriented NoSQL database used for high volume data storage. "
     },
+    "redis": {
+      "name": "Redis",
+      "website": "https://redis.io/",
+      "about": "The open source, in-memory data store used by millions of developers as a database, cache, streaming engine, and message broker."
+    },
     "docker": {
       "name": "Docker",
       "website": "https://www.docker.com/",
@@ -341,6 +351,11 @@
       "name": "Tensorflow",
       "website": "https://www.tensorflow.org/",
       "about": "TensorFlow is an open-source library developed by Google primarily for deep learning applications."
+    },
+    "opencv": {
+      "name": "OpenCV",
+      "website": "https://opencv.org/",
+      "about": "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML)"
     },
     "rust": {
       "name": "Rust",

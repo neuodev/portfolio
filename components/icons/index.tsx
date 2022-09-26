@@ -40,6 +40,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import PostgreSQL from "./PostgreSQL";
+import MUI from "./MUI";
+import Redis from "./Redis";
+import OpenCV from "./OpenCV";
 
 export const SOCIAL_ICONS = {
   whatsapp: WhatsAppIcon,
@@ -99,6 +102,9 @@ export const DEV_TOOLS: {
   socketio: SocketIo,
   express: Express,
   postgres: PostgreSQL,
+  mui: MUI,
+  redis: Redis,
+  opencv: OpenCV,
 };
 
 export const Logo: React.FC<{ id: string; className?: string }> = ({
