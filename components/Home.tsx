@@ -45,7 +45,7 @@ const Home = () => {
           <div className="flex">
             <Button
               iconStart={<AccountCircleIcon />}
-              className="mr-4 w-60"
+              className="mr-4 w-60 leading-none"
               variant="primary"
             >
               More about me
@@ -53,7 +53,7 @@ const Home = () => {
             <Button
               iconStart={<BusinessCenterIcon />}
               variant="secondary"
-              className="w-60"
+              className="w-60 leading-none"
             >
               Portfolio
             </Button>

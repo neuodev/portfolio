@@ -91,7 +91,7 @@ const Contact = () => {
               <QuestionAnswerIcon className="text-indigo-500 mr-3" />
               <textarea
                 placeholder="You message"
-                className="bg-transparent w-full h-200 px-1 outline-none"
+                className="bg-transparent w-full h-200 pt-1 px-1 outline-none"
               />
             </div>
 
