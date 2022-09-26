@@ -12,17 +12,17 @@ const Button: NextPage<{
   return (
     <button
       onClick={onClick}
-      className={`px-8 py-2 ${
+      className={`px-8 h-12 text-sm ${
         variant === "secondary"
           ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
           : "bg-indigo-500 text-white hover:bg-indigo-600"
-      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-semibold relative overflow-hidden bg-slide flex items-center justify-center tracking-widest ${variant} ${
+      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-medium relative overflow-hidden bg-slide flex items-center justify-center tracking-widest ${variant} ${
         className || ""
       }`}
     >
-      {iconStart && <span className="inline-block mr-1">{iconStart}</span>}
+      {iconStart && <span className="inline-block mr-3">{iconStart}</span>}
       <p>{children}</p>
-      {iconEnd && <span className="inline-block ml-1">{iconEnd}</span>}
+      {iconEnd && <span className="inline-block ml-3">{iconEnd}</span>}
     </button>
   );
 };

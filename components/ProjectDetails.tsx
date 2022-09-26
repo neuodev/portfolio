@@ -109,16 +109,12 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
         <Button
           onClick={() => visit(project.live)}
           iconStart={<PublicIcon />}
-          className="mr-4 w-44"
+          className="mr-4 w-36"
         >
-          <span className="ml-1.5">Live</span>
+          Live
         </Button>
-        <Button
-          onClick={() => visit(project.repo)}
-          iconStart={<GitHubIcon />}
-          className="w-44"
-        >
-          <span className="ml-1.5">GitHub</span>
+        <Button onClick={() => visit(project.repo)} iconStart={<GitHubIcon />}>
+          GitHub
         </Button>
       </div>
     </Modal>
