@@ -6,10 +6,11 @@ import Button from "./common/Button";
 import MuiButton from "@mui/material/Button";
 import LaunchIcon from "@mui/icons-material/Launch";
 import SocialLinks from "./SocialLinks";
+import Experience from "./Experience";
 
 const AboutMe = () => {
   return (
-    <div className="snap-center min-h-screen text-gray-100">
+    <div className="min-h-screen text-gray-100">
       <SectionTitle
         prefix="About"
         focus="Me"
@@ -60,6 +61,7 @@ const AboutMe = () => {
             </Button>
           </div>
         </div>
+        <Experience />
       </div>
     </div>
   );
