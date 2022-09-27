@@ -3,6 +3,7 @@ import SectionTitle from "./common/SectionTitle";
 import me from "../json/me.json";
 import Image from "next/image";
 import Button from "./common/Button";
+import MuiButton from "@mui/material/Button";
 import LaunchIcon from "@mui/icons-material/Launch";
 import SocialLinks from "./SocialLinks";
 
@@ -17,15 +18,26 @@ const AboutMe = () => {
 
       <div className="max-w-screen-lg mx-auto min-h-700">
         <div className="flex items-start justify-center">
-          <div className="relative shrink-0 h-450 w-450 overflow-hidden rounded-md cursor-pointer">
-            <Image
-              layout="fill"
-              className="object-contain"
-              src={me.personalImage}
-              alt={me.name}
-              title={me.name}
-            />
-          </div>
+          <MuiButton
+            sx={{
+              minWidth: "unset",
+              width: "100%",
+              padding: 0,
+              "&& .MuiTouchRipple-rippleVisible": {
+                animationDuration: "500ms",
+              },
+            }}
+          >
+            <div className="relative shrink-0 h-450 w-450 overflow-hidden rounded-md cursor-pointer">
+              <Image
+                layout="fill"
+                className="object-contain"
+                src={me.personalImage}
+                alt={me.name}
+                title={me.name}
+              />
+            </div>
+          </MuiButton>
           <div className="ml-8">
             <h1 className="text-2xl mb-5">Hi, 👋! </h1>
             <p className="text-4xl font-bold mb-5">
