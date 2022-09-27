@@ -18,10 +18,6 @@ const AboutMe = () => {
       <div className="max-w-screen-lg mx-auto min-h-700">
         <div className="flex items-start justify-center">
           <div className="relative shrink-0 h-450 w-450 overflow-hidden rounded-md cursor-pointer">
-            <div
-              className="w-full h-full absolute top-8 left-8 border-indigo-500"
-              style={{ borderWidth: "6px" }}
-            />
             <Image
               layout="fill"
               className="object-contain"
@@ -30,7 +26,6 @@ const AboutMe = () => {
               title={me.name}
             />
           </div>
-
           <div className="ml-8">
             <h1 className="text-2xl mb-5">Hi, 👋! </h1>
             <p className="text-4xl font-bold mb-5">
