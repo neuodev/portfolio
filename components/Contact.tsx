@@ -95,9 +95,7 @@ const Contact = () => {
               />
             </div>
 
-            <Button iconStart={<SendIcon />}>
-              <span>Send Message</span>
-            </Button>
+            <Button iconStart={<SendIcon />}>Send Message</Button>
           </form>
         </div>
       </div>

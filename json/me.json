@@ -1,10 +1,10 @@
 {
   "name": "Ahmed Ibrahim",
-  "personalImage": "/images/me.jpg",
+  "personalImage": "/images/ahmed.jpg",
   "resume": "/Ahmed Ibrahim - Software Engineer.pdf",
   "jobTitle": "Full Stack Web Developer",
   "jobTitleParts": ["A full stack engineer"],
-  "aboutme": "<TODO>",
+  "aboutme": "I am a software engineer with a huge interest in Machine Learning and data-driven decision making. My experience ranges from working on Real-Time messaging systems that can handle thousands of messages per day to scale open-source projects to serve more than 1+ million active users.",
   "github": "https://github.com/AhmedIbrahim336",
   "social": [
     {

@@ -6,12 +6,14 @@ import theme from "../theme";
 import Contact from "../components/Contact";
 import Latest from "../components/Latest";
 import Skills from "../components/Skills";
+import AboutMe from "../components/AboutMe";
 
 const Main: NextPage = () => {
   return (
     <ThemeProvider theme={theme}>
       <div className="bg-black w-full snap-y snap-proximity h-screen overflow-y-scroll">
         <Home />
+        <AboutMe />
         <Projects />
         <Skills />
         <Latest />
