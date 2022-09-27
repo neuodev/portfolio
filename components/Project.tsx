@@ -94,7 +94,7 @@ const Project: React.FC<{ project: IProject; onSelect(): void }> = ({
   onSelect,
 }) => {
   return (
-    <div className="col-span-12 lg:col-span-6 row-span-1 lg:row-span-3 flex items-center justify-center w-full">
+    <div className="col-span-12 lg:col-span-6 row-span-1 lg:row-span-2 flex items-center justify-center w-full">
       <ImageButton onClick={onSelect} focusRipple key={project.name}>
         <ImageSrc style={{ backgroundImage: `url(${project.thumbnail})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />

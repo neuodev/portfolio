@@ -43,6 +43,7 @@ import PostgreSQL from "./PostgreSQL";
 import MUI from "./MUI";
 import Redis from "./Redis";
 import OpenCV from "./OpenCV";
+import WASM from "./WASM";
 
 export const SOCIAL_ICONS = {
   whatsapp: WhatsAppIcon,
@@ -105,6 +106,7 @@ export const DEV_TOOLS: {
   mui: MUI,
   redis: Redis,
   opencv: OpenCV,
+  wasm: WASM,
 };
 
 export const Logo: React.FC<{ id: string; className?: string }> = ({

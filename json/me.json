@@ -102,6 +102,40 @@
   },
   "projects": [
     {
+      "thumbnail": "/images/yoroi-1.jpg",
+      "name": "Yoroi Wallet",
+      "description": [
+        "A simple, secure and fast Cardano ADA wallet.",
+        "Yoroi allows users to manage Ada in their browser. It is a lightweight wallet that launches quickly, allowing users to start sending or receiving Ada in minutes.",
+        "The Yoroi browser extension allows users to control their funds with ease, without syncing to the blockchain. Users can easily import their Ada from Daedalus into their Yoroi wallet. "
+      ],
+      "techStack": ["react", "wasm", "mui", "node", "postgres"],
+      "repo": "https://github.com/Emurgo/yoroi-frontend",
+      "live": "https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb",
+      "screenshots": [
+        {
+          "path": "/images/yoroi-1.jpg",
+          "description": null
+        },
+        {
+          "path": "/images/yoroi-2.jpg",
+          "description": null
+        },
+        {
+          "path": "/images/yoroi-3.jpg",
+          "description": null
+        },
+        {
+          "path": "/images/yoroi-4.jpg",
+          "description": null
+        },
+        {
+          "path": "/images/yoroi-4.jpg",
+          "description": null
+        }
+      ]
+    },
+    {
       "thumbnail": "/images/e-commerce-1.png",
       "name": "Wallet Ecommerce",
       "description": [
@@ -361,6 +395,11 @@
       "name": "Rust",
       "website": "https://www.rust-lang.org/",
       "about": "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages."
+    },
+    "wasm": {
+      "name": "Webassembly",
+      "website": "https://webassembly.org/",
+      "about": "WebAssembly (abbreviated Wasm) is a binary instruction format for a stack-based virtual machine. Wasm is designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications."
     },
     "bash": {
       "name": "BASH",
