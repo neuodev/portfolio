@@ -41,7 +41,7 @@ const AboutMe = () => {
             </p>
 
             <div className="mb-5">
-              <SocialLinks iconClassName="w-10 h-10" />
+              <SocialLinks />
             </div>
 
             <Button
