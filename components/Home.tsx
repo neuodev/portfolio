@@ -5,17 +5,25 @@ import Typewriter from "typewriter-effect";
 import me from "../json/me.json";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import { Skeleton } from "@mui/material";
 
 const Home = () => {
   return (
-    <section className="h-screen w-full bg-[url('/images/hero.jpg')] relative overlay snap-start">
+    <section className="h-screen w-full bg-[url('/images/hero.jpg')] bg-cover relative overlay snap-start">
       <div className="relative z-10 flex items-center justify-center w-full h-full">
-        <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden mr-12">
+        <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden mr-12 relative w-80 h-80 bg-transparent">
           <Image
             src="/images/ahmed.jpg"
             alt={me.name}
-            height={300}
-            width={300}
+            layout="fill"
+            className="z-10 shadow-2xl w-80 h-80 inline-block overflow-hidden"
+          />
+          <Skeleton
+            variant="circular"
+            className="bg-gray-700"
+            width={320}
+            height={320}
+            animation="wave"
           />
         </div>
         <div className="text-white max-w-lg font-rubik">

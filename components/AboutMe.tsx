@@ -7,6 +7,7 @@ import MuiButton from "@mui/material/Button";
 import LaunchIcon from "@mui/icons-material/Launch";
 import SocialLinks from "./SocialLinks";
 import Experience from "./Experience";
+import { Skeleton } from "@mui/material";
 
 const AboutMe = () => {
   return (
@@ -30,6 +31,11 @@ const AboutMe = () => {
             }}
           >
             <div className="relative shrink-0 h-450 w-450 overflow-hidden rounded-md cursor-pointer">
+              <Skeleton
+                variant="rectangular"
+                className="bg-gray-700 w-full h-full"
+                animation="wave"
+              />
               <Image
                 layout="fill"
                 className="object-contain"

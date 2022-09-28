@@ -4,7 +4,7 @@ import Button from "./common/Button";
 import me from "../json/me.json";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Tooltip from "./common/Tooltip";
-import { Typography } from "@mui/material";
+import { Typography, Skeleton } from "@mui/material";
 
 export type VideoType = typeof me.content.videos[0];
 
@@ -12,10 +12,14 @@ const Video: React.FC<{ video: VideoType }> = ({ video }) => {
   return (
     <div className="text-white">
       <div className="relative h-72 cursor-pointer">
+        <Skeleton
+          variant="rectangular"
+          className="bg-gray-700 w-full h-full rounded-md"
+          animation="wave"
+        />
         <Image
           src={video.thumbnail}
           layout="fill"
-          objectFit="contain"
           className="overflow-hidden rounded-md hover:scale-110 transition-transform duration-700"
           alt={video.title}
           title={video.title}

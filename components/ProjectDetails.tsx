@@ -14,7 +14,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import PublicIcon from "@mui/icons-material/Public";
 import { Logo } from "./icons";
 import me from "../json/me.json";
-import { Typography } from "@mui/material";
+import { Typography, Skeleton } from "@mui/material";
 import Tooltip from "./common/Tooltip";
 
 export type TechName = keyof typeof me.tech;
@@ -37,7 +37,12 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
         >
           {project.screenshots.map((s) => (
             <SwiperSlide key={s.path}>
-              <div className="w-full h-450 cursor-pointer">
+              <div className="w-full h-450 relative cursor-pointer overflow-hidden">
+                <Skeleton
+                  variant="rectangular"
+                  className="bg-gray-700 w-full h-full rounded-xl"
+                  animation="wave"
+                />
                 <Image
                   src={s.path}
                   alt={project.name}
