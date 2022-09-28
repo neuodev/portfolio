@@ -41,7 +41,7 @@ const AboutMe = () => {
                 <Image
                   layout="fill"
                   className="object-contain"
-                  src={me.personalImage}
+                  src={me.photo}
                   alt={me.name}
                   title={me.name}
                 />
