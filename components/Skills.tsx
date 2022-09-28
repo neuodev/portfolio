@@ -15,7 +15,11 @@ const Skills = () => {
 
   return (
     <div className="min-h-screen snap-start">
-      <SectionTitle prefix="My" focus="tech stack" subtitle="<TODO>" />
+      <SectionTitle
+        prefix="My"
+        focus="tech stack"
+        subtitle="Knowledge is power"
+      />
 
       <div className="max-w-screen-lg grid grid-cols-12 gap-4 mx-auto">
         {techStack.map((tech) => (

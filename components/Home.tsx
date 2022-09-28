@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Button from "./common/Button";
 import Typewriter from "typewriter-effect";
@@ -6,6 +6,7 @@ import me from "../json/me.json";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { Skeleton } from "@mui/material";
+import { Link, animateScroll as scroll, Events, scroller } from "react-scroll";
 
 const Home = () => {
   return (
@@ -51,20 +52,24 @@ const Home = () => {
             through carefully crafted code and user-centric design.
           </p>
           <div className="flex">
-            <Button
-              iconStart={<AccountCircleIcon />}
-              className="mr-4 w-60 leading-none"
-              variant="primary"
-            >
-              More about me
-            </Button>
-            <Button
-              iconStart={<BusinessCenterIcon />}
-              variant="secondary"
-              className="w-60 leading-none"
-            >
-              Portfolio
-            </Button>
+            <Link to="aboutme" spy smooth duration={200}>
+              <Button
+                iconStart={<AccountCircleIcon />}
+                className="mr-4 w-60 leading-none"
+                variant="primary"
+              >
+                More about me
+              </Button>
+            </Link>
+            <Link to="projects" spy smooth duration={200}>
+              <Button
+                iconStart={<BusinessCenterIcon />}
+                variant="secondary"
+                className="w-60 leading-none"
+              >
+                Portfolio
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Element } from "react-scroll";
 import me from "../json/me.json";
 import Project, { IProject } from "./Project";
 import ProjectDetails from "./ProjectDetails";
@@ -7,7 +8,10 @@ const Projects = () => {
   const [currProject, setCurrProject] = useState<IProject | null>(null);
 
   return (
-    <section className="text-gray-300 w-full h-screen snap-start">
+    <Element
+      name="projects"
+      className="text-gray-300 w-full h-screen snap-start"
+    >
       <div className="w-ful flex items-center justify-center flex-col py-16">
         <h1 className="text-7xl uppercase font-bold">
           My <span className="text-indigo-500">Projects</span>
@@ -45,7 +49,7 @@ const Projects = () => {
           onClose={() => setCurrProject(null)}
         />
       )}
-    </section>
+    </Element>
   );
 };
 

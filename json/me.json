@@ -1,11 +1,12 @@
 {
   "name": "Ahmed Ibrahim",
-  "personalImage": "/images/ahmed.jpg",
+  "photo": "/images/ahmed.jpg",
   "resume": "/Ahmed Ibrahim - Software Engineer.pdf",
   "jobTitle": "Full Stack Web Developer",
   "jobTitleParts": ["A full stack engineer"],
   "aboutme": "I am a software engineer with a huge interest in Machine Learning and data-driven decision making. My experience ranges from working on Real-Time messaging systems that can handle thousands of messages per day to scale open-source projects to serve more than 1+ million active users.",
   "github": "https://github.com/AhmedIbrahim336",
+  "url": "http://ahmedibrahim.dev/",
   "social": [
     {
       "lable": "GitHub",
@@ -295,25 +296,55 @@
       "website": "https://www.typescriptlang.org/",
       "about": "TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale."
     },
+    "rust": {
+      "name": "Rust",
+      "website": "https://www.rust-lang.org/",
+      "about": "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages."
+    },
+    "python": {
+      "name": "Python",
+      "website": "https://www.python.org/",
+      "about": "Python is a programming language that lets you work quickly and integrate systems more effectively."
+    },
+    "node": {
+      "name": "NodeJS",
+      "website": "https://nodejs.org/en/",
+      "about": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine."
+    },
+    "express": {
+      "name": "Express",
+      "website": "https://expressjs.com/",
+      "about": "Fast, unopinionated, minimalist web framework for Node.js"
+    },
+    "django": {
+      "name": "Django",
+      "website": "https://www.djangoproject.com/",
+      "about": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. "
+    },
+    "flask": {
+      "name": "Flask",
+      "website": "https://flask.palletsprojects.com/en/2.2.x/",
+      "about": "Flask is a micro web framework written in Python."
+    },
+    "actix": {
+      "name": "Actix",
+      "website": "https://actix.rs/",
+      "about": "A powerful, pragmatic, and extremely fast web framework for Rust"
+    },
     "react": {
       "name": "React",
       "website": "https://reactjs.org/",
       "about": "A JavaScript library for building user interfaces"
-    },
-    "redux": {
-      "name": "Redux",
-      "website": "https://redux.js.org/",
-      "about": "A Predictable State Container for JS Apps"
     },
     "nextjs": {
       "name": "NextJS",
       "website": "https://nextjs.org/",
       "about": "The React Framework for Production"
     },
-    "graphql": {
-      "name": "GraphQL",
-      "website": "https://graphql.org/",
-      "about": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data"
+    "redux": {
+      "name": "Redux",
+      "website": "https://redux.js.org/",
+      "about": "A Predictable State Container for JS Apps"
     },
     "tailwind": {
       "name": "Tailwind",
@@ -325,10 +356,10 @@
       "website": "https://mui.com/",
       "about": "MUI provides a simple, customizable, and accessible library of React components. "
     },
-    "git": {
-      "name": "Git",
-      "website": "https://git-scm.com/",
-      "about": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
+    "sass": {
+      "name": "SASS",
+      "website": "https://sass-lang.com/",
+      "about": "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."
     },
     "html": {
       "name": "HTML",
@@ -340,30 +371,10 @@
       "website": "https://www.w3.org/Style/CSS/Overview.en.html",
       "about": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML"
     },
-    "sass": {
-      "name": "SASS",
-      "website": "https://sass-lang.com/",
-      "about": "Sass is the most mature, stable, and powerful professional grade CSS extension language in the world."
-    },
-    "node": {
-      "name": "NodeJS",
-      "website": "https://nodejs.org/en/",
-      "about": "Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine."
-    },
-    "python": {
-      "name": "Python",
-      "website": "https://www.python.org/",
-      "about": "Python is a programming language that lets you work quickly and integrate systems more effectively."
-    },
-    "django": {
-      "name": "Django",
-      "website": "https://www.djangoproject.com/",
-      "about": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. "
-    },
-    "flask": {
-      "name": "Flask",
-      "website": "https://flask.palletsprojects.com/en/2.2.x/",
-      "about": "Flask is a micro web framework written in Python."
+    "graphql": {
+      "name": "GraphQL",
+      "website": "https://graphql.org/",
+      "about": "GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data"
     },
     "mysql": {
       "name": "MySQL",
@@ -390,10 +401,20 @@
       "website": "https://www.docker.com/",
       "about": "Containerization technology that enables the creation and use of Linux® containers."
     },
+    "git": {
+      "name": "Git",
+      "website": "https://git-scm.com/",
+      "about": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency."
+    },
     "jest": {
       "name": "Jest",
       "website": "https://jestjs.io/",
       "about": "Jest is a delightful JavaScript Testing Framework with a focus on simplicity."
+    },
+    "cypress": {
+      "name": "Cypress",
+      "website": "https://www.cypress.io/",
+      "about": "Cypress is a purely JavaScript-based front-end testing tool built for the modern web."
     },
     "selenium": {
       "name": "Selenium",
@@ -404,11 +425,6 @@
       "name": "Cucumber",
       "website": "https://cucumber.io/",
       "about": "Cucumber is a software tool that supports behavior-driven development."
-    },
-    "cypress": {
-      "name": "Cypress",
-      "website": "https://www.cypress.io/",
-      "about": "Cypress is a purely JavaScript-based front-end testing tool built for the modern web."
     },
     "numpy": {
       "name": "NumPy",
@@ -435,11 +451,6 @@
       "website": "https://opencv.org/",
       "about": "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML)"
     },
-    "rust": {
-      "name": "Rust",
-      "website": "https://www.rust-lang.org/",
-      "about": "Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages."
-    },
     "wasm": {
       "name": "Webassembly",
       "website": "https://webassembly.org/",
@@ -455,21 +466,6 @@
       "website": "https://www.vim.org/",
       "about": "Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient."
     },
-    "electron": {
-      "name": "Electron",
-      "website": "https://www.electronjs.org/",
-      "about": "Build cross-platform desktop apps with JavaScript, HTML, and CSS"
-    },
-    "actix": {
-      "name": "Actix",
-      "website": "https://actix.rs/",
-      "about": "A powerful, pragmatic, and extremely fast web framework for Rust"
-    },
-    "tauri": {
-      "name": "Tauri",
-      "website": "https://tauri.app/",
-      "about": "Build an optimized, secure, and frontend-independent application for multi-platform deployment."
-    },
     "apollo": {
       "name": "Apollo",
       "website": "https://www.apollographql.com/docs/react/",
@@ -480,10 +476,15 @@
       "website": "https://socket.io/",
       "about": "Bidirectional and low-latency communication for every platform"
     },
-    "express": {
-      "name": "Express",
-      "website": "https://expressjs.com/",
-      "about": "Fast, unopinionated, minimalist web framework for Node.js"
+    "electron": {
+      "name": "Electron",
+      "website": "https://www.electronjs.org/",
+      "about": "Build cross-platform desktop apps with JavaScript, HTML, and CSS"
+    },
+    "tauri": {
+      "name": "Tauri",
+      "website": "https://tauri.app/",
+      "about": "Build an optimized, secure, and frontend-independent application for multi-platform deployment."
     }
   }
 }
