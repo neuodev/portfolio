@@ -1,5 +1,5 @@
 import { OutlinedInput, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import me from "../json/me.json";
 import Tooltip from "./common/Tooltip";
 import { SocialIcon } from "./icons";
@@ -8,8 +8,99 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import SendIcon from "@mui/icons-material/Send";
 import Button from "./common/Button";
+import { isValidEmail, notEmptyStr } from "../utils";
+
+const validators = {
+  email: isValidEmail,
+  name: notEmptyStr,
+  message: notEmptyStr,
+};
+
+type Field = keyof typeof validators;
 
 const Contact = () => {
+  const [state, setState] = useState<{
+    name: string;
+    email: string;
+    message: string;
+  }>({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const [errors, setErrors] = useState<{
+    name: boolean;
+    email: boolean;
+    message: boolean;
+  }>({
+    name: false,
+    email: false,
+    message: false,
+  });
+
+  const [sendEmail, setSendEmail] = useState({
+    loading: false,
+    error: false,
+    success: false,
+  });
+
+  const updateStateHandler = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    const field = e.target.name;
+    const value = e.target.value;
+
+    if (!field) throw new Error("Missing field name");
+    let validator = validators[field as Field];
+    if (!validator) throw new Error(`${field} field has not validator`);
+
+    const isValid = validator(value);
+    setErrors({ ...errors, [field]: !isValid });
+    setState({ ...state, [field]: value });
+  };
+
+  const isCurrentStateValid = () => {
+    for (let field in validators) {
+      let isValid = validators[field as Field];
+
+      if (!isValid(state[field as keyof typeof state])) return false;
+    }
+
+    return true;
+  };
+
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setSendEmail({
+      ...sendEmail,
+      loading: true,
+    });
+    try {
+      if (!isCurrentStateValid()) throw new Error("Can't send invalid request");
+
+      await fetch("/api/email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(state),
+      });
+
+      setSendEmail({
+        loading: false,
+        error: false,
+        success: true,
+      });
+    } catch (error) {
+      setSendEmail({
+        loading: false,
+        error: true,
+        success: true,
+      });
+    }
+  };
+
   return (
     <div className="min-h-screen text-white snap-start">
       <div className="w-ful flex items-center justify-center flex-col py-16">
@@ -70,19 +161,37 @@ const Contact = () => {
             If you have any suggestions, projects, or even you want to say
             Hello.. please fill out the form below and I will reply shortly.
           </p>
-          <form className="mt-8" onSubmit={(e) => e.preventDefault()}>
+          <form className="mt-8" onSubmit={onSubmit}>
             <div className="w-full grid grid-cols-2 gap-8">
               <OutlinedInput
+                name="name"
+                value={state.name}
+                error={errors.name}
+                autoComplete="off"
+                onChange={updateStateHandler}
                 className="text-gray-200 rounded-3xl col-span-1 bg-stone-900"
                 startAdornment={
-                  <AccountCircleIcon className="text-indigo-500 mr-2" />
+                  <AccountCircleIcon
+                    className={`${
+                      errors.name ? "text-red-500" : "text-indigo-500 "
+                    } mr-2`}
+                  />
                 }
                 placeholder="Your name"
               />
               <OutlinedInput
+                name="email"
+                autoComplete="off"
+                value={state.email}
+                error={errors.email}
+                onChange={updateStateHandler}
                 className="text-gray-200 rounded-3xl grid-cols-1 bg-stone-900"
                 startAdornment={
-                  <AlternateEmailIcon className="text-indigo-500 mr-2" />
+                  <AlternateEmailIcon
+                    className={`${
+                      errors.email ? "text-red-500" : "text-indigo-500 "
+                    } mr-2`}
+                  />
                 }
                 placeholder="Your email"
               />
@@ -90,12 +199,16 @@ const Contact = () => {
             <div className="my-8 px-4 py-5 flex items-start bg-stone-900 focus:outline-none focus-within:ring-2 focus-within:ring-indigo-500 min-h-100 rounded-3xl overflow-hidden">
               <QuestionAnswerIcon className="text-indigo-500 mr-3" />
               <textarea
-                placeholder="You message"
+                name="message"
+                value={state.message}
+                onChange={updateStateHandler}
+                placeholder="Your message"
                 className="bg-transparent w-full h-200 pt-1 px-1 outline-none"
               />
             </div>
-
-            <Button iconStart={<SendIcon />}>Send Message</Button>
+            <Button disabled={!isCurrentStateValid()} iconStart={<SendIcon />}>
+              Send Message
+            </Button>
           </form>
         </div>
       </div>
