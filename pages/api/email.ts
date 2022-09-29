@@ -1,11 +1,13 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import nodemailer from "nodemailer";
 import { google } from "googleapis";
+import { isValidEmail, notEmptyStr } from "../../utils";
 
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const REDIRECT_URI = process.env.REDIRECT_URI;
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
+const USER_EMAIL = process.env.USER_EMAIL;
 
 const oAuth2Client = new google.auth.OAuth2(
   CLIENT_ID,
@@ -31,6 +33,30 @@ type Body = {
   message: string;
 };
 
+type Field = "name" | "message" | "email";
+
+const validators: Array<{
+  field: Field;
+  isValid(val: string): boolean;
+  msg: string;
+}> = [
+  {
+    field: "name",
+    isValid: notEmptyStr,
+    msg: "Empty name",
+  },
+  {
+    field: "message",
+    isValid: notEmptyStr,
+    msg: "Empty message",
+  },
+  {
+    field: "email",
+    isValid: isValidEmail,
+    msg: "Invalid email",
+  },
+];
+
 export default async function handler(req: Request, res: NextApiResponse) {
   if (req.method !== "POST") {
     res.status(400).json({
@@ -39,13 +65,25 @@ export default async function handler(req: Request, res: NextApiResponse) {
     return;
   }
 
+  const errors: Array<{ field: Field; msg: string }> = [];
+
+  validators.forEach(({ field, isValid, msg }) => {
+    if (!isValid(req.body[field])) errors.push({ field, msg });
+  });
+
+  if (errors.length !== 0) {
+    res.status(400).json(errors);
+    return;
+  }
+
   const { name, email, message } = req.body;
+
   const accessToken = await oAuth2Client.getAccessToken();
   let transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
       type: "OAuth2",
-      user: "ahmedibarhim556@gmail.com",
+      user: USER_EMAIL,
       clientId: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
       refreshToken: REFRESH_TOKEN,
@@ -53,14 +91,14 @@ export default async function handler(req: Request, res: NextApiResponse) {
     },
   });
 
-  let info = await transporter.sendMail({
-    from: '"Hi, Ahmed 👻" <foo@example.com>', // sender address
-    to: "ahmedibarhim556@gmail.com", // list of receivers
-    subject: ".env.local", // Subject line
-    text: "Hello world?", // plain text body
-    html: "<b>Hello world?</b>", // html body
+  await transporter.sendMail({
+    from: email,
+    to: USER_EMAIL,
+    subject: `Message from ${name}`,
+    text: `Hi, I am ${name} (${email})\n${message}`,
   });
+
   res.status(200).json({
-    info,
+    success: true,
   });
 }
