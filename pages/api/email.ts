@@ -95,7 +95,7 @@ export default async function handler(req: Request, res: NextApiResponse) {
     from: email,
     to: USER_EMAIL,
     subject: `Message from ${name}`,
-    text: `Hi, I am ${name} (${email})\n${message}`,
+    text: `Hi, I am ${name} ( ${email} )\n${message}`,
   });
 
   res.status(200).json({
