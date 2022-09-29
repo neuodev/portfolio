@@ -1,4 +1,4 @@
-import { OutlinedInput, Typography } from "@mui/material";
+import { Modal, OutlinedInput, Typography } from "@mui/material";
 import React, { useState } from "react";
 import me from "../json/me.json";
 import Tooltip from "./common/Tooltip";
@@ -10,6 +10,8 @@ import SendIcon from "@mui/icons-material/Send";
 import Button from "./common/Button";
 import { isValidEmail, notEmptyStr } from "../utils";
 import { CircularProgress } from "@mui/material";
+import { Box } from "@mui/system";
+import theme from "../theme";
 
 const validators = {
   email: isValidEmail,
@@ -141,7 +143,7 @@ const Contact = () => {
                 key={s.id}
                 title={
                   <Typography fontFamily="Rubik">
-                    Checkout me on {s.lable}
+                    Check me on {s.lable}
                   </Typography>
                 }
               >
@@ -226,6 +228,42 @@ const Contact = () => {
           </form>
         </div>
       </div>
+
+      <Modal open onClose={() => {}}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            shadow: 24,
+            width: 500,
+            height: 300,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection: "column",
+            p: 4,
+            bgcolor: "black",
+            "&:focus": {
+              outline: "none",
+            },
+          }}
+          className="text-gray-200 border-2 border-gray-700 rounded-lg"
+        >
+          <Typography
+            textAlign="center"
+            fontFamily="Rubik"
+            variant="h4"
+            mb="20px"
+          >
+            Thank you 🎉🙌
+          </Typography>
+          <Typography textAlign="center" fontFamily="Rubik" variant="body1">
+            I will response to you soon!
+          </Typography>
+        </Box>
+      </Modal>
     </div>
   );
 };
