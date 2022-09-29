@@ -57,9 +57,19 @@ const validators: Array<{
   },
 ];
 
-export default async function handler(req: Request, res: NextApiResponse) {
+export default async function handler(
+  req: Request,
+  res: NextApiResponse<
+    | {
+        success: boolean;
+        message: string;
+      }
+    | Array<{ field: Field; msg: string }>
+  >
+) {
   if (req.method !== "POST") {
     res.status(400).json({
+      success: false,
       message: "Invalid request",
     });
     return;
@@ -77,28 +87,39 @@ export default async function handler(req: Request, res: NextApiResponse) {
   }
 
   const { name, email, message } = req.body;
+  try {
+    const accessToken = await oAuth2Client.getAccessToken();
+    let transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        type: "OAuth2",
+        user: USER_EMAIL,
+        clientId: CLIENT_ID,
+        clientSecret: CLIENT_SECRET,
+        refreshToken: REFRESH_TOKEN,
+        accessToken: accessToken.token as string,
+      },
+    });
 
-  const accessToken = await oAuth2Client.getAccessToken();
-  let transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      type: "OAuth2",
-      user: USER_EMAIL,
-      clientId: CLIENT_ID,
-      clientSecret: CLIENT_SECRET,
-      refreshToken: REFRESH_TOKEN,
-      accessToken: accessToken.token as string,
-    },
-  });
+    await transporter.sendMail({
+      from: email,
+      to: USER_EMAIL,
+      subject: `Message from ${name}`,
+      text: `Hi, I am ${name} ( ${email} )\n${message}`,
+    });
 
-  await transporter.sendMail({
-    from: email,
-    to: USER_EMAIL,
-    subject: `Message from ${name}`,
-    text: `Hi, I am ${name} ( ${email} )\n${message}`,
-  });
+    res.status(200).json({
+      success: true,
+      message: "Email sent successfully",
+    });
+  } catch (error) {
+    let message = "Unexpected error occurred, please retry";
+    if (typeof error === "string") message = error;
+    else if (error instanceof Error) message = error.message;
 
-  res.status(200).json({
-    success: true,
-  });
+    res.status(500).json({
+      success: false,
+      message,
+    });
+  }
 }

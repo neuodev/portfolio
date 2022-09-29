@@ -9,6 +9,7 @@ import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
 import SendIcon from "@mui/icons-material/Send";
 import Button from "./common/Button";
 import { isValidEmail, notEmptyStr } from "../utils";
+import { CircularProgress } from "@mui/material";
 
 const validators = {
   email: isValidEmail,
@@ -169,7 +170,7 @@ const Contact = () => {
                 error={errors.name}
                 autoComplete="off"
                 onChange={updateStateHandler}
-                className="text-gray-200 rounded-3xl col-span-1 bg-stone-900"
+                className="text-gray-200 rounded-3xl col-span-1 bg-gray-800"
                 startAdornment={
                   <AccountCircleIcon
                     className={`${
@@ -185,7 +186,7 @@ const Contact = () => {
                 value={state.email}
                 error={errors.email}
                 onChange={updateStateHandler}
-                className="text-gray-200 rounded-3xl grid-cols-1 bg-stone-900"
+                className="text-gray-200 rounded-3xl grid-cols-1 bg-gray-800"
                 startAdornment={
                   <AlternateEmailIcon
                     className={`${
@@ -196,7 +197,7 @@ const Contact = () => {
                 placeholder="Your email"
               />
             </div>
-            <div className="my-8 px-4 py-5 flex items-start bg-stone-900 focus:outline-none focus-within:ring-2 focus-within:ring-indigo-500 min-h-100 rounded-3xl overflow-hidden">
+            <div className="my-8 px-4 py-5 flex items-start bg-gray-800 focus:outline-none focus-within:ring-2 focus-within:ring-indigo-500 min-h-100 rounded-3xl overflow-hidden">
               <QuestionAnswerIcon className="text-indigo-500 mr-3" />
               <textarea
                 name="message"
@@ -206,9 +207,22 @@ const Contact = () => {
                 className="bg-transparent w-full h-200 pt-1 px-1 outline-none"
               />
             </div>
-            <Button disabled={!isCurrentStateValid()} iconStart={<SendIcon />}>
-              Send Message
+            <Button
+              disabled={!isCurrentStateValid() || sendEmail.loading}
+              iconStart={sendEmail.loading ? undefined : <SendIcon />}
+            >
+              {sendEmail.loading ? (
+                <CircularProgress size={25} />
+              ) : (
+                "Send Message"
+              )}
             </Button>
+
+            {sendEmail.error && (
+              <p className="text-red-500 text-sm mt-3">
+                Unexpected error occurred, please retry
+              </p>
+            )}
           </form>
         </div>
       </div>

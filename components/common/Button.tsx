@@ -32,7 +32,7 @@ const Button: NextPage<{
       } ${variant} ${className || ""}`}
     >
       {iconStart && <span className="inline-block mr-3">{iconStart}</span>}
-      <p>{children}</p>
+      <p className="flex items-center justify-center">{children}</p>
       {iconEnd && <span className="inline-block ml-3">{iconEnd}</span>}
     </button>
   );
