@@ -22,7 +22,10 @@ const Button: NextPage<{
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`px-8 h-12 text-sm ${
+      style={{
+        fontSize: "0.875rem",
+      }}
+      className={`px-8 h-12 ${
         variant === "secondary"
           ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
           : "bg-indigo-500 text-white hover:bg-indigo-600"

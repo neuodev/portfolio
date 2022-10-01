@@ -11,7 +11,9 @@ import Button from "./common/Button";
 import { isValidEmail, notEmptyStr } from "../utils";
 import { CircularProgress } from "@mui/material";
 import { Box } from "@mui/system";
-import theme from "../theme";
+import HighlightOffIcon from "@mui/icons-material/HighlightOff";
+import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
+import { Link } from "react-scroll";
 
 const validators = {
   email: isValidEmail,
@@ -21,15 +23,31 @@ const validators = {
 
 type Field = keyof typeof validators;
 
+const initState = {
+  name: "",
+  email: "",
+  message: "",
+};
+
+const initErrState = {
+  name: false,
+  email: false,
+  message: false,
+};
+
+const initEmailState = {
+  loading: false,
+  error: false,
+  success: false,
+};
+
 const Contact = () => {
   const [state, setState] = useState<{
     name: string;
     email: string;
     message: string;
   }>({
-    name: "",
-    email: "",
-    message: "",
+    ...initState,
   });
 
   const [errors, setErrors] = useState<{
@@ -37,15 +55,11 @@ const Contact = () => {
     email: boolean;
     message: boolean;
   }>({
-    name: false,
-    email: false,
-    message: false,
+    ...initErrState,
   });
 
   const [sendEmail, setSendEmail] = useState({
-    loading: false,
-    error: false,
-    success: false,
+    ...initEmailState,
   });
 
   const updateStateHandler = (
@@ -102,6 +116,14 @@ const Contact = () => {
         success: true,
       });
     }
+  };
+
+  const onClose = () => {
+    setSendEmail({
+      ...initEmailState,
+    });
+    setErrors({ ...initErrState });
+    setState({ ...initState });
   };
 
   return (
@@ -229,7 +251,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <Modal open onClose={() => {}}>
+      <Modal open={sendEmail.success} onClose={onClose}>
         <Box
           sx={{
             position: "absolute",
@@ -237,13 +259,11 @@ const Contact = () => {
             left: "50%",
             transform: "translate(-50%, -50%)",
             shadow: 24,
-            width: 500,
-            height: 300,
+            p: "60px",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             flexDirection: "column",
-            p: 4,
             bgcolor: "black",
             "&:focus": {
               outline: "none",
@@ -252,16 +272,44 @@ const Contact = () => {
           className="text-gray-200 border-2 border-gray-700 rounded-lg"
         >
           <Typography
+            className="mb-2"
             textAlign="center"
             fontFamily="Rubik"
             variant="h4"
-            mb="20px"
           >
             Thank you 🎉🙌
           </Typography>
-          <Typography textAlign="center" fontFamily="Rubik" variant="body1">
+          <Typography
+            className="mb-4"
+            textAlign="center"
+            fontFamily="Rubik"
+            variant="body1"
+          >
             I will response to you soon!
           </Typography>
+
+          <Box className="grid grid-cols-2 gap-4">
+            <Link to="home" spy smooth duration={200}>
+              <Button
+                onClick={onClose}
+                iconStart={<HighlightOffIcon />}
+                className="mt-4"
+                variant="secondary"
+              >
+                Close
+              </Button>
+            </Link>
+            <Link to="projects" spy smooth duration={200}>
+              <Button
+                onClick={onClose}
+                iconStart={<BusinessCenterIcon />}
+                className="mt-4"
+                variant="primary"
+              >
+                Portfolio
+              </Button>
+            </Link>
+          </Box>
         </Box>
       </Modal>
     </div>

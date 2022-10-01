@@ -6,11 +6,14 @@ import me from "../json/me.json";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { Skeleton } from "@mui/material";
-import { Link, animateScroll as scroll, Events, scroller } from "react-scroll";
+import { Link, Element } from "react-scroll";
 
 const Home = () => {
   return (
-    <section className="h-screen w-full bg-[url('/images/hero.jpg')] bg-cover relative overlay snap-start">
+    <Element
+      name="home"
+      className="h-screen w-full bg-[url('/images/hero.jpg')] bg-cover relative overlay snap-start"
+    >
       <div className="relative z-10 flex items-center justify-center w-full h-full">
         <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden mr-12 relative w-80 h-80 bg-transparent">
           <Image
@@ -73,7 +76,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </section>
+    </Element>
   );
 };
 
