@@ -21,10 +21,10 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   position: "relative",
   height: "100%",
   width: "100%",
-  [theme.breakpoints.down("sm")]: {
-    width: "100% !important", // Overrides inline-style
-    height: 100,
-  },
+  // [theme.breakpoints.down("sm")]: {
+  //   width: "100% !important", // Overrides inline-style
+  //   height: 100,
+  // },
   color: theme.palette.primary.main,
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
@@ -49,6 +49,7 @@ const ImageSrc = styled("span")({
   top: 0,
   bottom: 0,
   backgroundSize: "cover",
+  backgroundRepeat: "no-repeat",
   backgroundPosition: "center 40%",
 });
 
@@ -94,7 +95,7 @@ const Project: React.FC<{ project: IProject; onSelect(): void }> = ({
   onSelect,
 }) => {
   return (
-    <div className="col-span-12 lg:col-span-6 row-span-1 lg:row-span-2 flex items-center justify-center w-full">
+    <div className="col-span-12 lg:col-span-6 flex items-center justify-center w-full h-72">
       <ImageButton onClick={onSelect} focusRipple key={project.name}>
         <ImageSrc style={{ backgroundImage: `url(${project.thumbnail})` }} />
         <ImageBackdrop className="MuiImageBackdrop-root" />

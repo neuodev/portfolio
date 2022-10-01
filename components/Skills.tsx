@@ -14,43 +14,48 @@ const Skills = () => {
   }));
 
   return (
-    <div className="min-h-screen snap-start">
+    <div className="min-h-screen text-gray-300">
       <SectionTitle
         prefix="My"
         focus="tech stack"
         subtitle="Knowledge is power"
       />
 
-      <div className="max-w-screen-lg grid grid-cols-12 gap-4 mx-auto">
+      <div className="max-w-screen-lg grid grid-cols-12 gap-4 mx-auto items-center justify-center p-4">
         {techStack.map((tech) => (
-          <Tooltip
-            placement="top"
-            arrow
-            title={
-              <div className="p-1">
-                <a href={tech.website} target="_blank" rel="noreferrer">
-                  <Typography className="text-indigo-500 mb-2" variant="h5">
-                    {tech.name}
-                    <LaunchIcon className="ml-1 inline-block" />
-                  </Typography>
-                </a>
-                <Typography className="text-gray-300" variant="caption">
-                  {tech.about}
-                </Typography>
-              </div>
-            }
+          <div
             key={tech.techId}
+            className="col-span-4 flex flex-col items-center justify-center"
           >
-            <Button
-              variant="outlined"
-              className="group border-transparent group-hover:border-indigo-500 rounded-full w-20 h-20 transition-colors duration-200"
+            <Tooltip
+              placement="top"
+              arrow
+              title={
+                <div className="p-1">
+                  <a href={tech.website} target="_blank" rel="noreferrer">
+                    <Typography className="text-indigo-500 mb-2" variant="h5">
+                      {tech.name}
+                      <LaunchIcon className="ml-1 inline-block" />
+                    </Typography>
+                  </a>
+                  <Typography className="text-gray-300" variant="caption">
+                    {tech.about}
+                  </Typography>
+                </div>
+              }
             >
-              <Logo
-                id={tech.techId}
-                className="group-hover:fill-indigo-500 transition-colors duration-200"
-              />
-            </Button>
-          </Tooltip>
+              <Button
+                variant="outlined"
+                className=" group border-transparent group-hover:border-indigo-500 rounded-full w-20 h-20 transition-colors duration-200"
+              >
+                <Logo
+                  id={tech.techId}
+                  className="group-hover:fill-indigo-500 transition-colors duration-200"
+                />
+              </Button>
+            </Tooltip>
+            <p className="mt-2 text-center lg:hidden">{tech.name}</p>
+          </div>
         ))}
       </div>
     </div>

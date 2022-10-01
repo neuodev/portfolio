@@ -11,7 +11,7 @@ const Projects = () => {
   return (
     <Element
       name="projects"
-      className="text-gray-300 w-full h-screen snap-start"
+      className="text-gray-300 w-full min-h-screen snap-start"
     >
       <SectionTitle
         prefix="My"
@@ -31,7 +31,7 @@ const Projects = () => {
         }
       />
       <div className="container mx-auto">
-        <div className="grid grid-cols-12 grid-rows-4 lg:grid-rows-6 max-w-screen-lg mx-auto gap-1 min-h-700 lg:min-h-700">
+        <div className="grid grid-cols-12 gap-3 lg:gap-1 max-w-screen-lg mx-auto min-h-700 p-5">
           {me.projects.map((project) => (
             <Project
               onSelect={() => setCurrProject(project)}
