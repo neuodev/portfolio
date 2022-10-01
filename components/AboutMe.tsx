@@ -21,8 +21,8 @@ const AboutMe = () => {
         />
 
         <div className="max-w-screen-lg mx-auto min-h-700 p-5">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center">
-            <div className="relative shrink-0 h-300 w-300 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer">
+          <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
+            <div className="relative shrink-0 h-300 w-300 md:w-400 md:h-400 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer">
               <MuiButton
                 sx={{
                   minWidth: "unset",
@@ -48,16 +48,16 @@ const AboutMe = () => {
                 />
               </MuiButton>
             </div>
-            <div className="mx-6 lg:mx-0 lg:ml-8">
-              <h1 className="text-2xl mb-5 mt-4 lg:mt-0">Hi, 👋! </h1>
-              <p className="text-2xl lg:text-4xl font-bold mb-5">
+            <div className="mx-6 max-w-xs px-2 lg:px-0 lg:max-w-max lg:mx-0 lg:ml-8">
+              <h1 className="text-xl mt-4 md:mt-0">Hi, 👋! </h1>
+              <p className="text-2xl md:text-3xl lg:text-4xl font-bold mb-5 md:mb-3 lg:mb-5">
                 I am <span className="text-indigo-500">{me.name}</span>
               </p>
-              <p className="font-thin text-base lg:text-lg leading-relaxed mb-5">
+              <p className="font-thin text-base lg:text-lg leading-relaxed mb-5 md:mb-3 lg:mb-5">
                 {me.aboutme}
               </p>
 
-              <div className="mb-5 -ml-3 lg:ml-0">
+              <div className="mb-5 md:mb-3 lg:mb-5 -ml-3">
                 <SocialLinks />
               </div>
 
@@ -65,7 +65,7 @@ const AboutMe = () => {
                 onClick={() => window.open(me.resume)}
                 iconStart={<LaunchIcon />}
                 variant="primary"
-                className="w-full"
+                className="w-full md:w-auto"
               >
                 Take a look at my cv
               </Button>

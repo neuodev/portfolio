@@ -25,7 +25,7 @@ const Skills = () => {
         {techStack.map((tech) => (
           <div
             key={tech.techId}
-            className="col-span-4 flex flex-col items-center justify-center"
+            className="col-span-4 md:col-span-3 lg:col-span-2 flex flex-col items-center justify-center"
           >
             <Tooltip
               placement="top"

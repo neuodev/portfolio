@@ -13,13 +13,13 @@ import theme from "../theme";
 import me from "../json/me.json";
 
 const Experience = () => {
-  const isLargeScreen = useMediaQuery("(min-width: 1024px)");
+  const isLargeScreen = useMediaQuery("(min-width: 768px)");
 
   return (
     <div className="my-20">
       <Timeline
         sx={{
-          [theme.breakpoints.down(1024)]: {
+          [theme.breakpoints.down(768)]: {
             [`& .${timelineItemClasses.root}:before`]: {
               flex: 0,
               padding: 0,
