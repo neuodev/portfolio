@@ -9,17 +9,17 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 const Latest = () => {
   const [currVideo, setCurrVideo] = useState<VideoType | null>(null);
   return (
-    <section className="w-full min-h-screen mb-20">
+    <section className="min-h-screen mb-20">
       <SectionTitle
         prefix="Latest"
         focus="content"
         subtitle="tips, insights, and best practices about web developpment and personal life"
       />
 
-      <div className="grid grid-cols-12 gap-10 max-w-screen-lg mx-auto">
+      <div className="grid grid-cols-12 gap-y-10 lg:gap-10 max-w-screen-lg mx-4 lg:mx-auto">
         {me.content.videos.map((v) => (
           <div
-            className="col-span-6"
+            className="col-span-12 lg:col-span-6"
             key={v.title}
             onClick={() => setCurrVideo(v)}
           >

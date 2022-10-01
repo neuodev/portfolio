@@ -10,8 +10,8 @@ export type VideoType = typeof me.content.videos[0];
 
 const Video: React.FC<{ video: VideoType }> = ({ video }) => {
   return (
-    <div className="text-white">
-      <div className="relative h-72 cursor-pointer">
+    <div className="text-white w-full">
+      <div className="relative h-48 lg:h-72 w-full overflow-hidden cursor-pointer">
         <Skeleton
           variant="rectangular"
           className="bg-gray-700 w-full h-full rounded-md"
@@ -20,13 +20,13 @@ const Video: React.FC<{ video: VideoType }> = ({ video }) => {
         <Image
           src={video.thumbnail}
           layout="fill"
-          className="overflow-hidden rounded-md hover:scale-110 transition-transform duration-700"
+          className="object-cover overflow-hidden rounded-md hover:scale-110 transition-transform duration-700"
           alt={video.title}
           title={video.title}
         />
       </div>
 
-      <a className="mt-5 mb-3 text-gray-100 hover:text-indigo-500 cursor-pointer text-xl font-medium uppercase inline-block transition-colors duration-150">
+      <a className=" mt-3 lg:mt-5 lg:mb-3 text-gray-100 hover:text-indigo-500 cursor-pointer text-lg lg:text-xl font-medium uppercase inline-block transition-colors duration-150">
         {video.title}
       </a>
       <Tooltip
@@ -43,9 +43,13 @@ const Video: React.FC<{ video: VideoType }> = ({ video }) => {
           </Typography>
         }
       >
-        <p className="text-sm text-gray-400 truncate">{video.description}</p>
+        <p className="text-sm text-gray-400 lg:truncate">{video.description}</p>
       </Tooltip>
-      <Button iconStart={<YouTubeIcon />} className="mt-8" variant="primary">
+      <Button
+        iconStart={<YouTubeIcon />}
+        className="mt-3 lg:mt-8"
+        variant="primary"
+      >
         Watch
       </Button>
     </div>
