@@ -20,19 +20,20 @@ const AboutMe = () => {
           subtitle="I use my skill set to solve other people's problems"
         />
 
-        <div className="max-w-screen-lg mx-auto min-h-700">
-          <div className="flex items-start justify-center">
-            <MuiButton
-              sx={{
-                minWidth: "unset",
-                width: "100%",
-                padding: 0,
-                "&& .MuiTouchRipple-rippleVisible": {
-                  animationDuration: "500ms",
-                },
-              }}
-            >
-              <div className="relative shrink-0 h-450 w-450 overflow-hidden rounded-md cursor-pointer">
+        <div className="max-w-screen-lg mx-auto min-h-700 p-5">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start justify-center">
+            <div className="relative shrink-0 h-300 w-300 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer">
+              <MuiButton
+                sx={{
+                  minWidth: "unset",
+                  width: "100%",
+                  height: "100%",
+                  padding: 0,
+                  "&& .MuiTouchRipple-rippleVisible": {
+                    animationDuration: "500ms",
+                  },
+                }}
+              >
                 <Skeleton
                   variant="rectangular"
                   className="bg-gray-700 w-full h-full"
@@ -45,18 +46,18 @@ const AboutMe = () => {
                   alt={me.name}
                   title={me.name}
                 />
-              </div>
-            </MuiButton>
-            <div className="ml-8">
-              <h1 className="text-2xl mb-5">Hi, 👋! </h1>
-              <p className="text-4xl font-bold mb-5">
+              </MuiButton>
+            </div>
+            <div className="mx-6 lg:mx-0 lg:ml-8">
+              <h1 className="text-2xl mb-5 mt-4 lg:mt-0">Hi, 👋! </h1>
+              <p className="text-2xl lg:text-4xl font-bold mb-5">
                 I am <span className="text-indigo-500">{me.name}</span>
               </p>
-              <p className="font-thin text-lg leading-relaxed mb-5">
+              <p className="font-thin text-base lg:text-lg leading-relaxed mb-5">
                 {me.aboutme}
               </p>
 
-              <div className="mb-5">
+              <div className="mb-5 -ml-3 lg:ml-0">
                 <SocialLinks />
               </div>
 
@@ -64,6 +65,7 @@ const AboutMe = () => {
                 onClick={() => window.open(me.resume)}
                 iconStart={<LaunchIcon />}
                 variant="primary"
+                className="w-full"
               >
                 Take a look at my cv
               </Button>

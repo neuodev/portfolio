@@ -14,13 +14,13 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-[url('/images/hero.jpg')] bg-cover relative overlay snap-start"
     >
-      <div className="relative z-10 flex items-center justify-center w-full h-full">
-        <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden mr-12 relative w-80 h-80 bg-transparent">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen min-w-screen p-5">
+        <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden lg:mr-12 mb-12 lg:mb-0 relative w-64 h-64 lg:w-80 lg:h-80 bg-transparent">
           <Image
             src="/images/ahmed.jpg"
             alt={me.name}
             layout="fill"
-            className="z-10 shadow-2xl w-80 h-80 inline-block overflow-hidden"
+            className="z-10 shadow-2xl w-64 h-64 lg:w-80 lg:h-80 inline-block overflow-hidden"
           />
           <Skeleton
             variant="circular"
@@ -31,8 +31,8 @@ const Home = () => {
           />
         </div>
         <div className="text-white max-w-lg font-rubik">
-          <p className="uppercase text-lg mb-2">HI THERE!</p>
-          <h1 className="mt-2 mb-3 text-4xl font-bold uppercase flex items-center justify-start">
+          <p className="uppercase text-sm lg:text-lg mb-2">HI THERE 👋!</p>
+          <h1 className="mt-2 mb-3 text-2xl lg:text-4xl font-bold uppercase flex items-center justify-start">
             I&apos;m{" "}
             <span className="text-indigo-500 ml-1">
               <Typewriter
@@ -49,26 +49,38 @@ const Home = () => {
               />
             </span>
           </h1>
-          <p className="mt-2 mb-6 leading-relaxed">
+          <p className="mt-2 mb-6 leading-relaxed text-sm lg:text-base">
             I&apos;m a Freelance UI/UX Designer and Developer based in London,
             England. I strives to build immersive and beautiful web applications
             through carefully crafted code and user-centric design.
           </p>
-          <div className="flex">
-            <Link to="aboutme" spy smooth duration={200}>
+          <div className="grid grid-cols-2 gap-5">
+            <Link
+              to="aboutme"
+              className="block w-full col-span-2"
+              spy
+              smooth
+              duration={200}
+            >
               <Button
                 iconStart={<AccountCircleIcon />}
-                className="mr-4 w-60 leading-none"
+                className="w-full lg:mr-4 lg:w-60"
                 variant="primary"
               >
                 More about me
               </Button>
             </Link>
-            <Link to="projects" spy smooth duration={200}>
+            <Link
+              to="projects"
+              className="block w-full col-span-2"
+              spy
+              smooth
+              duration={200}
+            >
               <Button
                 iconStart={<BusinessCenterIcon />}
                 variant="secondary"
-                className="w-60 leading-none"
+                className="w-full lg:w-60"
               >
                 Portfolio
               </Button>
