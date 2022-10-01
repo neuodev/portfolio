@@ -1,19 +1,33 @@
 import React from "react";
 import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
+import TimelineItem, { timelineItemClasses } from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import me from "../json/me.json";
 import { Box, Typography } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Tooltip from "./common/Tooltip";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import theme from "../theme";
+import me from "../json/me.json";
 
 const Experience = () => {
+  const isLargeScreen = useMediaQuery("(min-width: 1024px)");
+
   return (
     <div className="my-20">
-      <Timeline position="alternate">
+      <Timeline
+        sx={{
+          [theme.breakpoints.down(1024)]: {
+            [`& .${timelineItemClasses.root}:before`]: {
+              flex: 0,
+              padding: 0,
+            },
+          },
+        }}
+        position={isLargeScreen ? "alternate" : undefined}
+      >
         {me.experiences.map((ex, idx) => {
           return (
             <TimelineItem key={idx}>
@@ -38,13 +52,15 @@ const Experience = () => {
                     </Typography>
                   }
                 >
-                  <Typography className="mb-3 text-left" variant="h6">
-                    <span>{ex.company.name}</span>- {ex.jobTitle}
+                  <Typography className="mb-3 text-left text-xl lg:text-2xl">
+                    <span>{ex.company.name} </span>- {ex.jobTitle}
                   </Typography>
                 </Tooltip>
                 {ex.roles.map((role, idx) => (
                   <Box key={idx * 10} className="text-left">
-                    <p className="font-thin mb-3 leading-relaxed">{role}</p>
+                    <p className="font-thin mb-3 leading-relaxed text-sm lg:text-base">
+                      {role}
+                    </p>
                   </Box>
                 ))}
               </TimelineContent>
