@@ -156,35 +156,35 @@
   },
   "projects": [
     {
-      "thumbnail": "/images/yoroi-1.jpg",
+      "thumbnail": "/images/yoroi/yoroi_1.png",
       "name": "Yoroi Wallet",
       "description": [
         "A simple, secure and fast Cardano ADA wallet.",
         "Yoroi allows users to manage Ada in their browser. It is a lightweight wallet that launches quickly, allowing users to start sending or receiving Ada in minutes.",
         "The Yoroi browser extension allows users to control their funds with ease, without syncing to the blockchain. Users can easily import their Ada from Daedalus into their Yoroi wallet. "
       ],
-      "techStack": ["react", "wasm", "mui", "node", "postgres"],
+      "techStack": ["js", "react", "rust", "wasm", "mui", "node", "postgres"],
       "repo": "https://github.com/Emurgo/yoroi-frontend",
       "live": "https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb",
       "screenshots": [
         {
-          "path": "/images/yoroi-1.jpg",
+          "path": "/images/yoroi/yoroi_1.png",
           "description": null
         },
         {
-          "path": "/images/yoroi-2.jpg",
+          "path": "/images/yoroi/yoroi_2.png",
           "description": null
         },
         {
-          "path": "/images/yoroi-3.jpg",
+          "path": "/images/yoroi/yoroi_3.png",
           "description": null
         },
         {
-          "path": "/images/yoroi-4.jpg",
+          "path": "/images/yoroi/yoroi_4.png",
           "description": null
         },
         {
-          "path": "/images/yoroi-4.jpg",
+          "path": "/images/yoroi/yoroi_5.png",
           "description": null
         }
       ]
