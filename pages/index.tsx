@@ -9,6 +9,7 @@ import Skills from "../components/Skills";
 import AboutMe from "../components/AboutMe";
 import Head from "next/head";
 import me from "../json/me.json";
+import Experience from "../components/Experience";
 
 const Main: NextPage = () => {
   const header = `${me.name} - ${me.jobTitle}`;
@@ -32,6 +33,7 @@ const Main: NextPage = () => {
       <div className="bg-black w-full">
         {/* <Home /> */}
         <AboutMe />
+        <Experience />
         <Projects />
         <Skills />
         <Latest />

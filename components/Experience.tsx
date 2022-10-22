@@ -11,71 +11,83 @@ import Tooltip from "./common/Tooltip";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../theme";
 import me from "../json/me.json";
+import SectionTitle from "./common/SectionTitle";
 
 const Experience = () => {
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className="my-20">
-      <Timeline
-        sx={{
-          [theme.breakpoints.down(768)]: {
-            [`& .${timelineItemClasses.root}:before`]: {
-              flex: 0,
-              padding: 0,
+    <div className="min-h-screen text-gray-100">
+      <SectionTitle
+        prefix="My"
+        focus="Experience"
+        subtitle="I use my skill set to solve other people's problems"
+      />
+      <div className="max-w-screen-lg mx-auto">
+        <Timeline
+          sx={{
+            [theme.breakpoints.down(768)]: {
+              [`& .${timelineItemClasses.root}:before`]: {
+                flex: 0,
+                padding: 0,
+              },
             },
-          },
-        }}
-        position={isLargeScreen ? "alternate" : undefined}
-      >
-        {me.experiences.map((ex, idx) => {
-          return (
-            <TimelineItem key={idx}>
-              <TimelineSeparator>
-                <TimelineDot />
-                <TimelineConnector />
-              </TimelineSeparator>
-              <TimelineContent className="mb-4">
-                <Box className="flex items-center justify-start mt-1 mb-4">
-                  <CalendarTodayIcon className="text-lg text-indigo-500" />
-                  <Typography className="ml-2" variant="caption" lineHeight={1}>
-                    {ex.period}
-                  </Typography>
-                </Box>
-                <Tooltip
-                  placement="top"
-                  arrow
-                  followCursor
-                  title={
-                    <Typography variant="subtitle2">
-                      {ex.company.about}
-                    </Typography>
-                  }
-                >
-                  <Typography
-                    href={ex.company.website}
-                    target="_blank"
-                    component={Link}
-                    className="mb-3 text-left text-xl lg:text-2xl block"
-                  >
-                    {ex.company.name} - {ex.jobTitle}
-                  </Typography>
-                </Tooltip>
-                <ul>
-                  {ex.roles.map((role, idx) => (
-                    <li
-                      key={idx * 10}
-                      className="text-left list-decimal list-inside font-thin mb-3 leading-relaxed text-sm lg:text-base"
+          }}
+          position={isLargeScreen ? "alternate" : undefined}
+        >
+          {me.experiences.map((ex, idx) => {
+            return (
+              <TimelineItem key={idx}>
+                <TimelineSeparator>
+                  <TimelineDot />
+                  <TimelineConnector />
+                </TimelineSeparator>
+                <TimelineContent className="mb-4">
+                  <Box className="flex items-center justify-start mt-1 mb-4">
+                    <CalendarTodayIcon className="text-lg text-indigo-500" />
+                    <Typography
+                      className="ml-2"
+                      variant="caption"
+                      lineHeight={1}
                     >
-                      {role}
-                    </li>
-                  ))}
-                </ul>
-              </TimelineContent>
-            </TimelineItem>
-          );
-        })}
-      </Timeline>
+                      {ex.period}
+                    </Typography>
+                  </Box>
+                  <Tooltip
+                    placement="top"
+                    arrow
+                    followCursor
+                    title={
+                      <Typography variant="subtitle2">
+                        {ex.company.about}
+                      </Typography>
+                    }
+                  >
+                    <Typography
+                      href={ex.company.website}
+                      target="_blank"
+                      component={Link}
+                      className="mb-3 text-left text-xl lg:text-2xl block"
+                    >
+                      {ex.company.name} - {ex.jobTitle}
+                    </Typography>
+                  </Tooltip>
+                  <ul>
+                    {ex.roles.map((role, idx) => (
+                      <li
+                        key={idx * 10}
+                        className="text-left list-decimal list-inside font-thin mb-3 leading-relaxed text-sm lg:text-base"
+                      >
+                        {role}
+                      </li>
+                    ))}
+                  </ul>
+                </TimelineContent>
+              </TimelineItem>
+            );
+          })}
+        </Timeline>
+      </div>
     </div>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Image from "next/image";
 import Button from "./common/Button";
 import Typewriter from "typewriter-effect";
