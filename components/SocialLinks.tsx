@@ -18,7 +18,10 @@ const SocialLinks: React.FC<{}> = () => {
         >
           <Button
             onClick={() => window.open(s.value)}
-            className={`group border-transparent group-hover:border-indigo-500 rounded-full h-16 w-16 transition-colors duration-200 relative overflow-hidden bg-slide mr-2`}
+            className="group border-transparent group-hover:border-indigo-500 h-16 w-16 transition-colors duration-200 relative overflow-hidden bg-slide mr-2"
+            sx={{
+              borderRadius: "999px",
+            }}
           >
             <SocialIcon id={s.id} className="fill-indigo-500 w-10 h-10" />
           </Button>

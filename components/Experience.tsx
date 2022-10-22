@@ -46,7 +46,9 @@ const Experience = () => {
                   <Box className="flex items-center justify-start mt-1 mb-4">
                     <CalendarTodayIcon className="text-lg text-indigo-500" />
                     <Typography
-                      className="ml-2"
+                      sx={{
+                        ml: "8px",
+                      }}
                       variant="caption"
                       lineHeight={1}
                     >
@@ -67,7 +69,17 @@ const Experience = () => {
                       href={ex.company.website}
                       target="_blank"
                       component={Link}
-                      className="mb-3 text-left text-xl lg:text-2xl block"
+                      sx={{
+                        mb: "0.75rem",
+                        textAlign: "left",
+                        fontSize: "1.25rem",
+                        lineHeight: "1.75rem",
+                        display: "block",
+                        [theme.breakpoints.up("lg")]: {
+                          fontSize: "1.5rem",
+                          lineHeight: "2rem",
+                        },
+                      }}
                     >
                       {ex.company.name} - {ex.jobTitle}
                     </Typography>

@@ -188,7 +188,11 @@ const Contact = () => {
                 error={errors.name}
                 autoComplete="off"
                 onChange={updateStateHandler}
-                className="text-gray-200 rounded-3xl col-span-2 lg:col-span-1 bg-gray-800"
+                className="col-span-2 lg:col-span-1 bg-gray-800"
+                sx={{
+                  borderRadius: "1.5rem",
+                  color: "#e5e7eb",
+                }}
                 startAdornment={
                   <AccountCircleIcon
                     className={`${
@@ -204,7 +208,11 @@ const Contact = () => {
                 value={state.email}
                 error={errors.email}
                 onChange={updateStateHandler}
-                className="text-gray-200 rounded-3xl col-span-2 lg:col-span-1 bg-gray-800"
+                className="col-span-2 lg:col-span-1 bg-gray-800"
+                sx={{
+                  borderRadius: "1.5rem",
+                  color: "#e5e7eb",
+                }}
                 startAdornment={
                   <AlternateEmailIcon
                     className={`${
@@ -221,7 +229,7 @@ const Contact = () => {
                   value={state.message}
                   onChange={updateStateHandler}
                   placeholder="Your message"
-                  className="bg-transparent w-full h-200 pt-1 px-1 outline-none"
+                  className="bg-transparent w-full h-200 pb-1 px-1 outline-none"
                 />
               </div>
               <div className="col-span-2">

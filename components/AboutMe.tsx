@@ -42,10 +42,12 @@ const AboutMe = () => {
               </MuiButton>
             </div>
             <div className="mx-6 max-w-xs px-2 lg:px-0 lg:max-w-max lg:mx-0 lg:ml-8">
-              <p className="uppercase text-sm md:text-lg mb-2">HI THERE 👋!</p>
+              <p className="uppercase text-sm md:text-lg mb-2 mt-6 md:mt-0">
+                HI THERE 👋!
+              </p>
               <h1 className="mt-2 mb-3 text-lg sm:text-2xl md:text-3xl font-bold uppercase flex items-center justify-start">
                 I&apos;m{" "}
-                <span className="text-indigo-500 ml-1">
+                <span className="text-indigo-500 ml-1 block">
                   <Typewriter
                     onInit={(typewriter) => {
                       me.jobTitleParts.forEach((p) => {

@@ -62,7 +62,7 @@ export const SocialIcon: React.FC<{ id: string; className?: string }> = ({
   if (!id) throw new Error("ContactId is required");
   let Icon = SOCIAL_ICONS[id as SocialIconId];
   if (!Icon) throw new Error(`'${id}' doesn't have any icon`);
-  return <Icon className={className} />;
+  return <Icon className={className} color="primary" />;
 };
 export const DEV_TOOLS: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;

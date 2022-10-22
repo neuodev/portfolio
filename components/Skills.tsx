@@ -46,7 +46,13 @@ const Skills = () => {
             >
               <Button
                 variant="outlined"
-                className=" group border-transparent group-hover:border-indigo-500 rounded-full w-20 h-20 transition-colors duration-200"
+                className="group border-transparent group-hover:border-indigo-500 transition-colors duration-200"
+                sx={{
+                  width: "5rem",
+                  height: "5rem",
+                  borderRadius: "50%",
+                  borderColor: "transparent",
+                }}
               >
                 <Logo
                   id={tech.techId}
