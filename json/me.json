@@ -190,26 +190,60 @@
       ]
     },
     {
-      "thumbnail": "/images/e-commerce-1.png",
+      "thumbnail": "/images/wallet/wallet_1.png",
       "name": "Wallet Ecommerce",
       "description": [
         "E-Commerce Platform that gives the client a good shopping experience with features like shopping cart, Wishlist, search, advanced filters, checkout, payment, REST API, Auth.",
         "Built using React.js + Redux, Tailwindcss, Node.js, Express.js, Mongoose.js."
       ],
-      "techStack": ["react", "redux", "tailwind", "node", "mongodb", "docker"],
+      "techStack": [
+        "js",
+        "ts",
+        "react",
+        "redux",
+        "tailwind",
+        "mui",
+        "node",
+        "mongodb",
+        "docker"
+      ],
       "repo": "https://github.com/AhmedIbrahim336/wallet",
       "live": "https://walletecommerce.herokuapp.com/",
       "screenshots": [
         {
-          "path": "/images/e-commerce-1.png",
+          "path": "/images/wallet/wallet_1.png",
           "description": null
         },
         {
-          "path": "/images/e-commerce-2.png",
+          "path": "/images/wallet/wallet_2.png",
           "description": null
         },
         {
-          "path": "/images/e-commerce-3.png",
+          "path": "/images/wallet/wallet_3.png",
+          "description": null
+        },
+        {
+          "path": "/images/wallet/wallet_4.png",
+          "description": null
+        },
+        {
+          "path": "/images/wallet/wallet_5.png",
+          "description": null
+        },
+        {
+          "path": "/images/wallet/wallet_6.png",
+          "description": null
+        },
+        {
+          "path": "/images/wallet/wallet_7.png",
+          "description": null
+        },
+        {
+          "path": "/images/wallet/wallet_8.png",
+          "description": null
+        },
+        {
+          "path": "/images/wallet/wallet_9.png",
           "description": null
         }
       ]
