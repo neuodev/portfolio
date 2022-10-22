@@ -249,26 +249,37 @@
       ]
     },
     {
-      "thumbnail": "/images/homepress-1.jpg",
-      "name": "HomePress",
+      "thumbnail": "/images/connexease/conn_4.png",
+      "name": "Connexease",
       "description": [
-        "Real E-State Platform with Advanced Search to Help visitors find the right property by letting them set various search criteria such as size and price range. Advantages: Dewing on maps, Gallery Images, powerful filters, Saved Properties and 100% Mobile Ready",
-        "Built using GraphQl, Apollo client , Apollo server, React.js, Node.js, MongoDB"
+        "Connexease is a real-time multichannel messaging system with more than 700 million messages. It connects agencies with their customers."
       ],
-      "techStack": ["graphql", "apollo", "react", "node", "mongodb"],
-      "repo": "https://github.com/AhmedIbrahim336/homepress",
-      "live": "https://homepress101.herokuapp.com/",
+      "techStack": [
+        "js",
+        "ts",
+        "react",
+        "node",
+        "python",
+        "django",
+        "postgres"
+      ],
+      "repo": "https://github.com/connexease",
+      "live": "https://connexease.com/en/home/",
       "screenshots": [
         {
-          "path": "/images/homepress-1.jpg",
+          "path": "/images/connexease/conn_1.png",
           "description": null
         },
         {
-          "path": "/images/homepress-2.jpg",
+          "path": "/images/connexease/conn_2.png",
           "description": null
         },
         {
-          "path": "/images/homepress-3.jpg",
+          "path": "/images/connexease/conn_3.png",
+          "description": null
+        },
+        {
+          "path": "/images/connexease/conn_4.png",
           "description": null
         }
       ]
@@ -302,27 +313,6 @@
         },
         {
           "path": "/images/chat-app-3.png",
-          "description": null
-        }
-      ]
-    },
-    {
-      "thumbnail": "/images/sorting-visualizer-1.png",
-      "name": "Sorting Visualizier",
-      "description": [
-        "Program made with React and Material-UI for visualizing sorting algorithms. I built this application because I was fascinated by sorting algorithms, and I wanted to visualize them in action. Features: Prev and next buttons to control the steps, custom array sizes, custom sorting speed.",
-        "Applying Heap Sort, Insertion Sort, Selection Sort, Quick Sort, Merge Sort, Bubble Sort"
-      ],
-      "techStack": ["js", "react", "redux", "node"],
-      "repo": "https://github.com/AhmedIbrahim336/sorting-visualizer",
-      "live": "https://eloquent-swirles-49a9f8.netlify.app/",
-      "screenshots": [
-        {
-          "path": "/images/sorting-visualizer-1.png",
-          "description": null
-        },
-        {
-          "path": "/images/sorting-visualizer-2.png",
           "description": null
         }
       ]

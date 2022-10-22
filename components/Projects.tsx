@@ -31,7 +31,7 @@ const Projects = () => {
         }
       />
       <div className="container mx-auto">
-        <div className="grid grid-cols-12 gap-3 lg:gap-1 max-w-screen-lg mx-auto min-h-700 p-5">
+        <div className="grid grid-cols-12 gap-2 max-w-screen-lg mx-auto min-h-700 p-5">
           {me.projects.map((project) => (
             <Project
               onSelect={() => setCurrProject(project)}
