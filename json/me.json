@@ -196,7 +196,7 @@
         "E-Commerce Platform that gives the client a good shopping experience with features like shopping cart, Wishlist, search, advanced filters, checkout, payment, REST API, Auth.",
         "Built using React.js + Redux, Tailwindcss, Node.js, Express.js, Mongoose.js."
       ],
-      "techStack": ["react", "redux", "tailwind", "node", "mongodb"],
+      "techStack": ["react", "redux", "tailwind", "node", "mongodb", "docker"],
       "repo": "https://github.com/AhmedIbrahim336/wallet",
       "live": "https://walletecommerce.herokuapp.com/",
       "screenshots": [
