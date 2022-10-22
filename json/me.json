@@ -1,6 +1,6 @@
 {
   "name": "Ahmed Ibrahim",
-  "photo": "/images/ahmed.jpg",
+  "photo": "/images/me-1.jpeg",
   "resume": "/Ahmed Ibrahim - Software Engineer.pdf",
   "jobTitle": "Full Stack Web Developer",
   "jobTitleParts": ["A full stack engineer"],
@@ -44,39 +44,48 @@
         "about": "EMURGO is the official commercial arm and a founding entity of the Cardano blockchain."
       },
       "period": "Jul 2020 – Present",
-      "jobTitle": "Full Stack Web Developer",
+      "jobTitle": "Full Stack Developer",
       "roles": [
-        "EMURGO is one of the companies behind the Cardano Project and the company behind Yoroi Wallet chrome extension.",
-        "Yoroi Wallet is an Open-Source Project on GitHub. It is used by over 500K users.",
-        "We moved from 200K to 500K users by Scaling the backend API to serve our 1+ million users on both the extension and the app, add completely new interactive UI and extend the Cardano ecosystem by introducing the dApp Connector(Metamask like) that will enable developers from building dApps and allow users from interacting with it."
+        "Develop public API to enable other developers to build their own dApps on top of Cardano and to serve more than 1 million active users.",
+        "Tackle performance bottlenecks related to databases and memory size.",
+        "Improve the front-end experience by implementing an entirely new revamped theme.",
+        "Wrote end-to-end and unit tests to ensure app integrity.",
+        "Review PRs and make sure they follow the code standards and best practices.",
+        "Onboard new developers and help them fit into the team."
       ]
     },
     {
       "company": {
         "name": "Connexease",
         "website": "https://connexease.com/en/home/",
-        "about": "Connexease makes connecting with customers on all their preferred platforms more efficient and easier than ever."
+        "about": "Connexease is a real-time multichannel messaging system with more than 700 million messages. It connects agencies with their customers."
       },
       "period": "Aug 2019 – Jul 2020",
-      "jobTitle": "Full Stack Web Developer",
+      "jobTitle": "Full Stack Developer",
       "roles": [
-        "Connexease is a real-time multichannel messaging system with more than 700 million messages. It connects agencies with their customers.",
-        "Allow our customers to be more connected to their users by integrating more platforms like WhatsApp, Instagram, and Telegram.",
-        "The messaging system was built on top of React.js on the frontend and Django/PostgreSQL on the backend."
+        "Created a messaging system on top of ReactJS on the front and Django/PostgreSQL on the backend.",
+        "Created data collection pipelines then analyzed and displayed them in an easy-to-read graph.",
+        "Integrated 3rd party platforms including Telegram and Instagram into our messaging system.",
+        "Maintained existing integrations including WhatsApp, Twitter, and live chat.",
+        "Identified and assessed new technologies before implementation.",
+        "Technologies: JavaScript/TypeScript, ReactJS, Python, Django and PostgreSQL."
       ]
     },
     {
       "company": {
-        "name": "Spherium Finance",
+        "name": "Spherium",
         "website": "https://spherium.finance/",
-        "about": "Diversifying the DeFi ecosystem by introducing an all-inclusive Cross-Chain DeFi Protocol"
+        "about": "The Gateway to a cross-chain interoperable ecosystem that lets users bridge tokens on multiple chains."
       },
       "period": "Dec 2018 – Aug 2019",
-      "jobTitle": "Full Stack Web Developer",
+      "jobTitle": "Full Stack Developer",
       "roles": [
-        "Leading fintech platform in the decentralized financial sector.",
-        "Working as a part of a team to develop a cross-chain swapping platform using web technologies like React.js/Redux and backend tech like Node.js and MongoDB.",
-        "Building software as a service (SaaS) to enable our users from moving their tokens between different chains."
+        "Founding member of a team to develop a cross-chain bridge platform",
+        "Build the required infrastructure for a transaction queue (API, Cron Job, Scheduler).",
+        "Integrated new 12 blockchains that allowed users to easily move tokens between them.",
+        "Reduced average request time for most important endpoints from 12s to 2s (6x faster).",
+        "Onboarding new developers and helping them fit into the team.",
+        "Technologies: JavaScript/TypeScript, ReactJS, NodeJS, MongoDB and Cloud (AWS)"
       ]
     }
   ],

@@ -5,7 +5,7 @@ import TimelineSeparator from "@mui/lab/TimelineSeparator";
 import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, Link } from "@mui/material";
 import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Tooltip from "./common/Tooltip";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -38,7 +38,7 @@ const Experience = () => {
               <TimelineContent className="mb-4">
                 <Box className="flex items-center justify-start mt-1 mb-4">
                   <CalendarTodayIcon className="text-lg text-indigo-500" />
-                  <Typography className="ml-2" variant="caption">
+                  <Typography className="ml-2" variant="caption" lineHeight={1}>
                     {ex.period}
                   </Typography>
                 </Box>
@@ -52,17 +52,25 @@ const Experience = () => {
                     </Typography>
                   }
                 >
-                  <Typography className="mb-3 text-left text-xl lg:text-2xl">
-                    <span>{ex.company.name} </span>- {ex.jobTitle}
+                  <Typography
+                    href={ex.company.website}
+                    target="_blank"
+                    component={Link}
+                    className="mb-3 text-left text-xl lg:text-2xl block"
+                  >
+                    {ex.company.name} - {ex.jobTitle}
                   </Typography>
                 </Tooltip>
-                {ex.roles.map((role, idx) => (
-                  <Box key={idx * 10} className="text-left">
-                    <p className="font-thin mb-3 leading-relaxed text-sm lg:text-base">
+                <ul>
+                  {ex.roles.map((role, idx) => (
+                    <li
+                      key={idx * 10}
+                      className="text-left list-decimal list-inside font-thin mb-3 leading-relaxed text-sm lg:text-base"
+                    >
                       {role}
-                    </p>
-                  </Box>
-                ))}
+                    </li>
+                  ))}
+                </ul>
               </TimelineContent>
             </TimelineItem>
           );

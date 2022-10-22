@@ -30,7 +30,7 @@ const Main: NextPage = () => {
         <meta property="og:locale" content="en_US" />
       </Head>
       <div className="bg-black w-full">
-        <Home />
+        {/* <Home /> */}
         <AboutMe />
         <Projects />
         <Skills />

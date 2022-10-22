@@ -22,7 +22,7 @@ const AboutMe = () => {
 
         <div className="max-w-screen-lg mx-auto min-h-700 p-5">
           <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
-            <div className="relative shrink-0 h-300 w-300 md:w-400 md:h-400 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer">
+            <div className="relative shrink-0 h-300 w-300 md:w-400 md:h-400 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer ring-4 ring-indigo-500">
               <MuiButton
                 sx={{
                   minWidth: "unset",
@@ -71,7 +71,6 @@ const AboutMe = () => {
               </Button>
             </div>
           </div>
-          <Experience />
         </div>
       </Element>
     </div>

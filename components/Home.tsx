@@ -17,7 +17,7 @@ const Home = () => {
       <div className="relative z-10 flex flex-col lg:flex-row items-center justify-center min-h-screen min-w-screen p-5">
         <div className="ring-8 ring-gray-600 shadow-2xl rounded-full overflow-hidden lg:mr-12 mb-12 lg:mb-0 relative w-64 h-64 md:w-80 md:h-80 bg-transparent">
           <Image
-            src="/images/ahmed.jpg"
+            src={me.photo}
             alt={me.name}
             layout="fill"
             className="z-10 shadow-2xl w-64 h-64 md:w-80 md:h-80 inline-block overflow-hidden"
