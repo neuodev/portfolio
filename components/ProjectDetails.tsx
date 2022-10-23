@@ -12,9 +12,10 @@ import CancelIcon from "@mui/icons-material/Cancel";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import PublicIcon from "@mui/icons-material/Public";
 import { Logo } from "./icons";
-import me from "../json/me.json";
-import { Typography, Skeleton, IconButton } from "@mui/material";
+import { Typography, Skeleton, IconButton, Box } from "@mui/material";
 import Tooltip from "./common/Tooltip";
+import me from "../json/me.json";
+import theme from "../theme";
 
 export type TechName = keyof typeof me.tech;
 const visit = (link: string) => window.open(link);
@@ -29,7 +30,7 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          effect={"cards"}
+          effect="cards"
           grabCursor
           loop={true}
           modules={[EffectCards]}
@@ -64,7 +65,14 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
         >
           {project.name}
         </a>
-        <div className="hidden md:block">
+        <Box
+          sx={{
+            display: "none",
+            [theme.breakpoints.up("md")]: {
+              display: "block",
+            },
+          }}
+        >
           <Button
             iconStart={<CancelIcon />}
             variant="secondary"
@@ -73,9 +81,15 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
           >
             Close
           </Button>
-        </div>
+        </Box>
 
-        <IconButton onClick={onClose} className="block md:hidden p-0">
+        <IconButton
+          onClick={onClose}
+          sx={{
+            display: "flex",
+            [theme.breakpoints.up("md")]: { display: "none" },
+          }}
+        >
           <CancelIcon className="text-indigo-500" />
         </IconButton>
       </div>
