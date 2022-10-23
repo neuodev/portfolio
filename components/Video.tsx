@@ -47,7 +47,7 @@ const Video: React.FC<{ video: VideoType }> = ({ video }) => {
       </Tooltip>
       <Button
         iconStart={<YouTubeIcon />}
-        className="mt-3 lg:mt-8"
+        className="mt-3 lg:mt-4"
         variant="primary"
       >
         Watch

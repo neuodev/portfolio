@@ -90,7 +90,26 @@
     }
   ],
   "content": {
+    "videosCutOff": 4,
     "videos": [
+      {
+        "title": "Why should you have your own server?",
+        "thumbnail": "/thumbnails/why-should-you-have-your-own-server.png",
+        "description": "In this video I am taking about why me and you should have our own server. Server at not just made for production! We can do more with it!",
+        "videoId": "F4FSwM1oxhw"
+      },
+      {
+        "title": "Why should you learn rust?",
+        "thumbnail": "/thumbnails/why-should-you-learn-rust.png",
+        "description": "In this video I am sharing my personal reason for learning Rust why should everyone else should consider learning Rust",
+        "videoId": "XJf615CfJXE"
+      },
+      {
+        "title": "Vim Masterclas course review ",
+        "thumbnail": "/thumbnails/vim-mastery-course-review.png",
+        "description": "In this video I am reviewing the famouse course from Udemy about the tool that changed how I write my code",
+        "videoId": "6gHXQ8XE0J8"
+      },
       {
         "title": "Bash mastery class course review",
         "thumbnail": "/thumbnails/bash-course-review.png",
@@ -132,24 +151,6 @@
         "thumbnail": "/thumbnails/how-to-set-the-right-goals.png",
         "description": "In this video I am taking about my own way for setting my goals",
         "videoId": "m6-1Mi0YkEo"
-      },
-      {
-        "title": "Vim Masterclas course review ",
-        "thumbnail": "/thumbnails/vim-mastery-course-review.png",
-        "description": "In this video I am reviewing the famouse course from Udemy about the tool that changed how I write my code",
-        "videoId": "6gHXQ8XE0J8"
-      },
-      {
-        "title": "Why should you have your own server?",
-        "thumbnail": "/thumbnails/why-should-you-have-your-own-server.png",
-        "description": "In this video I am taking about why me and you should have our own server. Server at not just made for production! We can do more with it!",
-        "videoId": "F4FSwM1oxhw"
-      },
-      {
-        "title": "Why should you learn rust?",
-        "thumbnail": "/thumbnails/why-should-you-learn-rust.png",
-        "description": "In this video I am sharing my personal reason for learning Rust why should everyone else should consider learning Rust",
-        "videoId": "XJf615CfJXE"
       }
     ],
     "posts": null

@@ -28,10 +28,10 @@ const Button: NextPage<{
       className={`px-8 h-12 ${
         variant === "secondary"
           ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
-          : "bg-indigo-500 text-white hover:bg-indigo-600"
+          : ` ${!disabled && "bg-indigo-500"} text-white hover:bg-indigo-600`
       } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-medium relative overflow-hidden bg-slide flex items-center justify-center tracking-widest ${
         disabled &&
-        "bg-gray-800 cursor-not-allowed hover:bg-gray-900 hover:ring-gray-400"
+        "bg-gray-900 cursor-not-allowed hover:bg-gray-900 hover:ring-gray-400"
       } ${variant} ${className || ""}`}
     >
       {iconStart && <span className="inline-block mr-3">{iconStart}</span>}

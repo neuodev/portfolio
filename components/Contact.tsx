@@ -234,6 +234,7 @@ const Contact = () => {
               </div>
               <div className="col-span-2">
                 <Button
+                  variant="primary"
                   disabled={!isCurrentStateValid() || sendEmail.loading}
                   iconStart={sendEmail.loading ? undefined : <SendIcon />}
                 >
