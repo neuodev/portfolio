@@ -285,34 +285,50 @@
       ]
     },
     {
-      "thumbnail": "/images/chat-app-1.png",
-      "name": "Connect",
+      "thumbnail": "/images/receptor/re_1.png",
+      "name": "Receptor",
       "description": [
-        "A social chat  app focused on real time messaging. Utilized React + Redux to render modal page forms that provide users an intuitive UI with components easy to maintain. Features: Register an account and login, save data, join an existing group, or create your own group to communicate with everyone, chat privately with anyone and add them as friends, update user info, fully customizable, Easy to use, easy to use",
-        "Built using JavaScript, React.js + Redux, socket.io, Express, MongoDB"
+        "Real-time messaging app. Available as a website and as MacOS, Linux, and Windows application."
       ],
       "techStack": [
         "js",
+        "ts",
         "react",
         "redux",
+        "mui",
         "node",
+        "docker",
         "socketio",
         "express",
-        "mongodb"
+        "postgres",
+        "rust",
+        "tauri"
       ],
-      "repo": "https://github.com/AhmedIbrahim336/connect",
-      "live": "https://connectchatapplication.herokuapp.com/",
+      "repo": "https://github.com/AhmedIbrahim336/receptor",
+      "live": "#",
       "screenshots": [
         {
-          "path": "/images/chat-app-1.png",
+          "path": "/images/receptor/re_1.png",
           "description": null
         },
         {
-          "path": "/images/chat-app-2.png",
+          "path": "/images/receptor/re_2.png",
           "description": null
         },
         {
-          "path": "/images/chat-app-3.png",
+          "path": "/images/receptor/re_3.png",
+          "description": null
+        },
+        {
+          "path": "/images/receptor/re_4.png",
+          "description": null
+        },
+        {
+          "path": "/images/receptor/re_5.png",
+          "description": null
+        },
+        {
+          "path": "/images/receptor/re_6.png",
           "description": null
         }
       ]
