@@ -11,6 +11,7 @@
 html {
   scroll-behavior: smooth;
   line-height: unset;
+  background-color: #000000;
 }
 
 .overlay {
