@@ -2,9 +2,6 @@ import React from "react";
 import Modal from "./common/Modal";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css";
-import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
 import { IProject } from "./Project";
 import Button from "./common/Button";
@@ -16,6 +13,9 @@ import { Typography, Skeleton, IconButton, Box } from "@mui/material";
 import Tooltip from "./common/Tooltip";
 import me from "../json/me.json";
 import theme from "../theme";
+import "swiper/css";
+import "swiper/css";
+import "swiper/css/effect-cards";
 
 export type TechName = keyof typeof me.tech;
 const visit = (link: string) => window.open(link);
@@ -26,7 +26,7 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
 }) => {
   return (
     <Modal open onClose={onClose}>
-      <div className="mx-6">
+      <div className="mx-6 relative">
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
@@ -50,6 +50,12 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
                   objectFit="cover"
                   className="rounded-xl overflow-hidden"
                 />
+
+                {s.description && (
+                  <p className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 text-white bg-indigo-500 px-4 py-2">
+                    {s.description}
+                  </p>
+                )}
               </div>
             </SwiperSlide>
           ))}
@@ -94,13 +100,13 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
         </IconButton>
       </div>
 
-      <div className="my-4 md:my-8 leading-relaxed">
+      <ul className="mb-4 mt-3 md:mb-8 md:mt-6 leading-relaxed">
         {project.description.map((d, idx) => (
-          <p key={idx} className="text-sm md:text-base">
+          <li key={idx} className="text-sm md:text-base list-disc list-inside">
             {d}
-          </p>
+          </li>
         ))}
-      </div>
+      </ul>
 
       <div className="grid grid-cols-12 gap-4">
         {project.techStack.map((tech: string) => {
@@ -132,13 +138,15 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
       </div>
 
       <div className="flex flex-row my-8">
-        <Button
-          onClick={() => visit(project.live)}
-          iconStart={<PublicIcon />}
-          className="mr-4 w-36"
-        >
-          Live
-        </Button>
+        {project.live && (
+          <Button
+            onClick={() => visit(project.live)}
+            iconStart={<PublicIcon />}
+            className="mr-4 w-36"
+          >
+            Live
+          </Button>
+        )}
         <Button onClick={() => visit(project.repo)} iconStart={<GitHubIcon />}>
           GitHub
         </Button>

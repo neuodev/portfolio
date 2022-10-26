@@ -1,10 +1,10 @@
 {
   "name": "Ahmed Ibrahim",
   "photo": "/images/me-opt.png",
-  "resume": "/Ahmed Ibrahim - Software Engineer.pdf",
+  "resume": "/Ahmed Ibrahim - Full Stack Developer.pdf",
   "jobTitle": "Full Stack Developer",
   "jobTitleParts": ["A Full Stack Developer", "Ahmed Ibrahim"],
-  "aboutme": "I am a software engineer with a huge interest in Machine Learning and data-driven decision making. My experience ranges from working on Real-Time messaging systems that can handle thousands of messages per day to scale open-source projects to serve more than 1+ million active users.",
+  "aboutme": "Passionate, high-performing Full Stack Developer with more than 3 years of experience. My experience ranges from working on real-time messaging systems that can handle thousands of daily messages to scale opensource projects with more than 1+ million active users. Currently seeking a role as a Full-Stack Developer at a progressive organization, where applied knowledge and self-education skills meet.",
   "github": "https://github.com/AhmedIbrahim336",
   "url": "http://ahmedibrahim.dev/",
   "social": [
@@ -28,7 +28,7 @@
     {
       "label": "Email",
       "id": "email",
-      "value": "ahmedibarhim556@gmail.com"
+      "value": "me@ahmedibrahim.dev"
     },
     {
       "label": "Phone",
@@ -47,7 +47,8 @@
       "jobTitle": "Full Stack Developer",
       "roles": [
         "Develop public API to enable other developers to build their own dApps on top of Cardano and to serve more than 1 million active users.",
-        "Tackle performance bottlenecks related to databases and memory size.",
+        "Tackle performance bottlenecks related to databases and memory leaks.",
+        "Manage the software development lifecycle (Planning, Design, Development, QA).",
         "Improve the front-end experience by implementing an entirely new revamped theme.",
         "Wrote end-to-end and unit tests to ensure app integrity.",
         "Review PRs and make sure they follow the code standards and best practices.",
@@ -63,11 +64,11 @@
       "period": "Aug 2019 – Jul 2020",
       "jobTitle": "Full Stack Developer",
       "roles": [
-        "Created a messaging system on top of ReactJS on the front and Django/PostgreSQL on the backend.",
-        "Created data collection pipelines then analyzed and displayed them in an easy-to-read graph.",
-        "Integrated 3rd party platforms including Telegram and Instagram into our messaging system.",
-        "Maintained existing integrations including WhatsApp, Twitter, and live chat.",
+        "Created a real-time multichannel messaging system to connect agencies with their customers",
+        "Integrated 3rd party messaging platforms like Telegram and Instagram while maintaining existing integrations for WhatsApp and Twitter.",
+        "Created data collection pipelines then analyzed and displayed them in easy-to-read graphs.",
         "Identified and assessed new technologies before implementation.",
+        "Migrated the services to use up-to-date technology standers.",
         "Technologies: JavaScript/TypeScript, ReactJS, Python, Django and PostgreSQL."
       ]
     },
@@ -161,8 +162,8 @@
       "name": "Yoroi Wallet",
       "description": [
         "A simple, secure and fast Cardano ADA wallet.",
-        "Yoroi allows users to manage Ada in their browser. It is a lightweight wallet that launches quickly, allowing users to start sending or receiving Ada in minutes.",
-        "The Yoroi browser extension allows users to control their funds with ease, without syncing to the blockchain. Users can easily import their Ada from Daedalus into their Yoroi wallet. "
+        "Yoroi allows users to manage ADA in their browser.",
+        "It is a lightweight wallet that launches quickly, allowing users to start sending or receiving ADA in minutes."
       ],
       "techStack": ["js", "react", "rust", "wasm", "mui", "node", "postgres"],
       "repo": "https://github.com/Emurgo/yoroi-frontend",
@@ -170,23 +171,23 @@
       "screenshots": [
         {
           "path": "/images/yoroi/yoroi_1.png",
-          "description": null
+          "description": "Create or Restor your Cardano wallet"
         },
         {
           "path": "/images/yoroi/yoroi_2.png",
-          "description": null
+          "description": "View your funds and track you rewards"
         },
         {
           "path": "/images/yoroi/yoroi_3.png",
-          "description": null
+          "description": "View your transactions history offline"
         },
         {
           "path": "/images/yoroi/yoroi_4.png",
-          "description": null
+          "description": "Interact with other dApps"
         },
         {
           "path": "/images/yoroi/yoroi_5.png",
-          "description": null
+          "description": "Manage your wallet addresses"
         }
       ]
     },
@@ -194,8 +195,8 @@
       "thumbnail": "/images/wallet/wallet_1.png",
       "name": "Wallet Ecommerce",
       "description": [
-        "E-Commerce Platform that gives the client a good shopping experience with features like shopping cart, Wishlist, search, advanced filters, checkout, payment, REST API, Auth.",
-        "Built using React.js + Redux, Tailwindcss, Node.js, Express.js, Mongoose.js."
+        "A mobile friendly, production ready and fully featured e-commerce website.",
+        "Browse and buy projects"
       ],
       "techStack": [
         "js",
@@ -209,43 +210,43 @@
         "docker"
       ],
       "repo": "https://github.com/AhmedIbrahim336/wallet",
-      "live": "https://walletecommerce.herokuapp.com/",
+      "live": null,
       "screenshots": [
         {
           "path": "/images/wallet/wallet_1.png",
-          "description": null
+          "description": "View latest & featured products"
         },
         {
           "path": "/images/wallet/wallet_2.png",
-          "description": null
+          "description": "View product details"
         },
         {
           "path": "/images/wallet/wallet_3.png",
-          "description": null
+          "description": "Manage your wishlist"
         },
         {
           "path": "/images/wallet/wallet_4.png",
-          "description": null
+          "description": "View cart"
         },
         {
           "path": "/images/wallet/wallet_5.png",
-          "description": null
+          "description": "Fill your shipping address"
         },
         {
           "path": "/images/wallet/wallet_6.png",
-          "description": null
+          "description": "View your cart"
         },
         {
           "path": "/images/wallet/wallet_7.png",
-          "description": null
+          "description": "Pay using PayPal"
         },
         {
           "path": "/images/wallet/wallet_8.png",
-          "description": null
+          "description": "Track your order"
         },
         {
           "path": "/images/wallet/wallet_9.png",
-          "description": null
+          "description": "View your orders"
         }
       ]
     },
@@ -289,7 +290,9 @@
       "thumbnail": "/images/receptor/re_1.png",
       "name": "Receptor",
       "description": [
-        "Real-time messaging app. Available as a website and as MacOS, Linux, and Windows application."
+        "Real-time messaging app.",
+        "Send and receive messages with friends and groups",
+        "Available as a website and as MacOS, Linux, and Windows application."
       ],
       "techStack": [
         "js",
@@ -306,31 +309,31 @@
         "tauri"
       ],
       "repo": "https://github.com/AhmedIbrahim336/receptor",
-      "live": "#",
+      "live": null,
       "screenshots": [
         {
           "path": "/images/receptor/re_1.png",
-          "description": null
+          "description": "Message your friends in real-time"
         },
         {
           "path": "/images/receptor/re_2.png",
-          "description": null
+          "description": "Add, remove, and accept friends"
         },
         {
           "path": "/images/receptor/re_3.png",
-          "description": null
+          "description": "Chat in groups with your friends"
         },
         {
           "path": "/images/receptor/re_4.png",
-          "description": null
+          "description": "Login to your account"
         },
         {
           "path": "/images/receptor/re_5.png",
-          "description": null
+          "description": "Create groups with your best friends"
         },
         {
           "path": "/images/receptor/re_6.png",
-          "description": null
+          "description": "See if your friends active or not!"
         }
       ]
     }
