@@ -1,5 +1,4 @@
 import type { NextPage } from "next";
-import Home from "../components/Home";
 import Projects from "../components/Projects";
 import { ThemeProvider } from "@mui/material";
 import theme from "../theme";
@@ -10,6 +9,7 @@ import AboutMe from "../components/AboutMe";
 import Head from "next/head";
 import me from "../json/me.json";
 import Experience from "../components/Experience";
+import Introduction from "../components/Introduction";
 
 const Main: NextPage = () => {
   const header = `${me.name} - ${me.jobTitle}`;
@@ -32,6 +32,7 @@ const Main: NextPage = () => {
       </Head>
       <div className="bg-black w-full">
         <AboutMe />
+        <Introduction />
         <Experience />
         <Projects />
         <Skills />
