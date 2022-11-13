@@ -7,13 +7,13 @@ export interface IProject {
   thumbnail: string;
   name: string;
   description: Array<string>;
+  techStack: Array<string>;
   repo: string;
-  live: string;
+  live: string | null;
   screenshots: Array<{
     path: string;
     description: string | null;
   }>;
-  techStack: Array<string>;
 }
 
 const ImageButton = styled(ButtonBase)(({ theme }) => ({

@@ -18,7 +18,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 export type TechName = keyof typeof me.tech;
-const visit = (link: string) => window.open(link);
+const visit = (link: string | null) => link && window.open(link);
 
 const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
   project,
