@@ -138,10 +138,8 @@ const Contact = () => {
       <div className="max-w-xl lg:max-w-screen-lg mx-auto grid grid-cols-12 gap-5 p-5">
         <div className="col-span-12 lg:col-span-4">
           {me.contact.map((c) => (
-            <div key={c.id} className="mb-5">
-              <p className="mb-1.5 text-gray-400 capitalize text-sm">
-                {c.label}
-              </p>
+            <div key={c.id} className="mb-5 text-gray-300">
+              <p className="mb-1.5 capitalize text-sm">{c.label}</p>
               <div className="flex items-center justify-start">
                 <SocialIcon id={c.id} className="fill-indigo-500" />
                 <p className="ml-2">{c.value}</p>
@@ -149,7 +147,7 @@ const Contact = () => {
             </div>
           ))}
 
-          <p className="mt-4 mb-1.5 text-gray-400 text-sm">Socal Profiles</p>
+          <p className="mt-4 mb-1.5 text-gray-300 text-sm">Socal Profiles</p>
           <div className="flex items-center justify-start">
             {me.social.map((s) => (
               <Tooltip
@@ -176,7 +174,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-span-12 mt-4 lg:mt-0 lg:col-span-8">
-          <p className="text-gray-100 leading-relaxed">
+          <p className="text-gray-300 leading-relaxed">
             If you have any suggestions, projects, or even you want to say
             Hello.. please fill out the form below and I will reply shortly.
           </p>
@@ -279,7 +277,7 @@ const Contact = () => {
               outline: "none",
             },
           }}
-          className="text-gray-200 border-2 border-gray-700 rounded-lg"
+          className="text-gray-300 border-2 border-gray-700 rounded-lg"
         >
           <Typography
             className="mb-2"

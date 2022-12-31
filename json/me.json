@@ -101,6 +101,12 @@
     "videosCutOff": 4,
     "videos": [
       {
+        "title": "The Ultimate Guide to JS \"This\" Keyword",
+        "thumbnail": "/thumbnails/this-keyword.png",
+        "description": "In this video, I am talking about one of the confusing topics in JavaScript.  I discussed where the confusing natures of the \"this\" keyword come from and various use cases.",
+        "videoId": "0gz0Wmi1gEg"
+      },
+      {
         "title": "Why should you have your own server?",
         "thumbnail": "/thumbnails/why-should-you-have-your-own-server.png",
         "description": "In this video I am taking about why me and you should have our own server. Server at not just made for production! We can do more with it!",
@@ -113,7 +119,7 @@
         "videoId": "XJf615CfJXE"
       },
       {
-        "title": "Vim Masterclas course review ",
+        "title": "Vim Masterclas course review",
         "thumbnail": "/thumbnails/vim-mastery-course-review.png",
         "description": "In this video I am reviewing the famouse course from Udemy about the tool that changed how I write my code",
         "videoId": "6gHXQ8XE0J8"

@@ -11,7 +11,7 @@ import { Element } from "react-scroll";
 
 const AboutMe = () => {
   return (
-    <div className="min-h-screen text-gray-100 flex items-center justify-center">
+    <div className="min-h-screen text-gray-300 flex items-center justify-center">
       <Element name="aboutme" className="relative z-10">
         <div className="max-w-screen-lg mx-auto min-h-700 p-5 flex items-center justify-center flex-col ">
           <div className="flex flex-col md:flex-row items-center md:items-start justify-center">

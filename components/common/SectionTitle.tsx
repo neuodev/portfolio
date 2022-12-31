@@ -11,11 +11,11 @@ const SectionTitle: React.FC<{
         {prefix} <span className="text-indigo-500">{focus}</span>
       </h1>
       <p className="mt-5 flex items-center justify-center">
-        <span className="w-9 h-0.5 bg-indigo-500 inline-block"></span>
+        <span className="w-9 h-0.5 bg-indigo-500 inline-block" />
         <span className="mx-1 lg:mx-4 inline-block uppercase text-xs lg:text-base text-center">
           {subtitle}
         </span>
-        <span className="w-9 h-0.5 bg-indigo-500 inline-block"></span>
+        <span className="w-9 h-0.5 bg-indigo-500 inline-block" />
       </p>
     </div>
   );

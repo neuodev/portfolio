@@ -26,6 +26,9 @@ module.exports = {
       },
       spacing: spaces,
       minHeight: spaces,
+      colors: {
+        dark: "#121212",
+      },
     },
   },
   plugins: [],

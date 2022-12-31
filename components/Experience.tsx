@@ -17,7 +17,7 @@ const Experience = () => {
   const isLargeScreen = useMediaQuery("(min-width: 768px)");
 
   return (
-    <div className="min-h-screen text-gray-100">
+    <div className="min-h-screen text-gray-300">
       <SectionTitle
         prefix="My"
         focus="Experience"
