@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import ButtonBase from "@mui/material/ButtonBase";
 import Typography from "@mui/material/Typography";
+import { asRemoteImgUrl } from "../utils";
 
 export interface IProject {
   thumbnail: string;
@@ -92,7 +93,11 @@ const Project: React.FC<{ project: IProject; onSelect(): void }> = ({
   return (
     <div className="col-span-12 lg:col-span-6 flex items-center justify-center w-full">
       <ImageButton onClick={onSelect} focusRipple key={project.name}>
-        <ImageSrc style={{ backgroundImage: `url(${project.thumbnail})` }} />
+        <ImageSrc
+          style={{
+            backgroundImage: `url(${asRemoteImgUrl(project.thumbnail)})`,
+          }}
+        />
         <ImageBackdrop className="MuiImageBackdrop-root" />
         <Image>
           <Typography

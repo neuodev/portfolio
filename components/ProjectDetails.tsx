@@ -16,6 +16,7 @@ import theme from "../theme";
 import "swiper/css";
 import "swiper/css";
 import "swiper/css/effect-cards";
+import { asRemoteImgUrl } from "../utils";
 
 export type TechName = keyof typeof me.tech;
 const visit = (link: string | null) => link && window.open(link);
@@ -44,7 +45,7 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
                   animation="wave"
                 />
                 <Image
-                  src={s.path}
+                  src={asRemoteImgUrl(s.path)}
                   alt={project.name}
                   layout="fill"
                   objectFit="cover"

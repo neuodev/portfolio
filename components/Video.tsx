@@ -5,6 +5,7 @@ import me from "../json/me.json";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import Tooltip from "./common/Tooltip";
 import { Typography, Skeleton } from "@mui/material";
+import { asRemoteImgUrl } from "../utils";
 
 export type VideoType = typeof me.content.videos[0];
 
@@ -18,7 +19,7 @@ const Video: React.FC<{ video: VideoType }> = ({ video }) => {
           animation="wave"
         />
         <Image
-          src={video.thumbnail}
+          src={asRemoteImgUrl(video.thumbnail)}
           layout="fill"
           className="object-cover overflow-hidden rounded-md hover:scale-110 transition-transform duration-700"
           alt={video.title}
