@@ -101,6 +101,18 @@
     "videosCutOff": 4,
     "videos": [
       {
+        "title": "But How JavaScript Actually Works ?!",
+        "thumbnail": "/thumbnails/how-js-works.png",
+        "description": "In this video, I will explain how JavaScript actually works. This includes explaining fundamental concepts in JavaScript like the Call Stack, Callback Queue, WebAPI, and Event Loop,...",
+        "videoId": "NxhkaN2klUg"
+      },
+      {
+        "title": "Fetch API Clearly Explained",
+        "thumbnail": "/thumbnails/fetch-api.png",
+        "description": "In this video, I will talk about the Fetch API and the underlying HTTP Protocol, and how the frontend interacts with the server. All of these with in-depth detailed examples to make sure you understand the concepts on a deeper level",
+        "videoId": "WLXZYM6Dk9Q"
+      },
+      {
         "title": "The Ultimate Guide to JS \"This\" Keyword",
         "thumbnail": "/thumbnails/this-keyword.png",
         "description": "In this video, I am talking about one of the confusing topics in JavaScript.  I discussed where the confusing natures of the \"this\" keyword come from and various use cases.",
