@@ -21,6 +21,7 @@ import Pandas from "./Pandas";
 import Python from "./Python";
 import ReactIcon from "./ReactIcon";
 import Redux from "./Redux";
+import Mobx from "./MobX";
 import Rust from "./Rust";
 import SASS from "./SASS";
 import Selenium from "./Selenium";
@@ -65,13 +66,14 @@ export const SocialIcon: React.FC<{
   if (!Icon) throw new Error(`'${id}' doesn't have any icon`);
   return <Icon className={className} fontSize={size} color="primary" />;
 };
-export const DEV_TOOLS: {
+export const TECH_STACK: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;
 } = {
   js: JS,
   ts: TS,
   react: ReactIcon,
   redux: Redux,
+  mobx: Mobx,
   nextjs: NextJS,
   graphql: GraphQL,
   tailwind: TailwindCSS,
@@ -114,10 +116,10 @@ export const Logo: React.FC<{ id: string; className?: string }> = ({
   id,
   className,
 }) => {
-  let DevTool = DEV_TOOLS[id];
+  let Tech = TECH_STACK[id];
 
-  if (!DevTool) throw new Error(`'${id}' logo not found`);
-  return <DevTool className={className} fill="#ffffff" />;
+  if (!Tech) throw new Error(`'${id}' logo not found`);
+  return <Tech className={className} fill="#ffffff" />;
 };
 
 Logo.defaultProps = {

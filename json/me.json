@@ -427,6 +427,11 @@
       "website": "https://redux.js.org/",
       "about": "A Predictable State Container for JS Apps"
     },
+    "mobx": {
+      "name": "MboX",
+      "website": "https://mobx.js.org/",
+      "about": "Simple, scalable state management."
+    },
     "tailwind": {
       "name": "Tailwind",
       "website": "https://tailwindcss.com/",
