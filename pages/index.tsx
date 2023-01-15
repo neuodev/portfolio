@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import type { NextPage } from "next";
 import Projects from "../components/Projects";
 import { ThemeProvider } from "@mui/material";
@@ -9,6 +10,7 @@ import AboutMe from "../components/AboutMe";
 import Head from "next/head";
 import me from "../json/me.json";
 import Experience from "../components/Experience";
+import Particles from "../components/Particles";
 
 const Main: NextPage = () => {
   const header = `${me.name} - ${me.jobTitle}`;
@@ -29,6 +31,7 @@ const Main: NextPage = () => {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Head>
+      <Particles />
       <div className="bg-dark w-full">
         <AboutMe />
         <Experience />
