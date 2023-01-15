@@ -56,7 +56,7 @@ const Skills = () => {
               >
                 <Logo
                   id={tech.techId}
-                  className="group-hover:fill-indigo-500 transition-colors duration-200"
+                  className="group-hover:fill-indigo-500 transition-colors duration-200 w-full h-full"
                 />
               </Button>
             </Tooltip>
