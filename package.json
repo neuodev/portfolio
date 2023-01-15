@@ -21,8 +21,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scroll": "^1.8.7",
+    "react-tsparticles": "^2.7.1",
     "sharp": "^0.31.1",
     "swiper": "^8.4.2",
+    "tsparticles": "^2.7.1",
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
