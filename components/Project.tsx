@@ -22,6 +22,8 @@ const ImageButton = styled(ButtonBase)(({ theme }) => ({
   height: "100%",
   width: "100%",
   color: theme.palette.primary.main,
+  borderRadius: "8px",
+  overflow: "hidden",
   "&:hover, &.Mui-focusVisible": {
     zIndex: 1,
     "& .MuiImageBackdrop-root": {
@@ -102,7 +104,7 @@ const Project: React.FC<{ project: IProject; onSelect(): void }> = ({
         <Image>
           <Typography
             component="span"
-            variant="subtitle1"
+            variant="h6"
             color="inherit"
             sx={{
               position: "relative",
