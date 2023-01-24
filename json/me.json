@@ -276,41 +276,31 @@
       ]
     },
     {
-      "thumbnail": "/images/connexease/conn_4.png",
-      "name": "Connexease",
+      "thumbnail": "/images/panther-protocol/pc-1.png",
+      "name": "Panther Protocol",
       "description": [
-        "Connexease is a real-time multichannel messaging system with more than 700 million messages. It connects agencies with their customers.",
-        "Send feedback forms at the end of customer interactions to determine each customers satisfaction level and improve future communication quality.",
-        "Connexease provides automated data collection to help you with improving your customer relations. Find easy to read graphs in the admin panel or in a daily report in your inbox.",
-        "Let your customers know you've received their message and answer simple questions while you're sleeping. Connexease's auto response is easy to set up and customize."
+        "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance.",
+        "Advanced zero-knowledge privacy and trust on any blockchain"
       ],
-      "techStack": [
-        "js",
-        "ts",
-        "react",
-        "node",
-        "python",
-        "django",
-        "postgres"
-      ],
-      "repo": "https://github.com/connexease",
-      "live": "https://connexease.com/en/home/",
+      "techStack": ["js", "ts", "react", "node", "redux"],
+      "repo": "https://github.com/pantherprotocol/panther-core",
+      "live": "https://ipfs.io/ipns/pantherprotocol.eth/#/",
       "screenshots": [
         {
-          "path": "/images/connexease/conn_1.png",
-          "description": "Customer Feedback"
+          "path": "/images/panther-protocol/pc-1.png",
+          "description": "Stake your assets on a Zero Knowledge Staking Pool"
         },
         {
-          "path": "/images/connexease/conn_2.png",
-          "description": "Quick Reply"
+          "path": "/images/panther-protocol/pc-2.png",
+          "description": "Unstake your private assets"
         },
         {
-          "path": "/images/connexease/conn_3.png",
-          "description": "Auto Response"
+          "path": "/images/panther-protocol/pc-3.png",
+          "description": "View your rewards & redeem any time"
         },
         {
-          "path": "/images/connexease/conn_4.png",
-          "description": "Data Collection"
+          "path": "/images/panther-protocol/pc-4.png",
+          "description": "Get test ZKP tokens on testnet"
         }
       ]
     },
