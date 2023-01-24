@@ -53,7 +53,7 @@ const ProjectDetails: React.FC<{ project: IProject; onClose(): void }> = ({
                 />
 
                 {s.description && (
-                  <p className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 text-white bg-indigo-500 px-4 py-2">
+                  <p className="absolute bottom-0 left-1/2 z-10 -translate-x-1/2 text-white bg-indigo-500 px-4 py-2 text-center">
                     {s.description}
                   </p>
                 )}
