@@ -81,7 +81,7 @@ const Experience = () => {
                         },
                       }}
                     >
-                      {ex.company.name} - {ex.jobTitle}
+                      {ex.jobTitle} @ {ex.company.name}
                     </Typography>
                   </Tooltip>
                   <ul>
@@ -89,9 +89,8 @@ const Experience = () => {
                       <li
                         key={idx * 10}
                         className="text-left list-decimal list-inside font-thin mb-3 leading-relaxed text-sm lg:text-base"
-                      >
-                        {role}
-                      </li>
+                        dangerouslySetInnerHTML={{ __html: role }}
+                      />
                     ))}
                   </ul>
                 </TimelineContent>

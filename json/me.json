@@ -12,13 +12,13 @@
     "Then I used this as leverage to go to a bigger organization in Turcky. I was responsible for maintaining a multi-channel chating service in which users can interact with all of their customers  on Twitter and WhatsApp from one place! I was responsible for creating data-collection piplines to analyze and get insights from data then display it to our users in an easy to read graphs. Also I was researching solutions to our deployment issues we had it at the time.",
     "Currently seeking a role as a Full-stack Developer at a progressive organization"
   ],
-  "github": "https://github.com/AhmedIbrahim336",
+  "github": "https://github.com/neuodev",
   "url": "http://ahmedibrahim.dev/",
   "social": [
     {
       "lable": "GitHub",
       "id": "github",
-      "value": "https://github.com/AhmedIbrahim336"
+      "value": "https://github.com/neuodev"
     },
     {
       "lable": "LinkedIn",
@@ -28,7 +28,7 @@
     {
       "lable": "YouTube",
       "id": "youtube",
-      "value": "https://www.youtube.com/channel/UCtwFnsB9zw8P_rNePfRjUnw/videos"
+      "value": "https://www.youtube.com/@deep_code"
     }
   ],
   "contact": [
@@ -44,6 +44,38 @@
     }
   ],
   "experiences": [
+    {
+      "company": {
+        "name": "Synpress",
+        "website": "https://github.com/Synthetixio/synpress",
+        "about": "Synpress is a true E2E testing framework based on Cypress and Playwright with support for MetaMask."
+      },
+      "period": "Feb 2023 - Present",
+      "jobTitle": "Open Source Co-maintainer",
+      "roles": [
+        "Helped the project get sponsored & funded with more than <strong>350k USD</strong>.",
+        "Planning how to spend the funds, organize the work, hit the milestones, and popularize the project.",
+        "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests, and improving documentation.",
+        "Migrated the project to TypeScript, reduced package size, and added headless browser support.",
+        "Getting more adaption to the project by creating online documentation, lunching a landing page, and interacting with the community."
+      ]
+    },
+    {
+      "company": {
+        "name": "Panther Protocol",
+        "website": "https://www.pantherprotocol.io/",
+        "about": "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance."
+      },
+      "period": "Dec 2022 - Present",
+      "jobTitle": "Full Stack Developer",
+      "roles": [
+        "Took full responsibility & accountability over delivering critical features.",
+        "Reduced bundle size by 50% & Analyzed performance bottlenecks.",
+        "Improve the CI/CD speed (IPFS, Selective CI/CD Script Runner).",
+        "Took the initiative to introduce end-to-end testing to our code base.",
+        "Increase the backend syncing speed by 50x (from 50s to 1s)."
+      ]
+    },
     {
       "company": {
         "name": "EMURGO",

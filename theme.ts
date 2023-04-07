@@ -6,6 +6,9 @@ const theme = createTheme({
       main: "#6366f1",
     },
   },
+  typography: {
+    fontFamily: ["Rubik", "Roboto", "sans-serif"].join(","),
+  },
 });
 
 export default theme;
