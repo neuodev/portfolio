@@ -52,6 +52,7 @@
       },
       "period": "Feb 2023 - Present",
       "jobTitle": "Open Source Co-maintainer",
+      "location": ["International", "Remote"],
       "roles": [
         "Helped the project get sponsored & funded with more than <strong>350k USD</strong>.",
         "Planning how to spend the funds, organize the work, hit the milestones, and popularize the project.",
@@ -69,6 +70,7 @@
       },
       "period": "Dec 2022 - Present",
       "jobTitle": "Full Stack Developer",
+      "location": ["United Kingdom (UK)", "Remote"],
       "roles": [
         "Took full responsibility & accountability over delivering critical features.",
         "Reduced bundle size by 50% & Analyzed performance bottlenecks.",
@@ -86,6 +88,7 @@
       },
       "period": "Jul 2021 – Present",
       "jobTitle": "Full Stack Developer",
+      "location": ["United States (US)", "Remote"],
       "roles": [
         "Develop public API to enable other developers to build their own dApps on top of Cardano and to serve more than 1 million active users.",
         "Tackle performance bottlenecks related to databases and memory leaks.",
@@ -113,6 +116,7 @@
       },
       "period": "Dec 2018 – Aug 2019",
       "jobTitle": "Full Stack Developer",
+      "location": ["Singapore (SG)", "Remote"],
       "roles": [
         "Founding member of a team to develop a cross-chain bridge platform",
         "Build the required infrastructure for a transaction queue (API, Cron Job, Scheduler).",
