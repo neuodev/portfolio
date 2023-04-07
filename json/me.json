@@ -60,7 +60,14 @@
         "Migrated the project to TypeScript, reduced package size, and added headless browser support.",
         "Getting more adaption to the project by creating online documentation, lunching a landing page, and interacting with the community."
       ],
-      "skils": ["JavaScript", "TypeScript", "Cypress", "Playwright"]
+      "skils": [
+        "JavaScript",
+        "TypeScript",
+        "Cypress",
+        "Playwright",
+        "Docker",
+        "CI/CD"
+      ]
     },
     {
       "company": {
