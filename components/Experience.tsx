@@ -62,7 +62,7 @@ const Experience = () => {
                     arrow
                     followCursor
                     title={
-                      <Typography variant="subtitle2">
+                      <Typography variant="body2" className="text-gray-300">
                         {ex.company.about}
                       </Typography>
                     }
