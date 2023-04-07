@@ -5,7 +5,6 @@ import { Logo } from "./icons";
 import { Button, Typography } from "@mui/material";
 import Tooltip from "./common/Tooltip";
 import LaunchIcon from "@mui/icons-material/Launch";
-import Link from "next/link";
 
 const Skills = () => {
   const techStack = Object.entries(me.tech).map((entry) => ({

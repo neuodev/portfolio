@@ -1,12 +1,14 @@
+import { Typography, Link, Box } from "@mui/material";
 import React from "react";
-import { styled } from "@mui/material/styles";
-import ButtonBase from "@mui/material/ButtonBase";
-import Typography from "@mui/material/Typography";
-import { asRemoteImgUrl } from "../utils";
+import me from "../json/me.json";
+import Tooltip from "./common/Tooltip";
+import LaunchIcon from "@mui/icons-material/Launch";
+import { Logo } from "./icons";
 
 export interface IProject {
   thumbnail: string;
   name: string;
+  slot: string;
   description: Array<string>;
   techStack: Array<string>;
   repo: string;
@@ -17,108 +19,84 @@ export interface IProject {
   }>;
 }
 
-const ImageButton = styled(ButtonBase)(({ theme }) => ({
-  position: "relative",
-  height: "100%",
-  width: "100%",
-  color: theme.palette.primary.main,
-  borderRadius: "8px",
-  overflow: "hidden",
-  "&:hover, &.Mui-focusVisible": {
-    zIndex: 1,
-    "& .MuiImageBackdrop-root": {
-      opacity: 0.15,
-    },
-    "& .MuiImageMarked-root": {
-      opacity: 0,
-    },
-    "& .MuiTypography-root": {
-      border: `4px solid ${theme.palette.primary.main}`,
-      fontWeight: "500",
-      backgroundColor: theme.palette.primary.light,
-    },
-  },
-}));
-
-const ImageSrc = styled("span")({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  backgroundSize: "cover",
-  backgroundRepeat: "no-repeat",
-  backgroundPosition: "center 40%",
-});
-
-const Image = styled("span")(({ theme }) => ({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  color: theme.palette.common.white,
-  fontFamily: "Rubik",
-  "&:hover": {
-    color: theme.palette.common.white,
-  },
-}));
-
-const ImageBackdrop = styled("span")(({ theme }) => ({
-  position: "absolute",
-  left: 0,
-  right: 0,
-  top: 0,
-  bottom: 0,
-  backgroundColor: theme.palette.common.black,
-  opacity: 0.4,
-  transition: theme.transitions.create("opacity"),
-}));
-
-const ImageMarked = styled("span")(({ theme }) => ({
-  height: 3,
-  width: 18,
-  backgroundColor: theme.palette.common.white,
-  position: "absolute",
-  bottom: -2,
-  left: "calc(50% - 9px)",
-  transition: theme.transitions.create("opacity"),
-}));
-
-const Project: React.FC<{ project: IProject; onSelect(): void }> = ({
-  project,
-  onSelect,
-}) => {
+const Project: React.FC<{ project: IProject }> = ({ project }) => {
   return (
-    <div className="col-span-12 lg:col-span-6 flex items-center justify-center w-full">
-      <ImageButton onClick={onSelect} focusRipple key={project.name}>
-        <ImageSrc
-          style={{
-            backgroundImage: `url(${asRemoteImgUrl(project.thumbnail)})`,
-          }}
-        />
-        <ImageBackdrop className="MuiImageBackdrop-root" />
-        <Image>
-          <Typography
-            component="span"
-            variant="h6"
-            color="inherit"
-            sx={{
-              position: "relative",
-              p: 4,
-              pt: 2,
-              pb: (theme) => `calc(${theme.spacing(1)} + 6px)`,
-            }}
+    <Box className="mb-8">
+      <Tooltip
+        placement="top"
+        followCursor
+        title={
+          <Box className="flex px-3 py-1">
+            <Typography>Visit on GitHub</Typography>
+            <LaunchIcon />
+          </Box>
+        }
+      >
+        <Typography
+          variant="h5"
+          component={Link}
+          href={project.repo}
+          target="_blank"
+        >
+          {project.name} — {project.slot}
+        </Typography>
+      </Tooltip>
+
+      <Box component="ul" className="mt-2">
+        {project.description.map((desc, idx) => (
+          <Box
+            component="li"
+            className="list-inside list-disc mb-2 leading-relaxed"
+            key={idx}
           >
-            {project.name}
-            <ImageMarked className="MuiImageMarked-root" />
-          </Typography>
-        </Image>
-      </ImageButton>
-    </div>
+            {desc}
+          </Box>
+        ))}
+      </Box>
+
+      <Typography component="li">
+        Skills:{" "}
+        {project.techStack.map((techId: string, idx: number) => {
+          const { name, website, about } =
+            me.tech[techId as keyof typeof me.tech];
+          return (
+            <>
+              <Tooltip
+                placement="top"
+                arrow
+                title={
+                  <Box className="p-4">
+                    <a href={website} target="_blank" rel="noreferrer">
+                      <Logo
+                        id={techId}
+                        className="fill-indigo-500 transition-colors duration-200 mb-4"
+                      />
+                      <Typography className="text-indigo-500 mb-2" variant="h5">
+                        {name}
+                        <LaunchIcon className="ml-1 inline-block" />
+                      </Typography>
+                    </a>
+                    <Typography className="text-gray-300" variant="caption">
+                      {about}
+                    </Typography>
+                  </Box>
+                }
+              >
+                <Link
+                  key={techId}
+                  href={website}
+                  target="_blank"
+                  className="text-gray-300 no-underline"
+                >
+                  {name}
+                </Link>
+              </Tooltip>
+              {idx !== project.techStack.length - 1 && " · "}
+            </>
+          );
+        })}
+      </Typography>
+    </Box>
   );
 };
 

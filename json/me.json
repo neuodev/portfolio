@@ -227,8 +227,19 @@
   },
   "projects": [
     {
-      "thumbnail": "/images/yoroi/yoroi_1.png",
+      "name": "Synpress",
+      "slot": "E2E testing framework",
+      "description": [
+        "Synpress is an E2E testing framework based on Cypress and Playwright with support for Metamask.",
+        "2+ years in development, +6k NPM downloads, 100+ GitHub fork, 350+ starts, 22+ contributors"
+      ],
+      "techStack": ["js", "ts", "docker", "cypress", "playwright", "node"],
+      "repo": "https://github.com/Synthetixio/synpress",
+      "live": "https://www.npmjs.com/package/@synthetixio/synpress"
+    },
+    {
       "name": "Yoroi Wallet",
+      "slot": "Light Cardano ADA wallet",
       "description": [
         "A simple, secure and fast Cardano ADA wallet.",
         "Yoroi allows users to manage ADA in their browser.",
@@ -236,123 +247,23 @@
       ],
       "techStack": ["js", "react", "rust", "wasm", "mui", "node", "postgres"],
       "repo": "https://github.com/Emurgo/yoroi-frontend",
-      "live": "https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb",
-      "screenshots": [
-        {
-          "path": "/images/yoroi/yoroi_1.png",
-          "description": "Create or Restor your Cardano wallet"
-        },
-        {
-          "path": "/images/yoroi/yoroi_2.png",
-          "description": "View your funds and track you rewards"
-        },
-        {
-          "path": "/images/yoroi/yoroi_3.png",
-          "description": "View your transactions history offline"
-        },
-        {
-          "path": "/images/yoroi/yoroi_4.png",
-          "description": "Interact with other dApps"
-        },
-        {
-          "path": "/images/yoroi/yoroi_5.png",
-          "description": "Manage your wallet addresses"
-        }
-      ]
+      "live": "https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb"
     },
     {
-      "thumbnail": "/images/wallet/wallet_1.png",
-      "name": "Wallet Ecommerce",
-      "description": [
-        "A mobile friendly, production ready and fully featured e-commerce website.",
-        "Browse and buy projects"
-      ],
-      "techStack": [
-        "js",
-        "ts",
-        "react",
-        "redux",
-        "tailwind",
-        "mui",
-        "node",
-        "mongodb",
-        "docker"
-      ],
-      "repo": "https://github.com/AhmedIbrahim336/wallet",
-      "live": null,
-      "screenshots": [
-        {
-          "path": "/images/wallet/wallet_1.png",
-          "description": "View latest & featured products"
-        },
-        {
-          "path": "/images/wallet/wallet_2.png",
-          "description": "View product details"
-        },
-        {
-          "path": "/images/wallet/wallet_3.png",
-          "description": "Manage your wishlist"
-        },
-        {
-          "path": "/images/wallet/wallet_4.png",
-          "description": "View cart"
-        },
-        {
-          "path": "/images/wallet/wallet_5.png",
-          "description": "Fill your shipping address"
-        },
-        {
-          "path": "/images/wallet/wallet_6.png",
-          "description": "View your cart"
-        },
-        {
-          "path": "/images/wallet/wallet_7.png",
-          "description": "Pay using PayPal"
-        },
-        {
-          "path": "/images/wallet/wallet_8.png",
-          "description": "Track your order"
-        },
-        {
-          "path": "/images/wallet/wallet_9.png",
-          "description": "View your orders"
-        }
-      ]
-    },
-    {
-      "thumbnail": "/images/panther-protocol/pc-2.png",
       "name": "Panther Protocol",
+      "slot": "Zero Knowledge Proof (ZKP) based protocol",
       "description": [
         "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance.",
         "Advanced zero-knowledge privacy and trust on any blockchain"
       ],
       "techStack": ["js", "ts", "react", "node", "redux"],
       "repo": "https://github.com/pantherprotocol/panther-core",
-      "live": "https://ipfs.io/ipns/pantherprotocol.eth/#/",
-      "screenshots": [
-        {
-          "path": "/images/panther-protocol/pc-1.png",
-          "description": "Stake your assets on a Zero Knowledge Staking Pool"
-        },
-        {
-          "path": "/images/panther-protocol/pc-2.png",
-          "description": "Unstake your private assets"
-        },
-        {
-          "path": "/images/panther-protocol/pc-3.png",
-          "description": "View your rewards & redeem any time"
-        },
-        {
-          "path": "/images/panther-protocol/pc-4.png",
-          "description": "Get test ZKP tokens on testnet"
-        }
-      ]
+      "live": "https://ipfs.io/ipns/pantherprotocol.eth/#/"
     },
     {
-      "thumbnail": "/images/receptor/re_1.png",
       "name": "Receptor",
+      "slot": "Real-time messaging app.",
       "description": [
-        "Real-time messaging app.",
         "Send and receive messages with friends and groups",
         "Available as a website and as MacOS, Linux, and Windows application."
       ],
@@ -371,33 +282,28 @@
         "tauri"
       ],
       "repo": "https://github.com/AhmedIbrahim336/receptor",
-      "live": null,
-      "screenshots": [
-        {
-          "path": "/images/receptor/re_1.png",
-          "description": "Message your friends in real-time"
-        },
-        {
-          "path": "/images/receptor/re_2.png",
-          "description": "Add, remove, and accept friends"
-        },
-        {
-          "path": "/images/receptor/re_3.png",
-          "description": "Chat in groups with your friends"
-        },
-        {
-          "path": "/images/receptor/re_4.png",
-          "description": "Login to your account"
-        },
-        {
-          "path": "/images/receptor/re_5.png",
-          "description": "Create groups with your best friends"
-        },
-        {
-          "path": "/images/receptor/re_6.png",
-          "description": "See if your friends active or not!"
-        }
-      ]
+      "live": null
+    },
+    {
+      "name": "eCart",
+      "slot": "Production ready ecommerce platform",
+      "description": [
+        "A mobile friendly, production ready and fully featured e-commerce website.",
+        "Browse and buy projects"
+      ],
+      "techStack": [
+        "js",
+        "ts",
+        "react",
+        "redux",
+        "tailwind",
+        "mui",
+        "node",
+        "mongodb",
+        "docker"
+      ],
+      "repo": "https://github.com/neuodev/wallet",
+      "live": null
     }
   ],
   "tech": {
@@ -535,6 +441,11 @@
       "name": "Cypress",
       "website": "https://www.cypress.io/",
       "about": "Cypress is a purely JavaScript-based front-end testing tool built for the modern web."
+    },
+    "playwright": {
+      "name": "Playwright",
+      "website": "https://playwright.dev/",
+      "about": "Playwright enables reliable end-to-end testing for modern web apps."
     },
     "selenium": {
       "name": "Selenium",
