@@ -92,6 +92,9 @@ const Experience = () => {
                         dangerouslySetInnerHTML={{ __html: role }}
                       />
                     ))}
+                    <li className="text-left mb-3 leading-relaxed text-sm lg:text-base">
+                      Skills: {ex.skils.join(" · ")}
+                    </li>
                   </ul>
                 </TimelineContent>
               </TimelineItem>

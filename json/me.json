@@ -58,7 +58,8 @@
         "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests, and improving documentation.",
         "Migrated the project to TypeScript, reduced package size, and added headless browser support.",
         "Getting more adaption to the project by creating online documentation, lunching a landing page, and interacting with the community."
-      ]
+      ],
+      "skils": ["JavaScript", "TypeScript", "Cypress", "Playwright"]
     },
     {
       "company": {
@@ -74,7 +75,8 @@
         "Improve the CI/CD speed (IPFS, Selective CI/CD Script Runner).",
         "Took the initiative to introduce end-to-end testing to our code base.",
         "Increase the backend syncing speed by 50x (from 50s to 1s)."
-      ]
+      ],
+      "skils": ["TypeScript", "ReactJS", "Cypress", "IndexedDB"]
     },
     {
       "company": {
@@ -82,7 +84,7 @@
         "website": "https://emurgo.io/",
         "about": "EMURGO is the official commercial arm and a founding entity of the Cardano blockchain."
       },
-      "period": "Jul 2020 – Present",
+      "period": "Jul 2021 – Present",
       "jobTitle": "Full Stack Developer",
       "roles": [
         "Develop public API to enable other developers to build their own dApps on top of Cardano and to serve more than 1 million active users.",
@@ -92,23 +94,15 @@
         "Wrote end-to-end and unit tests to ensure app integrity.",
         "Review PRs and make sure they follow the code standards and best practices.",
         "Onboard new developers and help them fit into the team."
-      ]
-    },
-    {
-      "company": {
-        "name": "Connexease",
-        "website": "https://connexease.com/en/home/",
-        "about": "Connexease is a real-time multichannel messaging system with more than 700 million messages. It connects agencies with their customers."
-      },
-      "period": "Aug 2019 – Jul 2020",
-      "jobTitle": "Full Stack Developer",
-      "roles": [
-        "Created a real-time multichannel messaging system to connect agencies with their customers",
-        "Integrated 3rd party messaging platforms like Telegram and Instagram while maintaining existing integrations for WhatsApp and Twitter.",
-        "Created data collection pipelines then analyzed and displayed them in easy-to-read graphs.",
-        "Identified and assessed new technologies before implementation.",
-        "Migrated the services to use up-to-date technology standers.",
-        "Technologies: JavaScript/TypeScript, ReactJS, Python, Django and PostgreSQL."
+      ],
+      "skils": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "NodeJS",
+        "PostgreSQL",
+        "WebAssembly",
+        "Rust"
       ]
     },
     {
@@ -124,8 +118,15 @@
         "Build the required infrastructure for a transaction queue (API, Cron Job, Scheduler).",
         "Integrated new 12 blockchains that allowed users to easily move tokens between them.",
         "Reduced average request time for most important endpoints from 12s to 2s (6x faster).",
-        "Onboarding new developers and helping them fit into the team.",
-        "Technologies: JavaScript/TypeScript, ReactJS, NodeJS, MongoDB and Cloud (AWS)"
+        "Onboarding new developers and helping them fit into the team."
+      ],
+      "skils": [
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "NodeJS",
+        "MongoDB",
+        "Cloud (AWS)"
       ]
     }
   ],
