@@ -54,7 +54,7 @@
       "jobTitle": "Open Source Co-maintainer",
       "location": ["International", "Remote"],
       "roles": [
-        "Helped the project get sponsored & funded with more than <strong>350k USD</strong>.",
+        "Helped the project get sponsored & funded with more than <strong>400k USD</strong>.",
         "Planning how to spend the funds, organize the work, hit the milestones, and popularize the project.",
         "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests, and improving documentation.",
         "Migrated the project to TypeScript, reduced package size, and added headless browser support.",
@@ -243,7 +243,7 @@
       "description": [
         "A simple, secure and fast Cardano ADA wallet.",
         "Yoroi allows users to manage ADA in their browser.",
-        "It is a lightweight wallet that launches quickly, allowing users to start sending or receiving ADA in minutes."
+        "400,000+ users, 300+ stars, 100+ fork on GitHub"
       ],
       "techStack": ["js", "react", "rust", "wasm", "mui", "node", "postgres"],
       "repo": "https://github.com/Emurgo/yoroi-frontend",
