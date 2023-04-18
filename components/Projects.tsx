@@ -29,9 +29,14 @@ const Projects: React.FC<{}> = () => {
       />
       <div className="container mx-auto">
         <div className="max-w-screen-lg mx-auto p-5">
-          {me.projects.map((project) => (
-            <Project key={project.name} project={project as IProject} />
-          ))}
+          {me.projects.map((project) => {
+            return (
+              <Project
+                key={project.name.concat("-")}
+                project={project as IProject}
+              />
+            );
+          })}
         </div>
       </div>
     </Element>

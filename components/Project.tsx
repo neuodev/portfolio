@@ -60,7 +60,7 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
           const { name, website, about } =
             me.tech[techId as keyof typeof me.tech];
           return (
-            <>
+            <Box key={techId} component="span">
               <Tooltip
                 placement="top"
                 arrow
@@ -92,7 +92,7 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
                 </Link>
               </Tooltip>
               {idx !== project.techStack.length - 1 && " · "}
-            </>
+            </Box>
           );
         })}
       </Typography>
