@@ -288,8 +288,7 @@
       "name": "eCart",
       "slot": "Production ready ecommerce platform",
       "description": [
-        "A mobile friendly, production ready and fully featured e-commerce website.",
-        "Browse and buy projects"
+        "A mobile friendly, production ready and fully featured e-commerce website."
       ],
       "techStack": [
         "js",
