@@ -6,7 +6,6 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import { Box, Typography, Link } from "@mui/material";
-import CalendarTodayIcon from "@mui/icons-material/CalendarToday";
 import Tooltip from "./common/Tooltip";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import theme from "../theme";
@@ -43,16 +42,19 @@ const Experience = () => {
                   <TimelineConnector />
                 </TimelineSeparator>
                 <TimelineContent className="mb-4">
-                  <Box className="flex items-center justify-start mt-1 mb-4">
-                    <CalendarTodayIcon className="text-lg text-indigo-500" />
+                  <Box className="mt-1 mb-3 pt-0.5">
+                    <Box className="flex items-center justify-start">
+                      <Typography variant="body2" lineHeight={1}>
+                        {ex.period}
+                      </Typography>
+                    </Box>
+
                     <Typography
-                      sx={{
-                        ml: "8px",
-                      }}
-                      variant="caption"
+                      className="flex items-center justify-start mt-1"
+                      variant="body2"
                       lineHeight={1}
                     >
-                      {ex.period}
+                      {ex.location && ex.location.join(" · ")}
                     </Typography>
                   </Box>
                   <Tooltip
@@ -60,7 +62,7 @@ const Experience = () => {
                     arrow
                     followCursor
                     title={
-                      <Typography variant="subtitle2">
+                      <Typography variant="body2" className="text-gray-300">
                         {ex.company.about}
                       </Typography>
                     }
@@ -81,7 +83,7 @@ const Experience = () => {
                         },
                       }}
                     >
-                      {ex.company.name} - {ex.jobTitle}
+                      {ex.jobTitle} @ {ex.company.name}
                     </Typography>
                   </Tooltip>
                   <ul>
@@ -89,10 +91,12 @@ const Experience = () => {
                       <li
                         key={idx * 10}
                         className="text-left list-decimal list-inside font-thin mb-3 leading-relaxed text-sm lg:text-base"
-                      >
-                        {role}
-                      </li>
+                        dangerouslySetInnerHTML={{ __html: role }}
+                      />
                     ))}
+                    <li className="text-left mb-3 leading-relaxed text-sm lg:text-base">
+                      Skills: {ex.skils.join(" · ")}
+                    </li>
                   </ul>
                 </TimelineContent>
               </TimelineItem>

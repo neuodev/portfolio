@@ -12,13 +12,13 @@
     "Then I used this as leverage to go to a bigger organization in Turcky. I was responsible for maintaining a multi-channel chating service in which users can interact with all of their customers  on Twitter and WhatsApp from one place! I was responsible for creating data-collection piplines to analyze and get insights from data then display it to our users in an easy to read graphs. Also I was researching solutions to our deployment issues we had it at the time.",
     "Currently seeking a role as a Full-stack Developer at a progressive organization"
   ],
-  "github": "https://github.com/AhmedIbrahim336",
+  "github": "https://github.com/neuodev",
   "url": "http://ahmedibrahim.dev/",
   "social": [
     {
       "lable": "GitHub",
       "id": "github",
-      "value": "https://github.com/AhmedIbrahim336"
+      "value": "https://github.com/neuodev"
     },
     {
       "lable": "LinkedIn",
@@ -28,7 +28,7 @@
     {
       "lable": "YouTube",
       "id": "youtube",
-      "value": "https://www.youtube.com/channel/UCtwFnsB9zw8P_rNePfRjUnw/videos"
+      "value": "https://www.youtube.com/@deep_code"
     }
   ],
   "contact": [
@@ -46,12 +46,56 @@
   "experiences": [
     {
       "company": {
+        "name": "Synpress",
+        "website": "https://github.com/Synthetixio/synpress",
+        "about": "Synpress is a true E2E testing framework based on Cypress and Playwright with support for MetaMask."
+      },
+      "period": "Feb 2023 - Present",
+      "jobTitle": "Open Source Co-maintainer",
+      "location": ["International", "Remote"],
+      "roles": [
+        "Helped the project get sponsored & funded with more than <strong>400k USD</strong>.",
+        "Planning how to spend the funds, organize the work, hit the milestones, and popularize the project.",
+        "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests, and improving documentation.",
+        "Migrated the project to TypeScript, reduced package size, and added headless browser support.",
+        "Getting more adaption to the project by creating online documentation, lunching a landing page, and interacting with the community."
+      ],
+      "skils": [
+        "JavaScript",
+        "TypeScript",
+        "Cypress",
+        "Playwright",
+        "Docker",
+        "CI/CD"
+      ]
+    },
+    {
+      "company": {
+        "name": "Panther Protocol",
+        "website": "https://www.pantherprotocol.io/",
+        "about": "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance."
+      },
+      "period": "Dec 2022 - Present",
+      "jobTitle": "Full Stack Developer",
+      "location": ["United Kingdom (UK)", "Remote"],
+      "roles": [
+        "Took full responsibility & accountability over delivering critical features.",
+        "Reduced bundle size by 50% & Analyzed performance bottlenecks.",
+        "Improve the CI/CD speed (IPFS, Selective CI/CD Script Runner).",
+        "Took the initiative to introduce end-to-end testing to our code base.",
+        "Increase the backend syncing speed by 50x (from 50s to 1s)."
+      ],
+      "skils": ["TypeScript", "ReactJS", "Cypress", "IndexedDB"]
+    },
+    {
+      "company": {
         "name": "EMURGO",
         "website": "https://emurgo.io/",
         "about": "EMURGO is the official commercial arm and a founding entity of the Cardano blockchain."
       },
-      "period": "Jul 2020 – Present",
+      "period": "Jul 2021 – Present",
       "jobTitle": "Full Stack Developer",
+      "location": ["United States (US)", "Remote"],
       "roles": [
         "Develop public API to enable other developers to build their own dApps on top of Cardano and to serve more than 1 million active users.",
         "Tackle performance bottlenecks related to databases and memory leaks.",
@@ -60,23 +104,15 @@
         "Wrote end-to-end and unit tests to ensure app integrity.",
         "Review PRs and make sure they follow the code standards and best practices.",
         "Onboard new developers and help them fit into the team."
-      ]
-    },
-    {
-      "company": {
-        "name": "Connexease",
-        "website": "https://connexease.com/en/home/",
-        "about": "Connexease is a real-time multichannel messaging system with more than 700 million messages. It connects agencies with their customers."
-      },
-      "period": "Aug 2019 – Jul 2020",
-      "jobTitle": "Full Stack Developer",
-      "roles": [
-        "Created a real-time multichannel messaging system to connect agencies with their customers",
-        "Integrated 3rd party messaging platforms like Telegram and Instagram while maintaining existing integrations for WhatsApp and Twitter.",
-        "Created data collection pipelines then analyzed and displayed them in easy-to-read graphs.",
-        "Identified and assessed new technologies before implementation.",
-        "Migrated the services to use up-to-date technology standers.",
-        "Technologies: JavaScript/TypeScript, ReactJS, Python, Django and PostgreSQL."
+      ],
+      "skils": [
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "NodeJS",
+        "PostgreSQL",
+        "WebAssembly",
+        "Rust"
       ]
     },
     {
@@ -87,13 +123,21 @@
       },
       "period": "Dec 2018 – Aug 2019",
       "jobTitle": "Full Stack Developer",
+      "location": ["Singapore (SG)", "Remote"],
       "roles": [
         "Founding member of a team to develop a cross-chain bridge platform",
         "Build the required infrastructure for a transaction queue (API, Cron Job, Scheduler).",
         "Integrated new 12 blockchains that allowed users to easily move tokens between them.",
         "Reduced average request time for most important endpoints from 12s to 2s (6x faster).",
-        "Onboarding new developers and helping them fit into the team.",
-        "Technologies: JavaScript/TypeScript, ReactJS, NodeJS, MongoDB and Cloud (AWS)"
+        "Onboarding new developers and helping them fit into the team."
+      ],
+      "skils": [
+        "JavaScript",
+        "TypeScript",
+        "ReactJS",
+        "NodeJS",
+        "MongoDB",
+        "Cloud (AWS)"
       ]
     }
   ],
@@ -183,132 +227,43 @@
   },
   "projects": [
     {
-      "thumbnail": "/images/yoroi/yoroi_1.png",
+      "name": "Synpress",
+      "slot": "E2E testing framework",
+      "description": [
+        "Synpress is an E2E testing framework based on Cypress and Playwright with support for Metamask.",
+        "2+ years in development, +6k NPM downloads, 100+ GitHub fork, 350+ starts, 22+ contributors"
+      ],
+      "techStack": ["js", "ts", "docker", "cypress", "playwright", "node"],
+      "repo": "https://github.com/Synthetixio/synpress",
+      "live": "https://www.npmjs.com/package/@synthetixio/synpress"
+    },
+    {
       "name": "Yoroi Wallet",
+      "slot": "Light Cardano ADA wallet",
       "description": [
         "A simple, secure and fast Cardano ADA wallet.",
         "Yoroi allows users to manage ADA in their browser.",
-        "It is a lightweight wallet that launches quickly, allowing users to start sending or receiving ADA in minutes."
+        "400,000+ users, 300+ stars, 100+ fork on GitHub"
       ],
       "techStack": ["js", "react", "rust", "wasm", "mui", "node", "postgres"],
       "repo": "https://github.com/Emurgo/yoroi-frontend",
-      "live": "https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb",
-      "screenshots": [
-        {
-          "path": "/images/yoroi/yoroi_1.png",
-          "description": "Create or Restor your Cardano wallet"
-        },
-        {
-          "path": "/images/yoroi/yoroi_2.png",
-          "description": "View your funds and track you rewards"
-        },
-        {
-          "path": "/images/yoroi/yoroi_3.png",
-          "description": "View your transactions history offline"
-        },
-        {
-          "path": "/images/yoroi/yoroi_4.png",
-          "description": "Interact with other dApps"
-        },
-        {
-          "path": "/images/yoroi/yoroi_5.png",
-          "description": "Manage your wallet addresses"
-        }
-      ]
+      "live": "https://chrome.google.com/webstore/detail/yoroi/ffnbelfdoeiohenkjibnmadjiehjhajb"
     },
     {
-      "thumbnail": "/images/wallet/wallet_1.png",
-      "name": "Wallet Ecommerce",
-      "description": [
-        "A mobile friendly, production ready and fully featured e-commerce website.",
-        "Browse and buy projects"
-      ],
-      "techStack": [
-        "js",
-        "ts",
-        "react",
-        "redux",
-        "tailwind",
-        "mui",
-        "node",
-        "mongodb",
-        "docker"
-      ],
-      "repo": "https://github.com/AhmedIbrahim336/wallet",
-      "live": null,
-      "screenshots": [
-        {
-          "path": "/images/wallet/wallet_1.png",
-          "description": "View latest & featured products"
-        },
-        {
-          "path": "/images/wallet/wallet_2.png",
-          "description": "View product details"
-        },
-        {
-          "path": "/images/wallet/wallet_3.png",
-          "description": "Manage your wishlist"
-        },
-        {
-          "path": "/images/wallet/wallet_4.png",
-          "description": "View cart"
-        },
-        {
-          "path": "/images/wallet/wallet_5.png",
-          "description": "Fill your shipping address"
-        },
-        {
-          "path": "/images/wallet/wallet_6.png",
-          "description": "View your cart"
-        },
-        {
-          "path": "/images/wallet/wallet_7.png",
-          "description": "Pay using PayPal"
-        },
-        {
-          "path": "/images/wallet/wallet_8.png",
-          "description": "Track your order"
-        },
-        {
-          "path": "/images/wallet/wallet_9.png",
-          "description": "View your orders"
-        }
-      ]
-    },
-    {
-      "thumbnail": "/images/panther-protocol/pc-2.png",
       "name": "Panther Protocol",
+      "slot": "Zero Knowledge Proof (ZKP) based protocol",
       "description": [
         "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance.",
         "Advanced zero-knowledge privacy and trust on any blockchain"
       ],
       "techStack": ["js", "ts", "react", "node", "redux"],
       "repo": "https://github.com/pantherprotocol/panther-core",
-      "live": "https://ipfs.io/ipns/pantherprotocol.eth/#/",
-      "screenshots": [
-        {
-          "path": "/images/panther-protocol/pc-1.png",
-          "description": "Stake your assets on a Zero Knowledge Staking Pool"
-        },
-        {
-          "path": "/images/panther-protocol/pc-2.png",
-          "description": "Unstake your private assets"
-        },
-        {
-          "path": "/images/panther-protocol/pc-3.png",
-          "description": "View your rewards & redeem any time"
-        },
-        {
-          "path": "/images/panther-protocol/pc-4.png",
-          "description": "Get test ZKP tokens on testnet"
-        }
-      ]
+      "live": "https://ipfs.io/ipns/pantherprotocol.eth/#/"
     },
     {
-      "thumbnail": "/images/receptor/re_1.png",
       "name": "Receptor",
+      "slot": "Real-time messaging app.",
       "description": [
-        "Real-time messaging app.",
         "Send and receive messages with friends and groups",
         "Available as a website and as MacOS, Linux, and Windows application."
       ],
@@ -327,33 +282,27 @@
         "tauri"
       ],
       "repo": "https://github.com/AhmedIbrahim336/receptor",
-      "live": null,
-      "screenshots": [
-        {
-          "path": "/images/receptor/re_1.png",
-          "description": "Message your friends in real-time"
-        },
-        {
-          "path": "/images/receptor/re_2.png",
-          "description": "Add, remove, and accept friends"
-        },
-        {
-          "path": "/images/receptor/re_3.png",
-          "description": "Chat in groups with your friends"
-        },
-        {
-          "path": "/images/receptor/re_4.png",
-          "description": "Login to your account"
-        },
-        {
-          "path": "/images/receptor/re_5.png",
-          "description": "Create groups with your best friends"
-        },
-        {
-          "path": "/images/receptor/re_6.png",
-          "description": "See if your friends active or not!"
-        }
-      ]
+      "live": null
+    },
+    {
+      "name": "eCart",
+      "slot": "Production ready ecommerce platform",
+      "description": [
+        "A mobile friendly, production ready and fully featured e-commerce website."
+      ],
+      "techStack": [
+        "js",
+        "ts",
+        "react",
+        "redux",
+        "tailwind",
+        "mui",
+        "node",
+        "mongodb",
+        "docker"
+      ],
+      "repo": "https://github.com/neuodev/wallet",
+      "live": null
     }
   ],
   "tech": {
@@ -492,6 +441,11 @@
       "website": "https://www.cypress.io/",
       "about": "Cypress is a purely JavaScript-based front-end testing tool built for the modern web."
     },
+    "playwright": {
+      "name": "Playwright",
+      "website": "https://playwright.dev/",
+      "about": "Playwright enables reliable end-to-end testing for modern web apps."
+    },
     "selenium": {
       "name": "Selenium",
       "website": "https://www.selenium.dev/",
@@ -501,31 +455,6 @@
       "name": "Cucumber",
       "website": "https://cucumber.io/",
       "about": "Cucumber is a software tool that supports behavior-driven development."
-    },
-    "numpy": {
-      "name": "NumPy",
-      "website": "https://numpy.org/",
-      "about": "NumPy offers comprehensive mathematical functions, random number generators, linear algebra routines, Fourier transforms, and more."
-    },
-    "pandas": {
-      "name": "Pandas",
-      "website": "https://pandas.pydata.org/",
-      "about": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language."
-    },
-    "sklearn": {
-      "name": "Scikit-Learn",
-      "website": "https://scikit-learn.org/stable/",
-      "about": "Scikit-learn (Sklearn) is the most useful and robust library for machine learning in Python."
-    },
-    "tensorflow": {
-      "name": "Tensorflow",
-      "website": "https://www.tensorflow.org/",
-      "about": "TensorFlow is an open-source library developed by Google primarily for deep learning applications."
-    },
-    "opencv": {
-      "name": "OpenCV",
-      "website": "https://opencv.org/",
-      "about": "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML)"
     },
     "wasm": {
       "name": "Webassembly",

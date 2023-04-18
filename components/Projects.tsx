@@ -1,13 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Element } from "react-scroll";
 import me from "../json/me.json";
 import SectionTitle from "./common/SectionTitle";
 import Project, { IProject } from "./Project";
-import ProjectDetails from "./ProjectDetails";
 
-const Projects = () => {
-  const [currProject, setCurrProject] = useState<IProject | null>(null);
-
+const Projects: React.FC<{}> = () => {
   return (
     <Element
       name="projects"
@@ -31,22 +28,17 @@ const Projects = () => {
         }
       />
       <div className="container mx-auto">
-        <div className="grid grid-cols-12 gap-2 max-w-screen-lg mx-auto min-h-700 p-5">
-          {me.projects.map((project) => (
-            <Project
-              onSelect={() => setCurrProject(project)}
-              key={project.name}
-              project={project}
-            />
-          ))}
+        <div className="max-w-screen-lg mx-auto p-5">
+          {me.projects.map((project) => {
+            return (
+              <Project
+                key={project.name.concat("-")}
+                project={project as IProject}
+              />
+            );
+          })}
         </div>
       </div>
-      {currProject !== null && (
-        <ProjectDetails
-          project={currProject}
-          onClose={() => setCurrProject(null)}
-        />
-      )}
     </Element>
   );
 };

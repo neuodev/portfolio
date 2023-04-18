@@ -45,6 +45,7 @@ import MUI from "./MUI";
 import Redis from "./Redis";
 import OpenCV from "./OpenCV";
 import WASM from "./WASM";
+import Playwright from "./Playwright";
 
 export const SOCIAL_ICONS = {
   whatsapp: WhatsAppIcon,
@@ -92,6 +93,7 @@ export const TECH_STACK: {
   selenium: Selenium,
   cucumber: Cucumber,
   cypress: Cypress,
+  playwright: Playwright,
   numpy: NumPy,
   pandas: Pandas,
   sklearn: Sklearn,
