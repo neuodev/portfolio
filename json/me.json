@@ -456,31 +456,6 @@
       "website": "https://cucumber.io/",
       "about": "Cucumber is a software tool that supports behavior-driven development."
     },
-    "numpy": {
-      "name": "NumPy",
-      "website": "https://numpy.org/",
-      "about": "NumPy offers comprehensive mathematical functions, random number generators, linear algebra routines, Fourier transforms, and more."
-    },
-    "pandas": {
-      "name": "Pandas",
-      "website": "https://pandas.pydata.org/",
-      "about": "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool, built on top of the Python programming language."
-    },
-    "sklearn": {
-      "name": "Scikit-Learn",
-      "website": "https://scikit-learn.org/stable/",
-      "about": "Scikit-learn (Sklearn) is the most useful and robust library for machine learning in Python."
-    },
-    "tensorflow": {
-      "name": "Tensorflow",
-      "website": "https://www.tensorflow.org/",
-      "about": "TensorFlow is an open-source library developed by Google primarily for deep learning applications."
-    },
-    "opencv": {
-      "name": "OpenCV",
-      "website": "https://opencv.org/",
-      "about": "OpenCV provides a real-time optimized Computer Vision library, tools, and hardware. It also supports model execution for Machine Learning (ML)"
-    },
     "wasm": {
       "name": "Webassembly",
       "website": "https://webassembly.org/",
