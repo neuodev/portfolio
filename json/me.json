@@ -56,9 +56,9 @@
       "roles": [
         "Helped the project get sponsored & funded with more than <strong>400k USD</strong>.",
         "Planning how to spend the funds, organize the work, hit the milestones, and popularize the project.",
-        "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests, and improving documentation.",
-        "Migrated the project to TypeScript, reduced package size, and added headless browser support.",
-        "Getting more adaption to the project by creating online documentation, lunching a landing page, and interacting with the community."
+        "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests.",
+        "Documented the framework from start to finish — <strong>docs.synpress.io</strong>",
+        "Migrated the project to TypeScript, reduced package size, and added headless browser support."
       ],
       "skils": [
         "JavaScript",
