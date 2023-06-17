@@ -37,6 +37,9 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
           component={Link}
           href={project.repo}
           target="_blank"
+          sx={{
+            textDecoration: "none",
+          }}
         >
           {project.name} — {project.slot}
         </Typography>
@@ -82,14 +85,18 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
                   </Box>
                 }
               >
-                <Link
-                  key={techId}
+                <Typography
+                  component={Link}
                   href={website}
                   target="_blank"
                   className="text-gray-300 no-underline"
+                  sx={{
+                    textDecoration: "none",
+                    color: "inherit",
+                  }}
                 >
                   {name}
-                </Link>
+                </Typography>
               </Tooltip>
               {idx !== project.techStack.length - 1 && " · "}
             </Box>

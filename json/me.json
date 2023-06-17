@@ -51,7 +51,7 @@
         "about": "Synpress is a true E2E testing framework based on Cypress and Playwright with support for MetaMask."
       },
       "period": "Feb 2023 - Present",
-      "jobTitle": "Open Source Co-maintainer",
+      "jobTitle": "Open Source Maintainer",
       "location": ["International", "Remote"],
       "roles": [
         "Helped the project get sponsored & funded with more than <strong>400k USD</strong>.",
@@ -76,7 +76,7 @@
         "about": "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance."
       },
       "period": "Dec 2022 - Present",
-      "jobTitle": "Full Stack Developer",
+      "jobTitle": "Sr. Software Engineer",
       "location": ["United Kingdom (UK)", "Remote"],
       "roles": [
         "Took full responsibility & accountability over delivering critical features.",
@@ -228,7 +228,7 @@
   "projects": [
     {
       "name": "Synpress",
-      "slot": "E2E testing framework",
+      "slot": "E2E Testing Framework",
       "description": [
         "Synpress is an E2E testing framework based on Cypress and Playwright with support for Metamask.",
         "2+ years in development, +6k NPM downloads, 100+ GitHub fork, 350+ starts, 22+ contributors"
@@ -251,7 +251,7 @@
     },
     {
       "name": "Panther Protocol",
-      "slot": "Zero Knowledge Proof (ZKP) based protocol",
+      "slot": "Zero Knowledge Proof (ZKP) Based Protocol",
       "description": [
         "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance.",
         "Advanced zero-knowledge privacy and trust on any blockchain"
@@ -262,7 +262,7 @@
     },
     {
       "name": "Receptor",
-      "slot": "Real-time messaging app.",
+      "slot": "Real-Time Messaging App.",
       "description": [
         "Send and receive messages with friends and groups",
         "Available as a website and as MacOS, Linux, and Windows application."
@@ -286,7 +286,7 @@
     },
     {
       "name": "eCart",
-      "slot": "Production ready ecommerce platform",
+      "slot": "Production Ready Ecommerce Platform",
       "description": [
         "A mobile friendly, production ready and fully featured e-commerce website."
       ],
