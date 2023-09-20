@@ -3,33 +3,55 @@ import React from "react";
 import me from "../json/me.json";
 import Tooltip from "./common/Tooltip";
 import { SocialIcon } from "./icons";
+import classnames from "classnames";
 
-const SocialLinks: React.FC<{}> = () => {
+const SocialLinks: React.FC<{ asCols: boolean }> = ({ asCols }) => {
   return (
-    <div className="flex items-center justify-start">
-      {me.social.map((s) => (
-        <Tooltip
-          arrow
-          placement="top"
-          key={s.id}
-          title={
-            <Typography fontFamily="Rubik">Check me on {s.lable}</Typography>
-          }
-        >
-          <Button
-            onClick={() => window.open(s.value)}
-            className="group border-transparent group-hover:border-indigo-500 transition-colors duration-200 relative overflow-hidden bg-slide"
-            sx={{
-              width: "4rem",
-              height: "4rem",
-              borderRadius: "50%",
-              mr: "8px",
-            }}
+    <div
+      className={classnames(
+        "flex items-center justify-start",
+        asCols ? "flex-col gap-3" : "flex-row"
+      )}
+    >
+      {me.social.map((s) => {
+        const icon = (
+          <SocialIcon id={s.id} width="35px" className="fill-indigo-500" />
+        );
+        return (
+          <Tooltip
+            arrow
+            placement={asCols ? "right" : "top"}
+            key={s.id}
+            title={
+              <Typography fontFamily="Rubik">Check me on {s.lable}</Typography>
+            }
           >
-            <SocialIcon id={s.id} size="large" className="fill-indigo-500" />
-          </Button>
-        </Tooltip>
-      ))}
+            <Button
+              onClick={() => window.open(s.url)}
+              className="group border-transparent group-hover:border-indigo-500 transition-colors duration-200 relative overflow-hidden bg-slide"
+              sx={{
+                borderRadius: asCols ? "8px" : "50%",
+                aspectRatio: asCols ? "unset" : "1/1",
+                mr: "8px",
+                width: asCols ? "100%" : "unset",
+              }}
+              startIcon={asCols ? icon : undefined}
+            >
+              {asCols ? (
+                <Typography
+                  width="100%"
+                  textAlign="left"
+                  textTransform="lowercase"
+                >
+                  {s.urlAsText}
+                </Typography>
+              ) : (
+                icon
+              )}
+            </Button>
+          </Tooltip>
+        );
+      })}
     </div>
   );
 };

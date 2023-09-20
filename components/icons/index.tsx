@@ -35,37 +35,40 @@ import { SVGProps } from "react";
 import Apollo from "./Apollo";
 import SocketIo from "./Socketio";
 import Express from "./Express";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import YouTubeIcon from "@mui/icons-material/YouTube";
 import PostgreSQL from "./PostgreSQL";
 import MUI from "./MUI";
 import Redis from "./Redis";
 import OpenCV from "./OpenCV";
 import WASM from "./WASM";
 import Playwright from "./Playwright";
+import Medium from "./Medium";
+import YouTube from "./YouTube";
+import LinkedIn from "./LinkedIn";
+import GitHub from "./GitHub";
+import Email from "./Email";
+import WhatsApp from "./WhatsApp";
 
 export const SOCIAL_ICONS = {
-  whatsapp: WhatsAppIcon,
-  email: AlternateEmailIcon,
-  github: GitHubIcon,
-  linkedin: LinkedInIcon,
-  youtube: YouTubeIcon,
-};
+  whatsapp: WhatsApp,
+  email: Email,
+  github: GitHub,
+  linkedin: LinkedIn,
+  youtube: YouTube,
+  medium: Medium,
+} as const;
 
 export type SocialIconId = keyof typeof SOCIAL_ICONS;
 
-export const SocialIcon: React.FC<{
-  id: string;
-  className?: string;
-  size?: "small" | "medium" | "large";
-}> = ({ id, className, size }) => {
+export const SocialIcon: React.FC<
+  SVGProps<SVGSVGElement> & {
+    id: string;
+    className?: string;
+  }
+> = ({ id, className, ...props }) => {
   if (!id) throw new Error("ContactId is required");
   let Icon = SOCIAL_ICONS[id as SocialIconId];
   if (!Icon) throw new Error(`'${id}' doesn't have any icon`);
-  return <Icon className={className} fontSize={size} color="primary" />;
+  return <Icon className={className} {...props} />;
 };
 export const TECH_STACK: {
   [key: string]: (props: SVGProps<SVGSVGElement>) => JSX.Element;

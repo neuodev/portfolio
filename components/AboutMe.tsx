@@ -67,7 +67,7 @@ const AboutMe = () => {
               </p>
 
               <div className="mb-5 md:mb-3 lg:mb-5 -ml-3">
-                <SocialLinks />
+                <SocialLinks asCols={false} />
               </div>
 
               <Button

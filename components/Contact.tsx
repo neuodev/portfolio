@@ -16,6 +16,7 @@ import BusinessCenterIcon from "@mui/icons-material/BusinessCenter";
 import { Link } from "react-scroll";
 import SectionTitle from "./common/SectionTitle";
 import theme from "../theme";
+import SocialLinks from "./SocialLinks";
 
 const validators = {
   email: isValidEmail,
@@ -137,41 +138,7 @@ const Contact = () => {
       />
       <div className="max-w-xl lg:max-w-screen-lg mx-auto grid grid-cols-12 gap-5 p-5">
         <div className="col-span-12 lg:col-span-4">
-          {me.contact.map((c) => (
-            <div key={c.id} className="mb-5 text-gray-300">
-              <p className="mb-1.5 capitalize text-sm">{c.label}</p>
-              <div className="flex items-center justify-start">
-                <SocialIcon id={c.id} className="fill-indigo-500" />
-                <p className="ml-2">{c.value}</p>
-              </div>
-            </div>
-          ))}
-
-          <p className="mt-4 mb-1.5 text-gray-300 text-sm">Socal Profiles</p>
-          <div className="flex items-center justify-start">
-            {me.social.map((s) => (
-              <Tooltip
-                arrow
-                placement="top"
-                followCursor
-                key={s.id}
-                title={
-                  <Typography fontFamily="Rubik">
-                    Check me on {s.lable}
-                  </Typography>
-                }
-              >
-                <a
-                  href={s.value}
-                  target="_blank"
-                  className="mr-4 cursor-pointer"
-                  rel="noreferrer"
-                >
-                  <SocialIcon id={s.id} className="fill-indigo-500" />
-                </a>
-              </Tooltip>
-            ))}
-          </div>
+          <SocialLinks asCols />
         </div>
         <div className="col-span-12 mt-4 lg:mt-0 lg:col-span-8">
           <p className="text-gray-300 leading-relaxed">
@@ -190,6 +157,9 @@ const Contact = () => {
                 sx={{
                   borderRadius: "1.5rem",
                   color: "#e5e7eb",
+                  "& input": {
+                    pl: "8px",
+                  },
                 }}
                 startAdornment={
                   <AccountCircleIcon
@@ -210,6 +180,9 @@ const Contact = () => {
                 sx={{
                   borderRadius: "1.5rem",
                   color: "#e5e7eb",
+                  "& input": {
+                    pl: "8px",
+                  },
                 }}
                 startAdornment={
                   <AlternateEmailIcon
@@ -227,7 +200,7 @@ const Contact = () => {
                   value={state.message}
                   onChange={updateStateHandler}
                   placeholder="Your message"
-                  className="bg-transparent w-full h-200 pb-1 px-1 outline-none"
+                  className="bg-transparent w-full h-200 pb-1 px-1 outline-none pt-1/2"
                 />
               </div>
               <div className="col-span-2">
