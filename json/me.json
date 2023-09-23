@@ -46,18 +46,6 @@
       "urlAsText": "linkedin.com/in/neuodev/"
     }
   ],
-  "contact": [
-    {
-      "label": "Email",
-      "id": "email",
-      "value": "me@ahmedibrahim.dev"
-    },
-    {
-      "label": "Phone",
-      "id": "whatsapp",
-      "value": "+20 01552832217"
-    }
-  ],
   "experiences": [
     {
       "company": {
@@ -157,88 +145,29 @@
     }
   ],
   "content": {
-    "videosCutOff": 4,
-    "videos": [
+    "contentCutOff": 4,
+    "posts": [
       {
-        "title": "But How JavaScript Actually Works ?!",
-        "thumbnail": "/thumbnails/how-js-works.png",
-        "description": "In this video, I will explain how JavaScript actually works. This includes explaining fundamental concepts in JavaScript like the Call Stack, Callback Queue, WebAPI, and Event Loop,...",
-        "videoId": "NxhkaN2klUg"
+        "image": "images/story_5.jpg",
+        "url": "https://blog.ahmedibrahim.dev/how-i-get-myself-started-doing-hard-things-when-i-dont-want-to-4141e8538cfe"
       },
       {
-        "title": "Fetch API Clearly Explained",
-        "thumbnail": "/thumbnails/fetch-api.png",
-        "description": "In this video, I will talk about the Fetch API and the underlying HTTP Protocol, and how the frontend interacts with the server. All of these with in-depth detailed examples to make sure you understand the concepts on a deeper level",
-        "videoId": "WLXZYM6Dk9Q"
+        "image": "images/story_4.jpg",
+        "url": "https://blog.ahmedibrahim.dev/my-islamic-morning-routine-as-a-software-engineer-working-from-home-ced36311cd51"
       },
       {
-        "title": "The Ultimate Guide to JS \"This\" Keyword",
-        "thumbnail": "/thumbnails/this-keyword.png",
-        "description": "In this video, I am talking about one of the confusing topics in JavaScript.  I discussed where the confusing natures of the \"this\" keyword come from and various use cases.",
-        "videoId": "0gz0Wmi1gEg"
+        "image": "images/story_3.jpg",
+        "url": "https://blog.ahmedibrahim.dev/how-a-single-ted-video-changed-my-life-e47689ed5717"
       },
       {
-        "title": "Why should you have your own server?",
-        "thumbnail": "/thumbnails/why-should-you-have-your-own-server.png",
-        "description": "In this video I am taking about why me and you should have our own server. Server at not just made for production! We can do more with it!",
-        "videoId": "F4FSwM1oxhw"
+        "image": "images/story_2.jpg",
+        "url": "https://blog.ahmedibrahim.dev/my-principles-of-losing-and-keeping-weight-after-a-decade-of-research-87b3d20543de"
       },
       {
-        "title": "Why should you learn rust?",
-        "thumbnail": "/thumbnails/why-should-you-learn-rust.png",
-        "description": "In this video I am sharing my personal reason for learning Rust why should everyone else should consider learning Rust",
-        "videoId": "XJf615CfJXE"
-      },
-      {
-        "title": "Vim Masterclas course review",
-        "thumbnail": "/thumbnails/vim-mastery-course-review.png",
-        "description": "In this video I am reviewing the famouse course from Udemy about the tool that changed how I write my code",
-        "videoId": "6gHXQ8XE0J8"
-      },
-      {
-        "title": "Bash mastery class course review",
-        "thumbnail": "/thumbnails/bash-course-review.png",
-        "description": "A review for the famous BASH mastery course on Udemy",
-        "videoId": "uLHggJC00PI"
-      },
-      {
-        "title": "Best resources to learn rust",
-        "thumbnail": "/thumbnails/best-resources-to-learn-rust.png",
-        "description": "A quick video for people who are welling to learn rust but doesn't know where to start",
-        "videoId": "wCqMRKUBN_M"
-      },
-      {
-        "title": "How to aquire new skills?",
-        "thumbnail": "/thumbnails/how-to-aquire-new-skills.png",
-        "description": "In this video I am sharing my own methods and techniques for aquiring new skills in most effcient way",
-        "videoId": "ht0isWbUhh8"
-      },
-      {
-        "title": "How to boost your productivity?",
-        "thumbnail": "/thumbnails/how-to-boost-your-productvity.png",
-        "description": "In this video I am sharing my own thoughts on what makes someone PRODUCTIVE",
-        "videoId": "topmycLwhGE"
-      },
-      {
-        "title": "How to plan for your life?",
-        "thumbnail": "/thumbnails/how-to-plan-for-your-life.png",
-        "description": "In this video I am sharing my own way for putting a new plan and complete it end to end",
-        "videoId": "ITZtvSlAljU"
-      },
-      {
-        "title": "How to put your daily plan?",
-        "thumbnail": "/thumbnails/how-to-put-a-daily-plan.png",
-        "description": "Learn how to get the most out of your day",
-        "videoId": "video"
-      },
-      {
-        "title": "How to set the right goals?",
-        "thumbnail": "/thumbnails/how-to-set-the-right-goals.png",
-        "description": "In this video I am taking about my own way for setting my goals",
-        "videoId": "m6-1Mi0YkEo"
+        "image": "images/story_1.jpg",
+        "url": "https://blog.ahmedibrahim.dev/my-mind-wasnt-prepared-to-start-a-blog-but-now-it-is-36a6843a97f5"
       }
-    ],
-    "posts": null
+    ]
   },
   "projects": [
     {
