@@ -148,6 +148,10 @@
     "contentCutOff": 4,
     "posts": [
       {
+        "image": "images/story_6.jpg",
+        "url": "https://blog.ahmedibrahim.dev/the-evolution-of-my-git-commit-messages-6542cec6ba2f"
+      },
+      {
         "image": "images/story_5.jpg",
         "url": "https://blog.ahmedibrahim.dev/how-i-get-myself-started-doing-hard-things-when-i-dont-want-to-4141e8538cfe"
       },

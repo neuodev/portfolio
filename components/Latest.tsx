@@ -13,9 +13,12 @@ const LatestContent = () => {
         subtitle="tips, insights, and best practices about software engineering and personal life"
       />
 
-      <div className="grid grid-cols-12 gap-y-10 md:gap-10 max-w-screen-lg mx-4 lg:mx-auto">
+      <div className="grid grid-cols-12 gap-y-10 gap-5 md:gap-7 max-w-screen-lg mx-4 lg:mx-auto">
         {me.content.posts.map((post: IPost) => (
-          <div className="relative w-full col-span-4" key={post.image}>
+          <div
+            className="relative w-full col-span-6 md:col-span-4"
+            key={post.image}
+          >
             <Post post={post} />
           </div>
         ))}
