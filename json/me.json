@@ -46,6 +46,17 @@
       "urlAsText": "linkedin.com/in/neuodev/"
     }
   ],
+  "testimonials": {
+    "main": {
+      "text": "Your versatility in both front-end and back-end development has been a game-changer for EMURGO Fintech. With a proven track record of excellence in extending our platform's capabilities and now transitioning to enhance our libraries, your dual expertise is a rare and valuable virtue. Your adaptability and technical prowess ensure that we can confidently rely on your skills across the full spectrum of our software development needs.",
+      "owner": {
+        "name": "Vineeth Bhuvanagiri",
+        "role": "Managing Director at EMURGO Fintech",
+        "image": "images/vineeth.png",
+        "linkedin": "https://linkedin.com/in/vineeth-bhuvanagiri-59b35679"
+      }
+    }
+  },
   "experiences": [
     {
       "company": {
@@ -62,14 +73,6 @@
         "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests.",
         "Documented the framework from start to finish — <strong>docs.synpress.io</strong>",
         "Migrated the project to TypeScript, reduced package size, and added headless browser support."
-      ],
-      "skils": [
-        "JavaScript",
-        "TypeScript",
-        "Cypress",
-        "Playwright",
-        "Docker",
-        "CI/CD"
       ]
     },
     {
@@ -87,8 +90,7 @@
         "Improve the CI/CD speed (IPFS, Selective CI/CD Script Runner).",
         "Took the initiative to introduce end-to-end testing to our code base.",
         "Increase the backend syncing speed by 50x (from 50s to 1s)."
-      ],
-      "skils": ["TypeScript", "ReactJS", "Cypress", "IndexedDB"]
+      ]
     },
     {
       "company": {
@@ -107,15 +109,6 @@
         "Wrote end-to-end and unit tests to ensure app integrity.",
         "Review PRs and make sure they follow the code standards and best practices.",
         "Onboard new developers and help them fit into the team."
-      ],
-      "skils": [
-        "JavaScript",
-        "TypeScript",
-        "React",
-        "NodeJS",
-        "PostgreSQL",
-        "WebAssembly",
-        "Rust"
       ]
     },
     {
@@ -133,14 +126,6 @@
         "Integrated new 12 blockchains that allowed users to easily move tokens between them.",
         "Reduced average request time for most important endpoints from 12s to 2s (6x faster).",
         "Onboarding new developers and helping them fit into the team."
-      ],
-      "skils": [
-        "JavaScript",
-        "TypeScript",
-        "ReactJS",
-        "NodeJS",
-        "MongoDB",
-        "Cloud (AWS)"
       ]
     }
   ],

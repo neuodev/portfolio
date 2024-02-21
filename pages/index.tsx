@@ -11,6 +11,7 @@ import Head from "next/head";
 import me from "../json/me.json";
 import Experience from "../components/Experience";
 import Particles from "../components/Particles";
+import Testimonials from "../components/Testimonials";
 
 const Main: NextPage = () => {
   const header = `${me.name} - ${me.jobTitle}`;
@@ -34,6 +35,7 @@ const Main: NextPage = () => {
       <Particles />
       <div className="bg-dark w-full">
         <AboutMe />
+        <Testimonials />
         <Experience />
         <Projects />
         <Skills />

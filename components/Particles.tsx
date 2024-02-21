@@ -48,9 +48,7 @@ const Particles: React.FC<{}> = () => {
               opacity: 0.5,
               width: 1,
             },
-            collisions: {
-              enable: true,
-            },
+            collisions: { enable: true },
             move: {
               direction: "none",
               enable: true,
@@ -58,7 +56,7 @@ const Particles: React.FC<{}> = () => {
                 default: "bounce",
               },
               random: false,
-              speed: 3,
+              speed: 0.7,
               straight: false,
             },
             number: {
@@ -68,15 +66,9 @@ const Particles: React.FC<{}> = () => {
               },
               value: 30,
             },
-            opacity: {
-              value: 0.4,
-            },
-            shape: {
-              type: "circle",
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
+            opacity: { value: 0.4 },
+            shape: { type: "circle" },
+            size: { value: { min: 1, max: 5 } },
           },
           detectRetina: true,
         }}
