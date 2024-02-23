@@ -133,27 +133,27 @@
     "contentCutOff": 4,
     "posts": [
       {
-        "image": "images/story_6.jpg",
+        "image": "images/story-6.jpg",
+        "url": "https://blog.ahmedibrahim.dev/i-enjoy-designing-apis-901706a085ff"
+      },
+      {
+        "image": "images/story-5.jpg",
         "url": "https://blog.ahmedibrahim.dev/the-evolution-of-my-git-commit-messages-6542cec6ba2f"
       },
       {
-        "image": "images/story_5.jpg",
-        "url": "https://blog.ahmedibrahim.dev/how-i-get-myself-started-doing-hard-things-when-i-dont-want-to-4141e8538cfe"
-      },
-      {
-        "image": "images/story_4.jpg",
+        "image": "images/story-4.jpg",
         "url": "https://blog.ahmedibrahim.dev/my-islamic-morning-routine-as-a-software-engineer-working-from-home-ced36311cd51"
       },
       {
-        "image": "images/story_3.jpg",
+        "image": "images/story-3.jpg",
         "url": "https://blog.ahmedibrahim.dev/how-a-single-ted-video-changed-my-life-e47689ed5717"
       },
       {
-        "image": "images/story_2.jpg",
+        "image": "images/story-2.jpg",
         "url": "https://blog.ahmedibrahim.dev/my-principles-of-losing-and-keeping-weight-after-a-decade-of-research-87b3d20543de"
       },
       {
-        "image": "images/story_1.jpg",
+        "image": "images/story-1.jpg",
         "url": "https://blog.ahmedibrahim.dev/my-mind-wasnt-prepared-to-start-a-blog-but-now-it-is-36a6843a97f5"
       }
     ]
