@@ -4,7 +4,7 @@
   "resume": "/Ahmed Ibrahim - Full Stack Developer.pdf",
   "jobTitle": "Full Stack Developer",
   "jobTitleParts": ["A Full Stack Developer", "Ahmed Ibrahim"],
-  "aboutme": "Passionate, high-performing Full Stack Developer with more than 3 years of experience. My experience ranges from working on real-time messaging systems that can handle thousands of daily messages to scale opensource projects with more than 1+ million active users. Currently seeking a role as a Full-Stack Developer at a progressive organization, where applied knowledge and self-education skills meet.",
+  "aboutme": "I take extreme ownership of the problems I am working on. My dedication to quality and meticulous attention to detail enables me to produce work of exceptional standard.",
   "experienceOverview": [
     "My name is Ahmed Ibrahim. I have been in the industry for more than 3 years as a Full Stack Developer.",
     "I was a founding member of a team to develop a cross-chain bridge to enable users to move their tokens between different chains easly. I was responsible for building the required infrastructure for it to enable our users to move their tokens between 12 diffirent blockchains. During this time I reduced the average response time for our most imporant APIs from 12s to be just 2s (6x faster).",
@@ -13,7 +13,7 @@
     "Currently seeking a role as a Full-stack Developer at a progressive organization"
   ],
   "github": "https://github.com/neuodev",
-  "url": "http://me.ahmedibrahim.dev/",
+  "url": "https://ahmedibrahim.dev/",
   "social": [
     {
       "label": "Email",
