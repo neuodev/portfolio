@@ -15,7 +15,7 @@ const AboutMe = () => {
       <Element name="aboutme" className="relative z-10">
         <div className="max-w-screen-lg mx-auto min-h-700 p-5 flex items-center justify-center flex-col ">
           <div className="flex flex-col md:flex-row items-center md:items-start justify-center">
-            <div className="relative shrink-0 h-300 w-300 md:w-400 md:h-400 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer ring-4 ring-indigo-500">
+            <div className="relative shrink-0 h-300 w-300 md:w-400 md:h-400 lg:h-450 lg:w-450 overflow-hidden rounded-md cursor-pointer ring-4 ring-sky-400">
               <MuiButton
                 sx={{
                   minWidth: "unset",
@@ -47,7 +47,7 @@ const AboutMe = () => {
               </p>
               <h1 className="mt-2 mb-3 text-lg sm:text-2xl md:text-3xl font-bold uppercase flex items-center justify-start">
                 I&apos;m{" "}
-                <span className="text-indigo-500 ml-1 block">
+                <span className="text-sky-400 ml-1 block">
                   <Typewriter
                     onInit={(typewriter) => {
                       me.jobTitleParts.forEach((p) => {

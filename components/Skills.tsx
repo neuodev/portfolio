@@ -32,7 +32,7 @@ const Skills = () => {
               title={
                 <div className="p-1">
                   <a href={tech.website} target="_blank" rel="noreferrer">
-                    <Typography className="text-indigo-500 mb-2" variant="h5">
+                    <Typography className="text-sky-400 mb-2" variant="h5">
                       {tech.name}
                       <LaunchIcon className="ml-1 inline-block" />
                     </Typography>
@@ -45,7 +45,7 @@ const Skills = () => {
             >
               <Button
                 variant="outlined"
-                className="group border-transparent group-hover:border-indigo-500 transition-colors duration-200"
+                className="group border-transparent hover:!border-sky-400 transition-colors duration-200"
                 sx={{
                   width: "5rem",
                   height: "5rem",
@@ -55,7 +55,7 @@ const Skills = () => {
               >
                 <Logo
                   id={tech.techId}
-                  className="group-hover:fill-indigo-500 transition-colors duration-200 w-full h-full"
+                  className="group-hover:fill-sky-400 transition-colors duration-200 w-full h-full"
                 />
               </Button>
             </Tooltip>

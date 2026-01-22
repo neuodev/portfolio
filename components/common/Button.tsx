@@ -27,9 +27,9 @@ const Button: NextPage<{
       }}
       className={`px-8 h-12 ${
         variant === "secondary"
-          ? "border border-indigo-500 text-indigo-500 hover:bg-indigo-500 hover:text-white"
-          : ` ${!disabled && "bg-indigo-500"} text-white hover:bg-indigo-600`
-      } uppercase rounded-3xl hover:ring-2 hover:ring-indigo-400 font-medium relative overflow-hidden bg-slide flex items-center justify-center tracking-widest ${
+          ? "border border-sky-400 text-sky-400 hover:bg-sky-400 hover:text-white"
+          : ` ${!disabled && "bg-sky-400"} text-white hover:bg-sky-500`
+      } uppercase rounded-3xl hover:ring-2 hover:ring-sky-400 font-medium relative overflow-hidden bg-slide flex items-center justify-center tracking-widest ${
         disabled &&
         "bg-gray-900 cursor-not-allowed hover:bg-gray-900 hover:ring-gray-400"
       } ${variant} ${className || ""}`}

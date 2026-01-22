@@ -8,14 +8,14 @@ const SectionTitle: React.FC<{
   return (
     <div className="w-ful flex items-center justify-center flex-col py-16 px-5 text-gray-300">
       <h1 className="text-4xl lg:text-7xl uppercase font-bold">
-        {prefix} <span className="text-indigo-500">{focus}</span>
+        {prefix} <span className="text-sky-400">{focus}</span>
       </h1>
       <p className="mt-5 flex items-center justify-center">
-        <span className="w-9 h-0.5 bg-indigo-500 inline-block" />
+        <span className="w-9 h-0.5 bg-sky-400 inline-block" />
         <span className="mx-1 lg:mx-4 inline-block uppercase text-xs lg:text-base text-center">
           {subtitle}
         </span>
-        <span className="w-9 h-0.5 bg-indigo-500 inline-block" />
+        <span className="w-9 h-0.5 bg-sky-400 inline-block" />
       </p>
     </div>
   );

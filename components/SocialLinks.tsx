@@ -10,12 +10,12 @@ const SocialLinks: React.FC<{ asCols: boolean }> = ({ asCols }) => {
     <div
       className={classnames(
         "flex items-center justify-start",
-        asCols ? "flex-col gap-3" : "flex-row"
+        asCols ? "flex-col gap-3" : "flex-row",
       )}
     >
       {me.social.map((s) => {
         const icon = (
-          <SocialIcon id={s.id} width="35px" className="fill-indigo-500" />
+          <SocialIcon id={s.id} width="35px" className="fill-sky-400" />
         );
         return (
           <Tooltip
@@ -28,7 +28,7 @@ const SocialLinks: React.FC<{ asCols: boolean }> = ({ asCols }) => {
           >
             <Button
               onClick={() => window.open(s.url)}
-              className="group border-transparent group-hover:border-indigo-500 transition-colors duration-200 relative overflow-hidden bg-slide"
+              className="group border-transparent group-hover:border-sky-400 transition-colors duration-200 relative overflow-hidden bg-slide"
               sx={{
                 borderRadius: asCols ? "8px" : "50%",
                 aspectRatio: asCols ? "unset" : "1/1",
@@ -42,6 +42,7 @@ const SocialLinks: React.FC<{ asCols: boolean }> = ({ asCols }) => {
                   width="100%"
                   textAlign="left"
                   textTransform="lowercase"
+                  className="text-sky-400"
                 >
                   {s.urlAsText}
                 </Typography>

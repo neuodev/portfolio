@@ -37,9 +37,8 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
           component={Link}
           href={project.repo}
           target="_blank"
-          sx={{
-            textDecoration: "none",
-          }}
+          sx={{ textDecoration: "none" }}
+          className="text-sky-400"
         >
           {project.name} — {project.slot}
         </Typography>
@@ -72,9 +71,9 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
                     <a href={website} target="_blank" rel="noreferrer">
                       <Logo
                         id={techId}
-                        className="fill-indigo-500 transition-colors duration-200 mb-4"
+                        className="fill-sky-400 transition-colors duration-200 mb-4"
                       />
-                      <Typography className="text-indigo-500 mb-2" variant="h5">
+                      <Typography className="text-sky-400 mb-2" variant="h5">
                         {name}
                         <LaunchIcon className="ml-1 inline-block" />
                       </Typography>

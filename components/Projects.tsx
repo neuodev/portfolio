@@ -17,7 +17,7 @@ const Projects: React.FC<{}> = () => {
           <>
             want to see more? checkout my{" "}
             <a
-              className="text-indigo-500 hover:underline"
+              className="text-sky-400 hover:underline"
               href={me.github}
               target="_blank"
               rel="noreferrer"

@@ -36,6 +36,7 @@ const Testimonials: React.FC = () => {
                 href={me.testimonials.main.owner.linkedin}
                 target="_blank"
                 component={Link}
+                className="text-sky-400"
                 sx={{
                   textAlign: "left",
                   fontSize: "1rem",
