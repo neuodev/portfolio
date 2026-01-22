@@ -1,25 +1,18 @@
 {
-  "name": "Ahmed Ibrahim",
+  "name": "Ahmed Ghait",
   "photo": "/images/me-3.png",
-  "resume": "/Ahmed Ibrahim - Full Stack Developer.pdf",
-  "jobTitle": "Full Stack Developer",
-  "jobTitleParts": ["A Full Stack Developer", "Ahmed Ibrahim"],
+  "resume": "/Ahmed Ghait - Full Stack Web3 Developer.pdf",
+  "jobTitle": "Full Stack Web3 Developer",
+  "jobTitleParts": ["A Full Stack Developer", "Ahmed Ghait"],
   "aboutme": "I take extreme ownership of the problems I am working on. My dedication to quality and meticulous attention to detail enables me to produce work of exceptional standard.",
-  "experienceOverview": [
-    "My name is Ahmed Ibrahim. I have been in the industry for more than 3 years as a Full Stack Developer.",
-    "I was a founding member of a team to develop a cross-chain bridge to enable users to move their tokens between different chains easly. I was responsible for building the required infrastructure for it to enable our users to move their tokens between 12 diffirent blockchains. During this time I reduced the average response time for our most imporant APIs from 12s to be just 2s (6x faster).",
-    "Then I used this as leverage to go to a bigger organization in Turcky. I was responsible for maintaining a multi-channel chating service in which users can interact with all of their customers  on Twitter and WhatsApp from one place! I was responsible for creating data-collection piplines to analyze and get insights from data then display it to our users in an easy to read graphs. Also I was researching solutions to our deployment issues we had it at the time.",
-    "Then I used this as leverage to go to a bigger organization in Turcky. I was responsible for maintaining a multi-channel chating service in which users can interact with all of their customers  on Twitter and WhatsApp from one place! I was responsible for creating data-collection piplines to analyze and get insights from data then display it to our users in an easy to read graphs. Also I was researching solutions to our deployment issues we had it at the time.",
-    "Currently seeking a role as a Full-stack Developer at a progressive organization"
-  ],
   "github": "https://github.com/neuodev",
   "url": "https://ahmedibrahim.dev/",
   "social": [
     {
       "label": "Email",
       "id": "email",
-      "url": "mailto:me@ahmedibrahim.dev",
-      "urlAsText": "me@ahmedibrahim.dev"
+      "url": "mailto:me@ahmedghait.com",
+      "urlAsText": "me@ahmeghait.com"
     },
     {
       "lable": "GitHub",
@@ -60,32 +53,19 @@
   "experiences": [
     {
       "company": {
-        "name": "Synpress",
-        "website": "https://github.com/Synthetixio/synpress",
-        "about": "Synpress is a true E2E testing framework based on Cypress and Playwright with support for MetaMask."
-      },
-      "period": "Feb 2023 - Present",
-      "jobTitle": "Open Source Maintainer",
-      "location": ["International", "Remote"],
-      "roles": [
-        "Helped the project get sponsored & funded with more than <strong>400k USD</strong>.",
-        "Planning how to spend the funds, organize the work, hit the milestones, and popularize the project.",
-        "Adding new features, responding to issues, reviewing pull requests, refactoring the codebase, writing tests.",
-        "Documented the framework from start to finish — <strong>docs.synpress.io</strong>",
-        "Migrated the project to TypeScript, reduced package size, and added headless browser support."
-      ]
-    },
-    {
-      "company": {
         "name": "Panther Protocol",
-        "website": "https://www.pantherprotocol.io/",
+        "website": "https://www.panther.org/",
         "about": "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance."
       },
       "period": "Dec 2022 - Present",
       "jobTitle": "Sr. Software Engineer",
       "location": ["United Kingdom (UK)", "Remote"],
       "roles": [
-        "Took full responsibility & accountability over delivering critical features.",
+        "Integrated complex zero-knowledge smart contracts and ZK circuits (written in Circom DSL) into the production dApp, ensuring seamless interaction between frontend, backend, and privacy-preserving cryptographic protocols.",
+        "Collaborated intensively with the tech lead to deliver the Miner Client—a critical protocol component—within just 3 days to meet an aggressive deadline.",
+        "Contributed to technical architecture discussions, proposing scalable solutions for protocol infrastructure and collaborating on critical system design decisions.",
+        "Handled the entire production trusted setup ceremony.",
+        "Implemented a robust error handling mechanism to enhance the user experience and ensure data integrity.",
         "Reduced bundle size by 50% & Analyzed performance bottlenecks.",
         "Improve the CI/CD speed (IPFS, Selective CI/CD Script Runner).",
         "Took the initiative to introduce end-to-end testing to our code base.",
@@ -102,13 +82,30 @@
       "jobTitle": "Full Stack Developer",
       "location": ["United States (US)", "Remote"],
       "roles": [
-        "Develop public API to enable other developers to build their own dApps on top of Cardano and to serve more than 1 million active users.",
-        "Tackle performance bottlenecks related to databases and memory leaks.",
-        "Manage the software development lifecycle (Planning, Design, Development, QA).",
-        "Improve the front-end experience by implementing an entirely new revamped theme.",
-        "Wrote end-to-end and unit tests to ensure app integrity.",
+        "Developed and maintained the dApp Connector, enabling Cardano developers to build decentralized applications that interact with the Cardano blockchain through the Yoroi wallet Chrome extension.",
+        "Maintained and enhanced open-source packages utilized by the Cardano community and internal development teams, ensuring reliability and compatibility across the ecosystem.",
+        "Developed features spanning both frontend and backend systems, contributing to platform scalability and functionality for the broader Cardano developer community.",
+        "Awarded Duo-Coder Virtuoso in recognition of exceptional versatility in full-stack development and proven track record of technical excellence in extending platform capabilities.",
+        "Collaborated cross-functionally to deliver high-quality solutions that met both technical requirements and business objectives.",
         "Review PRs and make sure they follow the code standards and best practices.",
         "Onboard new developers and help them fit into the team."
+      ]
+    },
+    {
+      "company": {
+        "name": "Synpress",
+        "website": "https://github.com/Synthetixio/synpress",
+        "about": "Synpress is a true E2E testing framework based on Cypress and Playwright with support for MetaMask."
+      },
+      "period": "Feb 2023 - Present",
+      "jobTitle": "Open Source Maintainer",
+      "location": ["International", "Remote"],
+      "roles": [
+        "Authored complete technical documentation from scratch, launching docs.synpress.io to improve developer onboarding and reduce setup friction.",
+        "Migrated the entire codebase from JavaScript to TypeScript, improving type safety and developer experience across the framework.",
+        "Optimized package distribution by reducing bundle size and implementing headless browser support for CI/CD environments.",
+        "Maintained the project through feature development, issue triage, pull request reviews, code refactoring, and test coverage improvements.",
+        "Engaged with the open-source community to support developers integrating Synpress into their Web3 testing workflows."
       ]
     },
     {

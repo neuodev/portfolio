@@ -84,7 +84,7 @@ const Experience = () => {
                         },
                       }}
                     >
-                      {ex.jobTitle} @ {ex.company.name}
+                      {ex.jobTitle} | {ex.company.name}
                     </Typography>
                   </Tooltip>
                   <ul>
