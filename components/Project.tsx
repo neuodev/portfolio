@@ -38,7 +38,7 @@ const Project: React.FC<{ project: IProject }> = ({ project }) => {
           href={project.repo}
           target="_blank"
           sx={{ textDecoration: "none" }}
-          className="text-sky-400"
+          className="!text-sky-400"
         >
           {project.name} — {project.slot}
         </Typography>

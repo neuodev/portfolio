@@ -71,7 +71,7 @@ const Experience = () => {
                       href={ex.company.website}
                       target="_blank"
                       component={Link}
-                      className="text-sky-400"
+                      className="!text-sky-400"
                       sx={{
                         mb: "0.75rem",
                         textAlign: "left",
