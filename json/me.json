@@ -1,9 +1,9 @@
 {
   "name": "Ahmed Ghait",
   "photo": "/images/me-3.png",
-  "resume": "/Ahmed Ghait - Full Stack Web3 Developer.pdf",
-  "jobTitle": "Full Stack Web3 Developer",
-  "jobTitleParts": ["A Full Stack Developer", "Ahmed Ghait"],
+  "resume": "/Ahmed Ghait - Full Stack Engineer.pdf",
+  "jobTitle": "Full Stack Engineer",
+  "jobTitleParts": ["Ahmed Ghait", "A Full Stack Engineer"],
   "aboutme": "I take extreme ownership of the problems I am working on. My dedication to quality and meticulous attention to detail enables me to produce work of exceptional standard.",
   "github": "https://github.com/neuodev",
   "url": "https://ahmedibrahim.dev/",
@@ -52,75 +52,60 @@
   },
   "experiences": [
     {
-      "company": {
-        "name": "Panther Protocol",
-        "website": "https://www.panther.org/",
-        "about": "Panther Protocol is an end-to-end solution that restores privacy in Web3 and DeFi while providing financial institutions with full ownership of their data as they participate in decentralized finance."
-      },
-      "period": "Dec 2022 - Present",
-      "jobTitle": "Sr. Software Engineer",
-      "location": ["United Kingdom (UK)", "Remote"],
+      "company": { "name": "Panther Protocol" },
+      "period": "Nov 2022 - Present",
+      "jobTitle": "Full Stack Engineer",
+      "location": ["England, United Kingdom (UK)", "Remote"],
       "roles": [
+        "Joined during a critical development phase to integrate zero-knowledge smart contracts and Circom-based ZK circuits into the dApp, rapidly becoming a key contributor to the core product infrastructure within weeks of onboarding.",
         "Integrated complex zero-knowledge smart contracts and ZK circuits (written in Circom DSL) into the production dApp, ensuring seamless interaction between frontend, backend, and privacy-preserving cryptographic protocols.",
         "Collaborated intensively with the tech lead to deliver the Miner Client—a critical protocol component—within just 3 days to meet an aggressive deadline.",
-        "Contributed to technical architecture discussions, proposing scalable solutions for protocol infrastructure and collaborating on critical system design decisions.",
-        "Handled the entire production trusted setup ceremony.",
-        "Implemented a robust error handling mechanism to enhance the user experience and ensure data integrity.",
-        "Reduced bundle size by 50% & Analyzed performance bottlenecks.",
-        "Improve the CI/CD speed (IPFS, Selective CI/CD Script Runner).",
-        "Took the initiative to introduce end-to-end testing to our code base.",
-        "Increase the backend syncing speed by 50x (from 50s to 1s)."
+        "Handled the entire trusted setup ceremony."
       ]
     },
     {
-      "company": {
-        "name": "EMURGO",
-        "website": "https://emurgo.io/",
-        "about": "EMURGO is the official commercial arm and a founding entity of the Cardano blockchain."
-      },
-      "period": "Jul 2021 – Present",
-      "jobTitle": "Full Stack Developer",
-      "location": ["United States (US)", "Remote"],
+      "company": { "name": "LiteSpace" },
+      "period": "May 2024 - Oct 2025",
+      "jobTitle": "Tech Lead",
+      "location": ["Cairo, Egypt", "Remote"],
       "roles": [
+        "Led a team of 5 engineers building a full-stack SaaS platform within a TypeScript monorepo, keeping client, server, and all internal packages in sync through a unified type system.",
+        "Established and maintained engineering standards across the team: Conventional Commits, a documented coding style guide, deployment guidelines, and robust CI/CD pipelines.",
+        "Led the design of a PostgreSQL data layer built on Knex, with full integration test coverage against a real database, enabling confident schema and query changes at any time.",
+        "Built a platform-agnostic headless hooks library that encapsulated client-side logic and could be consumed across React, Next.js, and React Native without modification."
+      ]
+    },
+    {
+      "company": { "name": "EMURGO" },
+      "period": "Apr 2021 – May 2024",
+      "jobTitle": "Full Stack Engineer",
+      "location": ["North Carolina, United States (US)", "Remote"],
+      "roles": [
+        "Delivered full-stack development across EMURGO Fintech's platform, collaborating closely with design, product, tech, and QA teams to extend platform capabilities and maintain critical infrastructure for the Cardano ecosystem.",
         "Developed and maintained the dApp Connector, enabling Cardano developers to build decentralized applications that interact with the Cardano blockchain through the Yoroi wallet Chrome extension.",
         "Maintained and enhanced open-source packages utilized by the Cardano community and internal development teams, ensuring reliability and compatibility across the ecosystem.",
-        "Developed features spanning both frontend and backend systems, contributing to platform scalability and functionality for the broader Cardano developer community.",
-        "Awarded Duo-Coder Virtuoso in recognition of exceptional versatility in full-stack development and proven track record of technical excellence in extending platform capabilities.",
-        "Collaborated cross-functionally to deliver high-quality solutions that met both technical requirements and business objectives.",
-        "Review PRs and make sure they follow the code standards and best practices.",
-        "Onboard new developers and help them fit into the team."
+        "Awarded Duo-Coder Virtuoso in recognition of exceptional versatility in full-stack development and a proven track record of technical excellence in extending platform capabilities."
       ]
     },
     {
-      "company": {
-        "name": "Synpress",
-        "website": "https://github.com/Synthetixio/synpress",
-        "about": "Synpress is a true E2E testing framework based on Cypress and Playwright with support for MetaMask."
-      },
-      "period": "Feb 2023 - Present",
-      "jobTitle": "Open Source Maintainer",
-      "location": ["International", "Remote"],
+      "company": { "name": "Synpress" },
+      "period": "Feb 2023 - Jul 2023",
+      "jobTitle": "Open Source Developer (Co-Maintainer)",
+      "location": ["Sydney, NSW", "Remote"],
       "roles": [
-        "Authored complete technical documentation from scratch, launching docs.synpress.io to improve developer onboarding and reduce setup friction.",
+        "Spearheaded the technical modernization, development, and community maintenance of the Synpress E2E testing framework. Drove significant improvements in performance, code quality, and documentation, ensuring the framework remained a high-quality tool for its growing user base.",
         "Migrated the entire codebase from JavaScript to TypeScript, improving type safety and developer experience across the framework.",
         "Optimized package distribution by reducing bundle size and implementing headless browser support for CI/CD environments.",
-        "Maintained the project through feature development, issue triage, pull request reviews, code refactoring, and test coverage improvements.",
-        "Engaged with the open-source community to support developers integrating Synpress into their Web3 testing workflows."
+        "Maintained the project through feature development, issue triage, pull request reviews, code refactoring, and test coverage improvements."
       ]
     },
     {
-      "company": {
-        "name": "Spherium",
-        "website": "https://spherium.finance/",
-        "about": "The Gateway to a cross-chain interoperable ecosystem that lets users bridge tokens on multiple chains."
-      },
+      "company": { "name": "Spherium" },
       "period": "Dec 2018 – Aug 2019",
-      "jobTitle": "Full Stack Developer",
+      "jobTitle": "Full Stack Engineer",
       "location": ["Singapore (SG)", "Remote"],
       "roles": [
-        "Founding member of a team to develop a cross-chain bridge platform",
-        "Build the required infrastructure for a transaction queue (API, Cron Job, Scheduler).",
-        "Integrated new 12 blockchains that allowed users to easily move tokens between them.",
+        "Worked as a Full Stack Developer at a DeFi startup, contributing to the design and development of multiple decentralized finance products, including token staking, cross-chain token bridging across 12 EVM-compatible networks, and a lending & borrowing platform.",
         "Reduced average request time for most important endpoints from 12s to 2s (6x faster).",
         "Onboarding new developers and helping them fit into the team."
       ]
@@ -140,18 +125,6 @@
       {
         "image": "images/story-2.jpg",
         "url": "https://blog.ahmedibrahim.dev/how-to-document-your-library-f90c444855be"
-      },
-      {
-        "image": "images/story-4.jpg",
-        "url": "https://blog.ahmedibrahim.dev/my-islamic-morning-routine-as-a-software-engineer-working-from-home-ced36311cd51"
-      },
-      {
-        "image": "images/story-3.jpg",
-        "url": "https://blog.ahmedibrahim.dev/how-a-single-ted-video-changed-my-life-e47689ed5717"
-      },
-      {
-        "image": "images/story-1.jpg",
-        "url": "https://blog.ahmedibrahim.dev/my-mind-wasnt-prepared-to-start-a-blog-but-now-it-is-36a6843a97f5"
       }
     ]
   },

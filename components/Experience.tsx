@@ -57,36 +57,22 @@ const Experience = () => {
                       {ex.location && ex.location.join(" · ")}
                     </Typography>
                   </Box>
-                  <Tooltip
-                    placement="top"
-                    arrow
-                    followCursor
-                    title={
-                      <Typography variant="body2" className="text-gray-300">
-                        {ex.company.about}
-                      </Typography>
-                    }
+                  <Typography
+                    className="!text-sky-400"
+                    sx={{
+                      mb: "0.75rem",
+                      textAlign: "left",
+                      fontSize: "1.25rem",
+                      lineHeight: "1.75rem",
+                      display: "block",
+                      [theme.breakpoints.up("lg")]: {
+                        fontSize: "1.5rem",
+                        lineHeight: "2rem",
+                      },
+                    }}
                   >
-                    <Typography
-                      href={ex.company.website}
-                      target="_blank"
-                      component={Link}
-                      className="!text-sky-400"
-                      sx={{
-                        mb: "0.75rem",
-                        textAlign: "left",
-                        fontSize: "1.25rem",
-                        lineHeight: "1.75rem",
-                        display: "block",
-                        [theme.breakpoints.up("lg")]: {
-                          fontSize: "1.5rem",
-                          lineHeight: "2rem",
-                        },
-                      }}
-                    >
-                      {ex.jobTitle} | {ex.company.name}
-                    </Typography>
-                  </Tooltip>
+                    {ex.jobTitle} | {ex.company.name}
+                  </Typography>
                   <ul>
                     {ex.roles.map((role, idx) => (
                       <li
